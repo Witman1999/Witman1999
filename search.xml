@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[java中的引用]]></title>
+    <url>%2F2019%2F08%2F16%2Fjava%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[值类型与引用类型12int num=10;String str="hello"; 从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值 变量赋值12num=20;str="java"; 对于基本数据类型，如果赋值会覆盖掉原来的数，而对于引用数据类型，重新赋值的话，会覆盖原本保存的地址信息，而去指向新的对象，原来对象没有改变过，此时原来的对象则会因没有引用来关联找不到它，就会被垃圾回收器回收。 函数传参1234567891011121314151617StringBuilder sb1 = new StringBuilder("test");StringBuilder sb2 = new StringBuilder("test");// 对于提供修改自身的成员方法引用类型，原始的sBuilder会被更改public void func(StringBuilder sBuilder) &#123; sBuilder.append("aa");&#125;// 原始的sBuilder不会被更改public void test(StringBuilder sBuilder) &#123; sBuilder = new StringBuilder("111");&#125;public static void main(String s)&#123; func(sb1); test(sb2);&#125; 在执行 main 里面的 &ensp;func(sb1)&ensp;之后执行 main 里面的 test(sb2) 后]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>引用</tag>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[java8新特性和default]]></title>
+    <url>%2F2019%2F08%2F16%2Fjava8%E6%96%B0%E7%89%B9%E6%80%A7%E5%92%8Cdefault%2F</url>
+    <content type="text"><![CDATA[新特性 JDK1.8 为了加强接口的实用能力，使得接口可以存在具体的方法，前提是方法需要被 default 和 static 修饰 12345678public interface D &#123; default void method1() &#123; System.out.println("我是接口的默认方法"); &#125; static void method2() &#123; System.out.println("我是接口的静态方法"); &#125;&#125; 注意： 用 default 修饰的方法必须是用方法体，不能方法体为空，不能用以下形式声明在接口 1default void method1(); 如果一个 A 类继承 B,C 两个接口，此时接口中用同名的 default 修饰的方法，那么此时编译器会报错，编译器不知道调用哪一个。 default 方法不能通过类名调用（对象级），static 方法可以通过类名调用（类级）。 一个接口可以有多个default方法, 也可以有多个static方法 defautl另一种使用方法 以上是 default 的一种使用方法，另外一种则是在 switch 语句中，在 switch 中如果没有与 case 匹配的就与 default 匹配，这里就不多介绍了。 总结 default 可以使得接口有具体的默认方法 default 修饰的方法，被继承的子类也同时具有该默认方法，并且可以被重写 主要是解决继承该接口的类有些具有同样的方法功能，每个类都要写这段重复的代码，显然费时，这也是新特性的意义。 附注意这里的 default 与类中的 default 的修饰词是不一样的，两者意义不同，而且类中 default 是不能显示写出来，而是默认如果你没有写修饰符，默认就是 default ，所以不能写出来。]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[IO流]]></title>
+    <url>%2F2019%2F08%2F16%2FIO%E6%B5%81%2F</url>
+    <content type="text"><![CDATA[我们对文件的操作，大多都是通过 IO 流来操作的，那什么是流呢？ 一 流和水流类似，它只是变成了一组有顺序，连续字节的数据流，并且有开始和结束的位置，并且它的方向很重要。透明通常利用方向来区别它们的作用。 分类 根据流向分为：输入流和输出流 输入流：数据源（磁盘）—&gt; 内存 输出流：内存—&gt; 媒介 （磁盘等） 根据类型分为：字符流和字节流 字节流：以字节为单位的进行读写，一次是8为二进制。 字符流：以字符为单位进行读写。一次是16为二进制。使用环境 字节流输入字节流 InputStream InputStream 是所有输入字节流的父类，他是一个抽象类 ByteArrayInputStream、StringBufferInputStream、FileInputStream 是三种基本的介质流，它们分别从Byte 数组、StringBuffer、和本地文件中读取数据。 FileInputStream概念FileInputStream流被称为文件字节输入流，意思指对文件数据以字节的形式进行读取操作如读取图片视频等 构造方法第一种：通过打开与File类对象代表的实际文件的链接来创建FileInputStream流对象 1public FileInputStream(File file) throws FileNotFoundException&#123;&#125; 注意：若File类对象的所代表的文件不存在;不是文件是目录;或者其他原因不能打开的话，则会抛出FileNotFoundException第二种：通过指定的字符串参数来创建File类对象，而后再与File对象所代表的实际路径建立链接创建FileInputStream流对象,发现该构造方法等于是在第一个构造方法的基础上进行延伸的，因此规则也和第一个构造方法一致 1public FileInputStream(String name) throws FileNotFoundException 常用方法read() 数据的下一个字节（或者指定的长度），如果达到文件的末尾， -1 123456789 FileInputStream fin= new FileInputStream(file);//建立一个字节数组来保存读取的内容byte[] by=new byte[1024];//保存当前读取的长度int size= 0;while((size=fin.read(by))!=-1) &#123; System.out.println(new String(by,0,size));&#125;fin.close(); 输出字节流 OutputStream OutputStream 是所有的输出字节流的父类，它是一个抽象类。 ByteArrayOutputStream、FileOutputStream 是两种基本的介质流，它们分别从Byte 数组、和本地文件中读取数据。FileOutputStreamFileOutputStream流是指文件字节输出流，专用于输出原始字节流如图像数据等，其继承OutputStream类，拥有输出流的基本特性1public class FileOutputStream extends OutputStream&#123;&#125; 构造函数第一种：创建FileOutputStream流以写入数据到File对象所代表的文件，同时创建一个新的FileDescriptor对象来表示与该文件的关联(源码中会new一个该对象) 1public FileOutputStream(File file) throws FileNotFoundException&#123;&#125; 第二种：创建FileOutputStream流以写入数据到File对象表示的文件。 如果第二个参数为true，则字节将写入文件的末尾而不是开头。 创建一个新的FileDescriptor对象来表示此文件连接。其抛异常的规则与第一个构造函数一致 1public FileOutputStream(File file,boolean append) throws FileNotFoundException&#123;&#125; 若第二个参数为真，则意味着会写入字节到文件的末尾，意味着追加内容，若为假，则是写入字节到文件的开头，意味着是覆盖。（默认是覆盖）第三种：创建FileOutputStream流以写入数据到指定路径所代表的文件，同时创建一个新的FileDescriptor对象来表示与该文件的关联(源码中会new一个该对象) 1public FileOutputStream(String name) throws FileNotFoundException&#123;&#125; 第四种：创建FileOutputStream流以写入数据到指定路径所代表的文件，同时创建一个新的FileDescriptor对象来表示与该文件的关联(源码中会new一个该对象)， 如果第二个参数为true，则字节将写入文件的末尾而不是开头 1public FileOutputStream(String name,boolean append) throws FileNotFoundException 注意： 若文件存在，但是是目录而不是文件，则会抛出FileNotFoundException异常 若文件不存在则创建 若不存在且无法创建，则会抛出FileNotFoundException异常常用方法write()123456789101112 FileInputStream fin= new FileInputStream(file);FileOutputStream fout=new FileOutputStream("picture2.png");//建立一个字节数组来保存读取的内容byte[] by=new byte[1024];//保存当前读取的长度int size= 0;while((size=fin.read(by))!=-1) &#123; fout.write(by, 0, size); fout.flush();//刷流&#125;fout.close();fin.close(); 字符流输入字符流 Reader Reader 是所有输入字符流的父类，他是一个抽象类BufferedReaderBufferedReader类从字符输入流中读取文本并缓冲字符，以便有效地读取字符，数组和行可以通过构造函数指定缓冲区大小也可以使用默认大小。对于大多数用途，默认值足够大构造函数1BufferedReader(Reader in) 和上面的输入流类似，new出新对象的时候需要传入Reader的子类流，如下 1bufferRead = new BufferedReader(new InputStreamReader(new FileInputStream(path))); 常用的方法readLine()123456 bufferRead = new BufferedReader(new InputStreamReader(new FileInputStream(path))); String result;while ((result = bufferRead.readLine()) != null) &#123; System.out.println(result); &#125;&#125; 输出字符流 Writer Writer 是所有输出字符流的父类，他是一个抽象类BufferedWriter字符缓冲输出流构造函数1BufferedWriter(Wtiert in) ; 和上面的输入流类似，new出新对象的时候需要传入Writer的子类流，如下 1bufferWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path, true))); 常用方法writer()1234 bufferWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(path, true))); String result="hello world"; bufferWriter.write(result);&#125; nextLine() public void newLine() throws IOException写入一个行分隔符。]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>IO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ASCII码表]]></title>
     <url>%2F2019%2F08%2F16%2FASCII%E7%A0%81%E8%A1%A8%2F</url>
     <content type="text"><![CDATA[数字48-57 英文小写 a-z97-122 大写 A-Z65-90]]></content>
