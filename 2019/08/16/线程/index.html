@@ -93,11 +93,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="线程">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/线程/index.html">
-<meta property="og:site_name" content="不忘什么心？">
+<meta property="og:site_name" content="我是谁？">
 <meta property="og:description" content="进程与线程进程是程序运行的基本单位，一个程序就是代表一个进程，进程与进程之间是相互独立的，它们是由 CPU 进行调度的（分配内存空间） ，由于它们是相互独立所以各自的资源不共享。一台电脑中可以运行多个程序，并且执行效率快，所以它是高效而且并发性的。在一个时间段中，可以执行多个进程（程序），一个进程是非常占内存空间的，对 CPU 的开销也是非常大的。 线程是程序流中最小的执行单位，一个程序中至少存在">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/B95A2FBD62CA41BF8619F427EBF27A2F/9198">
-<meta property="og:updated_time" content="2019-08-16T07:48:06.566Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.454Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线程">
 <meta name="twitter:description" content="进程与线程进程是程序运行的基本单位，一个程序就是代表一个进程，进程与进程之间是相互独立的，它们是由 CPU 进行调度的（分配内存空间） ，由于它们是相互独立所以各自的资源不共享。一台电脑中可以运行多个程序，并且执行效率快，所以它是高效而且并发性的。在一个时间段中，可以执行多个进程（程序），一个进程是非常占内存空间的，对 CPU 的开销也是非常大的。 线程是程序流中最小的执行单位，一个程序中至少存在">
@@ -140,7 +140,7 @@
 
 
 
-  <title>线程 | 不忘什么心？</title>
+  <title>线程 | 我是谁？</title>
   
 
 
@@ -181,7 +181,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -329,7 +329,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -355,7 +355,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -425,6 +437,7 @@
 <li><p>线程开销小，不利于资源的管理和保护，进程正好相反。</p>
 </li>
 <li><p>线程数据共享</p>
+<a id="more"></a>
 <h1 id="线程的实现"><a href="#线程的实现" class="headerlink" title="线程的实现"></a>线程的实现</h1><p>java 中一共有两种方式实现线程</p>
 <h2 id="继承-Thread-类"><a href="#继承-Thread-类" class="headerlink" title="继承 Thread 类"></a>继承 Thread 类</h2><p>通过继承 java.lang.Thread 类来实现线程：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span></span>&#123;</span><br><span class="line">        .....</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    MyThread mt = <span class="keyword">new</span> MyThread();</span><br><span class="line">    mt.start();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -722,6 +735,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 

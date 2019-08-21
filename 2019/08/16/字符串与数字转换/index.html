@@ -93,10 +93,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="字符串和数字转换">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/字符串与数字转换/index.html">
-<meta property="og:site_name" content="不忘什么心？">
+<meta property="og:site_name" content="我是谁？">
 <meta property="og:description" content="12345678910111213public class Test &amp;#123;    public static void main(String[] args) &amp;#123;        String str = &quot;123&quot;;         Integer num1 = new Integer(str);         int num2 = Integer.parseInt(str);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-16T07:49:41.964Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.476Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串和数字转换">
 <meta name="twitter:description" content="12345678910111213public class Test &amp;#123;    public static void main(String[] args) &amp;#123;        String str = &quot;123&quot;;         Integer num1 = new Integer(str);         int num2 = Integer.parseInt(str);">
@@ -138,7 +138,7 @@
 
 
 
-  <title>字符串和数字转换 | 不忘什么心？</title>
+  <title>字符串和数字转换 | 我是谁？</title>
   
 
 
@@ -179,7 +179,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -327,7 +327,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -353,7 +353,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -410,6 +422,7 @@
         <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String str = <span class="string">"123"</span>;</span><br><span class="line"> </span><br><span class="line">        Integer num1 = <span class="keyword">new</span> Integer(str);</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">int</span> num2 = Integer.parseInt(str);</span><br><span class="line"> </span><br><span class="line">        Integer num3 = Integer.valueOf(str);</span><br><span class="line"> </span><br><span class="line">        System.out.println(num1 + <span class="string">"\t"</span> + num2 + <span class="string">"\t"</span> + num3);<span class="comment">//123	123	123</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>在上面代码中，演示了三个方式的转化，分别是new了新对象和调用静态方法，我们查看内部的变化</p>
+<a id="more"></a>
 <h3 id="Interger-类的构造函数"><a href="#Interger-类的构造函数" class="headerlink" title="Interger 类的构造函数"></a>Interger 类的构造函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">Integer</span><span class="params">(String s)</span> <span class="keyword">throws</span> NumberFormatException </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.value = parseInt(s, <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
 <p>从代码中看的，构造函数时调用了一个parseInt(s,10)的内部函数</p>
@@ -686,6 +699,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 

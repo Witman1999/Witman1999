@@ -88,22 +88,22 @@
 
 
 
-<meta name="description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值 变量赋值12num=20;str=&quot;java&quot;;  对于基本数据类型，如果赋值会覆盖掉原来的数，而对于引用数据类型，重新赋值的话，会覆盖原本保存的地址信息，而去指向新的对象，原来对象没有改变过，此时原来的对象则会因没有引用来关">
+<meta name="description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值">
 <meta name="keywords" content="基础知识,引用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java中的引用">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/java中的引用/index.html">
-<meta property="og:site_name" content="不忘什么心？">
-<meta property="og:description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值 变量赋值12num=20;str=&quot;java&quot;;  对于基本数据类型，如果赋值会覆盖掉原来的数，而对于引用数据类型，重新赋值的话，会覆盖原本保存的地址信息，而去指向新的对象，原来对象没有改变过，此时原来的对象则会因没有引用来关">
+<meta property="og:site_name" content="我是谁？">
+<meta property="og:description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/ED36801302CB4FC99BD307A99771EEE9/7419">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/6CDFFFA7D06D4EDEB7B53FE4CD00290D/7433">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/F485D582DB9B40D2A9FBC6429C38459D/7467">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/BC24DEA624EC4DE181C7BF860BB1C82E/7483">
-<meta property="og:updated_time" content="2019-08-16T07:33:55.525Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java中的引用">
-<meta name="twitter:description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值 变量赋值12num=20;str=&quot;java&quot;;  对于基本数据类型，如果赋值会覆盖掉原来的数，而对于引用数据类型，重新赋值的话，会覆盖原本保存的地址信息，而去指向新的对象，原来对象没有改变过，此时原来的对象则会因没有引用来关">
+<meta name="twitter:description" content="值类型与引用类型12int num=10;String str=&quot;hello&quot;;  从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值">
 <meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/ED36801302CB4FC99BD307A99771EEE9/7419">
 
 
@@ -143,7 +143,7 @@
 
 
 
-  <title>java中的引用 | 不忘什么心？</title>
+  <title>java中的引用 | 我是谁？</title>
   
 
 
@@ -184,7 +184,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -332,7 +332,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -358,7 +358,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -415,6 +427,7 @@
         <h1 id="值类型与引用类型"><a href="#值类型与引用类型" class="headerlink" title="值类型与引用类型"></a>值类型与引用类型</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> num=<span class="number">10</span>;</span><br><span class="line">String str=<span class="string">"hello"</span>;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/ED36801302CB4FC99BD307A99771EEE9/7419" alt="image"><br>从上图中可以看出基本数据类型保存的是值，而引用数据类型保存的是指向对象的地址信息，不是值</p>
+<a id="more"></a>
 <h1 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">num=<span class="number">20</span>;</span><br><span class="line">str=<span class="string">"java"</span>;</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/6CDFFFA7D06D4EDEB7B53FE4CD00290D/7433" alt="image"><br>对于基本数据类型，如果赋值会覆盖掉原来的数，而对于引用数据类型，重新赋值的话，会覆盖原本保存的地址信息，而去指向新的对象，原来对象没有改变过，此时原来的对象则会因没有引用来关联找不到它，就会被垃圾回收器回收。</p>
@@ -687,6 +700,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 

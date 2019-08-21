@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。二. 对象锁和">
+<meta name="description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。">
 <meta name="keywords" content="关键字">
 <meta property="og:type" content="article">
 <meta property="og:title" content="synchronized关键字">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/synchronized/index.html">
-<meta property="og:site_name" content="不忘什么心？">
-<meta property="og:description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。二. 对象锁和">
+<meta property="og:site_name" content="我是谁？">
+<meta property="og:description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-16T07:44:37.976Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.416Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="synchronized关键字">
-<meta name="twitter:description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。二. 对象锁和">
+<meta name="twitter:description" content="一. 概念（synchronized） java 中的关键字，是利用锁的机制来实现同步的。 特性 互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。 必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。">
 
 
 
@@ -138,7 +138,7 @@
 
 
 
-  <title>synchronized关键字 | 不忘什么心？</title>
+  <title>synchronized关键字 | 我是谁？</title>
   
 
 
@@ -179,7 +179,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -327,7 +327,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -353,7 +353,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -410,7 +422,8 @@
         <h1 id="一-概念"><a href="#一-概念" class="headerlink" title="一. 概念"></a>一. 概念</h1><p>（synchronized） java 中的关键字，是利用锁的机制来实现同步的。</p>
 <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ol>
 <li>互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。</li>
-<li>必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。<h1 id="二-对象锁和类锁"><a href="#二-对象锁和类锁" class="headerlink" title="二. 对象锁和类锁"></a>二. 对象锁和类锁</h1><h2 id="对象锁"><a href="#对象锁" class="headerlink" title="对象锁"></a>对象锁</h2>在 Java 中，每个对象都会有一个 monitor 对象，这个对象其实就是 java 对象的锁（内置锁/对象锁），每个对象都有独立的对象锁，互不干扰。<h2 id="类锁"><a href="#类锁" class="headerlink" title="类锁"></a>类锁</h2>在 Java 中，针对每个类也有一个锁，称为“类锁”，每一个类只有一个 class 对象锁。<h1 id="三-synchronized-的用法"><a href="#三-synchronized-的用法" class="headerlink" title="三 synchronized 的用法"></a>三 synchronized 的用法</h1><h2 id="根据修饰的对象分类"><a href="#根据修饰的对象分类" class="headerlink" title="根据修饰的对象分类"></a>根据修饰的对象分类</h2>synchronized 可以修饰方法和代码块</li>
+<li>必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。<a id="more"></a>
+<h1 id="二-对象锁和类锁"><a href="#二-对象锁和类锁" class="headerlink" title="二. 对象锁和类锁"></a>二. 对象锁和类锁</h1><h2 id="对象锁"><a href="#对象锁" class="headerlink" title="对象锁"></a>对象锁</h2>在 Java 中，每个对象都会有一个 monitor 对象，这个对象其实就是 java 对象的锁（内置锁/对象锁），每个对象都有独立的对象锁，互不干扰。<h2 id="类锁"><a href="#类锁" class="headerlink" title="类锁"></a>类锁</h2>在 Java 中，针对每个类也有一个锁，称为“类锁”，每一个类只有一个 class 对象锁。<h1 id="三-synchronized-的用法"><a href="#三-synchronized-的用法" class="headerlink" title="三 synchronized 的用法"></a>三 synchronized 的用法</h1><h2 id="根据修饰的对象分类"><a href="#根据修饰的对象分类" class="headerlink" title="根据修饰的对象分类"></a>根据修饰的对象分类</h2>synchronized 可以修饰方法和代码块</li>
 </ol>
 <ul>
 <li>修饰代码块<ul>
@@ -749,6 +762,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 

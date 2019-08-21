@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。 遍历方式（01）第一种，迭代器 12345Integer value = null;Iterator iter = lis">
+<meta name="description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。">
 <meta name="keywords" content="List">
 <meta property="og:type" content="article">
 <meta property="og:title" content="List集合">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/List集合/index.html">
-<meta property="og:site_name" content="不忘什么心？">
-<meta property="og:description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。 遍历方式（01）第一种，迭代器 12345Integer value = null;Iterator iter = lis">
+<meta property="og:site_name" content="我是谁？">
+<meta property="og:description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-16T07:40:52.498Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.402Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="List集合">
-<meta name="twitter:description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。 遍历方式（01）第一种，迭代器 12345Integer value = null;Iterator iter = lis">
+<meta name="twitter:description" content="有序集合，可以存放重复的元素；  实现类ArrayList 数组实现，查询块，增删慢，轻量级。（线程不安全）    底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。">
 
 
 
@@ -138,7 +138,7 @@
 
 
 
-  <title>List集合 | 不忘什么心？</title>
+  <title>List集合 | 我是谁？</title>
   
 
 
@@ -179,7 +179,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -327,7 +327,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -353,7 +353,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -414,6 +426,7 @@
 <p>数组实现，查询块，增删慢，轻量级。（线程不安全）  </p>
 </blockquote>
 <p>底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。</p>
+<a id="more"></a>
 <h3 id="遍历方式"><a href="#遍历方式" class="headerlink" title="遍历方式"></a>遍历方式</h3><p><strong>（01）第一种，迭代器</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Integer value = <span class="keyword">null</span>;</span><br><span class="line">Iterator iter = list.iterator();</span><br><span class="line"><span class="keyword">while</span> (iter.hasNext()) &#123;</span><br><span class="line">    value = (Integer)iter.next();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -706,6 +719,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 

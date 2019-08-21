@@ -93,10 +93,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="位运算">
 <meta property="og:url" content="http://witman1999.github.io/2019/08/16/位运算/index.html">
-<meta property="og:site_name" content="不忘什么心？">
+<meta property="og:site_name" content="我是谁？">
 <meta property="og:description" content="取出两个数的补码进行运算，在对补码（解决符号问题）进行位运算，然后反推原码就是结果    为什么  因为负数在运算时，需要转换正数的反码，然后由于符号位的问题，我们知道类似于时钟，10点到八点可以（-2）或者（+10），它们总和为12，同余，每十二进一位，同理，对于负数反码的符号位问题，可以加1进位，解决符号问题（-2的理论对应的是14，就是1110，而1110去掉符号位就是-2的补码，所以要反">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-16T08:52:47.774Z">
+<meta property="og:updated_time" content="2019-08-18T10:10:03.448Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="位运算">
 <meta name="twitter:description" content="取出两个数的补码进行运算，在对补码（解决符号问题）进行位运算，然后反推原码就是结果    为什么  因为负数在运算时，需要转换正数的反码，然后由于符号位的问题，我们知道类似于时钟，10点到八点可以（-2）或者（+10），它们总和为12，同余，每十二进一位，同理，对于负数反码的符号位问题，可以加1进位，解决符号问题（-2的理论对应的是14，就是1110，而1110去掉符号位就是-2的补码，所以要反">
@@ -138,7 +138,7 @@
 
 
 
-  <title>位运算 | 不忘什么心？</title>
+  <title>位运算 | 我是谁？</title>
   
 
 
@@ -179,7 +179,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">不忘什么心？</span>
+        <span class="site-title">我是谁？</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -327,7 +327,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="不忘什么心？">
+      <meta itemprop="name" content="我是谁？">
     </span>
 
     
@@ -353,7 +353,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
             
           </span>
 
@@ -414,6 +426,7 @@
 <blockquote>
 <p>因为负数在运算时，需要转换正数的反码，然后由于符号位的问题，我们知道类似于时钟，10点到八点可以（-2）或者（+10），它们总和为12，同余，每十二进一位，同理，对于负数反码的符号位问题，可以加1进位，解决符号问题（-2的理论对应的是14，就是1110，而1110去掉符号位就是-2的补码，所以要反码加1，用补码进行运算解决符号问题）</p>
 </blockquote>
+<a id="more"></a>
 <h2 id="按位与-amp"><a href="#按位与-amp" class="headerlink" title="按位与 (&amp;)"></a>按位与 (&amp;)</h2><p>（有正为正，无正为负）参与运算的两个数，换算成二进制后，进行与运算。只有当相应位上的数都是1时，改位才是1，否则位0</p>
 <h2 id="按位或（-）"><a href="#按位或（-）" class="headerlink" title="按位或（|）"></a>按位或（|）</h2><p>(有负为负，无负为正)参加运算的两个数，换算为二进制(0、1)后，进行或运算。只要相应位上存在1，那么该位就取1，均不为1，即为0。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">将10与-10进行按位或(|)运算：</span><br><span class="line">0000 0000 0000 1010</span><br><span class="line">1111 1111 1111 0110</span><br><span class="line">-----------------------</span><br><span class="line">1111 1111 1111 1110</span><br><span class="line">所以：10 | -10 = 1111 1111 1111 1110</span><br></pre></td></tr></table></figure>
@@ -699,6 +712,11 @@
 
 
 
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共15.6k字</span>
+</div>
 
         
 
