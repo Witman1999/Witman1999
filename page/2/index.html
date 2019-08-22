@@ -655,173 +655,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/2019/08/16/异常/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="志者">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar2.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我是谁？">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/16/异常/" itemprop="url">异常</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-16T15:43:00+08:00">
-                2019-08-16
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
-                2019-08-18
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>异常指的程序或者电脑发生不正常的现象所引发程序无法执行和崩溃，例如：文件找不到，网络连接失败等待。  </p>
-<p>在 java 中，异常都是对象，是 Throwable 的子类，Throwable 的子类都描述着不同的异常和错误。如下图，Java 异常类层次结构图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7DBBB42C24B944968DDF205FF43B3C99/7930" alt="image"></p>
-<h2 id="一-异常的架构体系"><a href="#一-异常的架构体系" class="headerlink" title="一 异常的架构体系"></a>一 异常的架构体系</h2><h3 id="1-1Throwable（超类）"><a href="#1-1Throwable（超类）" class="headerlink" title="1.1Throwable（超类）"></a>1.1Throwable（超类）</h3><p>所有异常的祖先，用两个重要的子类：Exception（异常），Error（错误），两者各自也包含了大量的子类。</p>
-		     
-        
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/16/异常/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-	<div>
-		
-	</div>
-	
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/2019/08/16/String字符串/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -980,6 +813,173 @@
 <p><font color="blue">从上面代码例子中看出，为什么  test1==test2 会 true ，而test1==test4 会 false。</font><br><strong><font color="red">（1）</font></strong>  对于test1 为什么会等于 test2 ,因为两个都是字面字符串常量，Java 在编译期间，就会将两边拼接起来，<font color="red">因为编译器认为这个时候的值是不会发生改变，这个运算即使放在运行时不会变化，所以编译期就放到同一个常量池中了</font>。<br><strong><font color="red">（2）</font></strong> 在 test4 中有一变量（严格意义上的变量，可以被改变的数据，可大可小可长可短能伸能缩，所有需要一次以上处理才能成为直接字面字符的     值存在时 java都一律将其视为变量），无论这里几个变量，因为 <font color="red">Java 并不知道这里 test3 到底是什么，只知道他是一个 String 变量（在编译期），具体值是在运行时而去处理，和多态很像。</font><br>从前面的知识点得知<font color="red">，Java 在处理字符串变量 + 时会生成一个 StringBuilder 的 append（） 方法，最后 toString() 方法来获得字符串，这是就 new 出来了一个新的堆空间</font>，就不一样了。</p>
 
           
+        
+      
+    </div>
+    
+    
+    
+
+	<div>
+		
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/2019/08/16/异常/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我是谁？">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/16/异常/" itemprop="url">异常</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-16T15:43:00+08:00">
+                2019-08-16
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-08-18T18:10:03+08:00">
+                2019-08-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>异常指的程序或者电脑发生不正常的现象所引发程序无法执行和崩溃，例如：文件找不到，网络连接失败等待。  </p>
+<p>在 java 中，异常都是对象，是 Throwable 的子类，Throwable 的子类都描述着不同的异常和错误。如下图，Java 异常类层次结构图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7DBBB42C24B944968DDF205FF43B3C99/7930" alt="image"></p>
+<h2 id="一-异常的架构体系"><a href="#一-异常的架构体系" class="headerlink" title="一 异常的架构体系"></a>一 异常的架构体系</h2><h3 id="1-1Throwable（超类）"><a href="#1-1Throwable（超类）" class="headerlink" title="1.1Throwable（超类）"></a>1.1Throwable（超类）</h3><p>所有异常的祖先，用两个重要的子类：Exception（异常），Error（错误），两者各自也包含了大量的子类。</p>
+		     
+        
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/16/异常/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
