@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://witman1999.github.io/about/index.html</loc>
+    
+    <lastmod>2019-08-23T08:10:33.443Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://witman1999.github.io/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo%EF%BC%89.html</loc>
     
     <lastmod>2019-08-22T09:16:29.494Z</lastmod>
@@ -124,13 +131,6 @@
     <loc>http://witman1999.github.io/IO%E6%B5%81.html</loc>
     
     <lastmod>2019-08-18T10:10:03.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://witman1999.github.io/about/index.html</loc>
-    
-    <lastmod>2019-08-18T06:47:47.416Z</lastmod>
     
   </url>
   

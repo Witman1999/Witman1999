@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #288cff;
+  background: #be7082;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3158,6 +3158,18 @@ body {
   background-size: cover;
   background-position: bottom;
 }
+.site-meta {
+  height: 100px;
+  background: none;
+  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .site-meta {
+    height: 80px;
+    background: #222;
+  }
+}
 .headband {
   height: 0px;
 }
@@ -3179,34 +3191,6 @@ body {
 @media (max-width: 767px) {
   .btn {
     background-color: #bdc3c7;
-  }
-}
-.post {
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 10px;
-  padding: 30px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
-}
-.page {
-  margin-bottom: 30px;
-  padding: 5px;
-  -webkit-box-shadow: 0 0 14px #cacbcb;
-  -moz-box-shadow: 0 0 14px #cacbcb;
-  box-shadow: 0 0 14px #cacbcb;
-  background: rgba(255,255,255,0.7);
-  border-radius: 10px;
-}
-@media (max-width: 767px) {
-  .page {
-    padding: 2px 12px;
-    border-radius: 0px;
-    -webkit-box-shadow: 0 0 1px #cacbcb;
-    -moz-box-shadow: 0 0 1px #cacbcb;
-    box-shadow: 0 0 1px #cacbcb;
   }
 }
 .sub-menu {
@@ -3260,6 +3244,10 @@ body {
   background: #fff;
   border-radius: 10px;
 }
+::selection {
+  background: #285943;
+  color: #fff;
+}
 img.img-topic {
   width: 100%;
 }
@@ -3290,4 +3278,129 @@ pre {
 code,
 pre {
   border: 1px solid #d6d6d6;
+}
+.post-body p a {
+  color: #ec7357;
+  border-bottom: none;
+  border-bottom: 1px solid #ec7357;
+}
+.post-body p a:hover {
+  color: #9055a2;
+  border-bottom: none;
+  border-bottom: 1px solid #9055a2;
+}
+.post-body p a:active {
+  color: #ec7357;
+  border-bottom: none;
+  border-bottom: 1px solid #ec7357;
+}
+.post {
+  margin-bottom: 20px;
+  padding: 20;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+@media (max-width: 767px) {
+  .post {
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.page {
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .page {
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.posts-expand {
+  padding-top: 20px;
+}
+.content-wrap {
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.4);
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: 0px;
+    border-radius: 0px;
+    background: #fff;
+  }
+}
+.comments {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7);
+  margin: 0;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .comments {
+    margin: 20px;
+    padding: 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.pagination,
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border: none;
+}
+.pagination .page-number.current {
+  border-radius: 14px;
+  background: #519d9e;
+}
+.pagination {
+  margin: 30px auto 0;
+}
+.post-body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Comic Sans MS;
+}
+.posts-expand .post-title {
+  font-size: 21px;
+  border-left: #649ab6 2px solid;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.posts-expand .post-title,
+.posts-expand .post-meta {
+  text-align: right;
+}
+.page-post-detail .post-title,
+.page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+.posts-expand .post-title-link {
+  line-height: 2.5;
 }
