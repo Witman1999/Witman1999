@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fc6c62;
+  background: #ff40aa;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3161,13 +3161,13 @@ body {
 .site-meta {
   height: 100px;
   background: none;
-  background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-image: url("https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/D41B083810FF47069BEC3F73462C8205/10228");
   background-size: cover;
 }
 @media (max-width: 767px) {
   .site-meta {
     height: 80px;
-    background: #222;
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
   }
 }
 .headband {
