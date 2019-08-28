@@ -36,7 +36,7 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
     path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
@@ -71,8 +71,9 @@
     isArchive: false
   };
 </script>
-
-  <title>小碗宽面</title>
+<meta name="google-site-verification" content="S02dSO8Ii6nJgcdTzOt678zkMEwYZXjpdKTeLfNwoO0">
+<meta name="referrer" content="no-referrer">
+  <title> witman1999 - 小碗宽面I was born to break these chains </title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -852,8 +853,9 @@ pre .javascript .function {
   margin-bottom: 20px;
   padding: 15px;
   position: relative;
-  border: 1px solid #eee;
-  border-left-width: 5px;
+  background-color: #f9f9f9;
+  border: initial;
+  border-left: 3px solid #eee;
   border-radius: 3px;
 }
 .post-body .note h2,
@@ -861,7 +863,7 @@ pre .javascript .function {
 .post-body .note h4,
 .post-body .note h5,
 .post-body .note h6 {
-  margin-top: 0;
+  margin-top: 3px;
   border-bottom: initial;
   margin-bottom: 0;
   padding-top: 0;
@@ -884,7 +886,18 @@ pre .javascript .function {
 .post-body .note img:last-child {
   margin-bottom: 0;
 }
+.post-body .note:not(.no-icon) {
+  padding-left: 45px;
+}
+.post-body .note:not(.no-icon)::before {
+  font-family: 'FontAwesome';
+  font-size: larger;
+  left: 15px;
+  position: absolute;
+  top: 13px;
+}
 .post-body .note.default {
+  background-color: #f7f7f7;
   border-left-color: #777;
 }
 .post-body .note.default h2,
@@ -894,7 +907,12 @@ pre .javascript .function {
 .post-body .note.default h6 {
   color: #777;
 }
+.post-body .note.default:not(.no-icon)::before {
+  content: "\f0a9";
+  color: #777;
+}
 .post-body .note.primary {
+  background-color: #f5f0fa;
   border-left-color: #6f42c1;
 }
 .post-body .note.primary h2,
@@ -904,7 +922,12 @@ pre .javascript .function {
 .post-body .note.primary h6 {
   color: #6f42c1;
 }
+.post-body .note.primary:not(.no-icon)::before {
+  content: "\f055";
+  color: #6f42c1;
+}
 .post-body .note.info {
+  background-color: #eef7fa;
   border-left-color: #428bca;
 }
 .post-body .note.info h2,
@@ -914,7 +937,12 @@ pre .javascript .function {
 .post-body .note.info h6 {
   color: #428bca;
 }
+.post-body .note.info:not(.no-icon)::before {
+  content: "\f05a";
+  color: #428bca;
+}
 .post-body .note.success {
+  background-color: #eff8f0;
   border-left-color: #5cb85c;
 }
 .post-body .note.success h2,
@@ -924,7 +952,12 @@ pre .javascript .function {
 .post-body .note.success h6 {
   color: #5cb85c;
 }
+.post-body .note.success:not(.no-icon)::before {
+  content: "\f058";
+  color: #5cb85c;
+}
 .post-body .note.warning {
+  background-color: #fdf8ea;
   border-left-color: #f0ad4e;
 }
 .post-body .note.warning h2,
@@ -934,7 +967,12 @@ pre .javascript .function {
 .post-body .note.warning h6 {
   color: #f0ad4e;
 }
+.post-body .note.warning:not(.no-icon)::before {
+  content: "\f06a";
+  color: #f0ad4e;
+}
 .post-body .note.danger {
+  background-color: #fcf1f2;
   border-left-color: #d9534f;
 }
 .post-body .note.danger h2,
@@ -942,6 +980,10 @@ pre .javascript .function {
 .post-body .note.danger h4,
 .post-body .note.danger h5,
 .post-body .note.danger h6 {
+  color: #d9534f;
+}
+.post-body .note.danger:not(.no-icon)::before {
+  content: "\f056";
   color: #d9534f;
 }
 .btn {
@@ -1710,6 +1752,57 @@ pre .javascript .function {
   align-self: center;
   height: 30px;
 }
+.my_post_copyright {
+  width: 85%;
+  max-width: 45em;
+  margin: 2.8em auto 0;
+  padding: 0.5em 1em;
+  border: 1px solid #d3d3d3;
+  font-size: 0.93rem;
+  line-height: 1.6em;
+  word-break: break-all;
+  background: rgba(255,255,255,0.4);
+}
+.my_post_copyright p {
+  margin: 0;
+}
+.my_post_copyright span {
+  display: inline-block;
+  width: 5.2em;
+  color: #333;
+  font-weight: bold;
+}
+.my_post_copyright .raw {
+  margin-left: 1em;
+  width: 5em;
+}
+.my_post_copyright a {
+  color: #808080;
+  border-bottom: 0;
+}
+.my_post_copyright a:hover {
+  color: #0593d3;
+  text-decoration: underline;
+}
+.my_post_copyright:hover .fa-clipboard {
+  color: #000;
+}
+.my_post_copyright .post-url:hover {
+  font-weight: normal;
+}
+.my_post_copyright .copy-path {
+  margin-left: 1em;
+  width: 1em;
+}
+@media (max-width: 767px) {
+  .my_post_copyright .copy-path {
+    display: none;
+  }
+}
+.my_post_copyright .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1792,7 +1885,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #34e4f6;
+  background: #22bdff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2034,8 +2127,11 @@ pre .javascript .function {
 .footer-inner {
   text-align: center;
 }
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
 .with-love {
-  color: #808080;
+  color: #ff0000;
   display: inline-block;
   margin: 0 5px;
 }
@@ -2098,6 +2194,113 @@ pre .javascript .function {
   50%, 70% {
     transform: scale(1.1);
   }
+}
+.search-pop-overlay {
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2080;
+}
+.search-popup {
+  background: #fff;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+  height: 80%;
+  left: 50%;
+  margin-left: -350px;
+  padding: 0;
+  position: fixed;
+  top: 10%;
+  width: 700px;
+  z-index: 9999;
+}
+@media (max-width: 767px) {
+  .search-popup {
+    border-radius: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.search-popup .search-icon,
+.search-popup .popup-btn-close {
+  color: #999;
+  display: inline-block;
+  font-size: 18px;
+  height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 18px;
+}
+.search-popup .popup-btn-close {
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  float: right;
+}
+.search-popup .popup-btn-close:hover .fa {
+  color: #222;
+}
+.search-popup .search-header {
+  background: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+}
+.search-popup ul.search-result-list {
+  margin: 0 5px;
+  padding: 0;
+}
+.search-popup p.search-result {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+}
+.search-popup a.search-result-title {
+  font-weight: bold;
+}
+.search-popup .search-keyword {
+  border-bottom: 1px dashed #f00;
+  color: #f00;
+  font-weight: bold;
+}
+.search-popup #search-result {
+  height: calc(100% - 55px);
+  overflow: auto;
+  padding: 5px 25px;
+  position: relative;
+}
+.search-popup .search-input-container {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 5px;
+  position: absolute;
+  width: calc(100% - 90px);
+}
+.search-popup .search-input-container input {
+  background: transparent;
+  border: 0;
+  display: block;
+  height: 20px;
+  outline: none;
+  padding: 8px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.search-popup #no-result {
+  color: #ccc;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .category-all-page .category-all-title {
   text-align: center;
@@ -2834,6 +3037,58 @@ body {
     background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
   }
 }
+copy,
+.highlight {
+  position: relative;
+}
+.btn-copy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  padding: 2px 6px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+}
+.btn-copy span {
+  margin-left: 5px;
+}
+.highlight:hover .btn-copy {
+  opacity: 1;
+}
+blockquote.question {
+  color: #555;
+  border-left: 4px solid #1098ad;
+  background-color: #e3f2fd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: 20px;
+}
+span#inline-toc {
+  display: inline-block;
+  border-radius: 80% 100% 90% 20%;
+  background-color: #e3f2fd;
+  color: #555;
+  padding: 0.05em 0.4em;
+  margin: 2px 5px 2px 0px;
+  line-height: 1.5;
+}
 .headband {
   height: 0px;
 }
@@ -2960,11 +3215,10 @@ pre {
   border-bottom: 1px solid #ec7357;
 }
 .post {
-  margin-bottom: 20px;
-  padding: 20;
-  background: rgba(255,255,255,0.3);
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgba(255,255,255,0.5);
   border-radius: 10px;
-  padding: 30px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
@@ -2977,7 +3231,22 @@ pre {
     box-shadow: 0 0 1px #cacbcb;
   }
 }
-.page {
+.post-block {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  padding: 70px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#posts > article + article .post-block {
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
+}
+.posts-expand {
   margin-bottom: 20px;
   padding: 20px;
   -webkit-box-shadow: 0 0 14px #cacbcb;
@@ -2987,16 +3256,13 @@ pre {
   border-radius: 10px;
 }
 @media (max-width: 767px) {
-  .page {
+  .posts-expand {
     padding: 2px 12px;
     border-radius: 0px;
     -webkit-box-shadow: 0 0 1px #cacbcb;
     -moz-box-shadow: 0 0 1px #cacbcb;
     box-shadow: 0 0 1px #cacbcb;
   }
-}
-.posts-expand {
-  padding-top: 20px;
 }
 .content-wrap {
   padding: 40px 20px;
@@ -3181,9 +3447,34 @@ h6 {
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
 </div>
     </header>
 
@@ -3299,6 +3590,12 @@ h6 {
       
           <p>类名首字母要大写，如果类名由几个单词构成，把么把它们拼接在一起（也就是说，不要用下划线来分隔名字），其中每个内部首字母都采用大写  </p>
 <p>  方法，字段（成语变量）以及对象引用名称等，公认的风格与类的风格一样，只是标识符的第一个字母小写<br></p>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -3315,130 +3612,14 @@ h6 {
     
     
     
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
 
-    
-        <article itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/类.html">
+	<div>
+     
+   </div>
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="志者">
-      <meta itemprop="description" content="I was born to break these chains">
-      <meta itemprop="image" content="/images/avatar3.jpeg">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小碗宽面">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/类.html" class="post-title-link" itemprop="url">类</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-16 15:46:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:46:00+08:00">2019-08-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-24 11:26:15" itemprop="dateModified" datetime="2019-08-24T11:26:15+08:00">2019-08-24</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>1.6k</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              
-              <span>3 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="类的组成"><a href="#类的组成" class="headerlink" title="类的组成"></a>类的组成</h1><p>当类的成员没有初始化的时候，都会给默认变量<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/11CD163F28A24A89ADAD01878D442E41/7390.jpg" alt="image"><br>定义类的例子</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问限定词   关键词    类名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassName</span></span>{</span><br><span class="line">    <span class="comment">//属性（变量，字段）</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/类.html#more" rel="contents">
-                阅读全文 »
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+	<div>
       
     </div>
-
-    
-    
-    
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -3568,6 +3749,12 @@ h6 {
 <li>数组长度必须得初始化长度，长度是要提前知道。容易固定无法动态改变。但是集合可以保存数量不确定的数据。同时还能保存映射关系数据（键值对 key-value）</li>
 <li>数组的元素可以对象或者基本类型，而集合只能是对象（保存对象的引用而非本身）</li>
 <li>集合有着封装，继承，多态的特性，通过方法和属性实现复杂操作。</li></ol>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -3584,6 +3771,152 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/类.html">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/类.html" class="post-title-link" itemprop="url">类</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-16 15:46:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:46:00+08:00">2019-08-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-24 11:26:15" itemprop="dateModified" datetime="2019-08-24T11:26:15+08:00">2019-08-24</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>1.6k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>3 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="类的组成"><a href="#类的组成" class="headerlink" title="类的组成"></a>类的组成</h1><p>当类的成员没有初始化的时候，都会给默认变量<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/11CD163F28A24A89ADAD01878D442E41/7390.jpg" alt="image"><br>定义类的例子</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问限定词   关键词    类名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassName</span></span>{</span><br><span class="line">    <span class="comment">//属性（变量，字段）</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+		  
+		     
+        
+          
+		  
+		  
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/类.html#more" rel="contents">
+                阅读全文 »
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -3694,6 +4027,12 @@ h6 {
 <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ol>
 <li>互斥性：即在同一时间只也许一个线程持有某个对象锁，同一时间只有一个线程对需要同步的代码块进行访问。</li>
 <li>必须确保在锁被释放之前，对共享变量所做的修改，对于随后获得该锁的另一个线程是可见的（即在获得锁时应获得最新共享变量的值），否则另一个线程可能是在本地缓存的某个副本上继续操作从而引起不一致。</li></ol>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -3710,6 +4049,14 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -3822,6 +4169,12 @@ h6 {
 <h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><h3 id="引用成员变量"><a href="#引用成员变量" class="headerlink" title="引用成员变量"></a>引用成员变量</h3><p>当子类的成员变量与父类同名<br>使用 super.xxx。 来引用父类的成员。</p>
 <h3 id="引用成员方法"><a href="#引用成员方法" class="headerlink" title="引用成员方法"></a>引用成员方法</h3><p>当子类的成员方法与父类同名，可以用 super 来区分。写法也是 super.xxx(参数)。</p>
 <h3 id="引用构造函数"><a href="#引用构造函数" class="headerlink" title="引用构造函数"></a>引用构造函数</h3><p>super(参数)，<font color="red">调用父类的某个构造函数，并且要成为使用这个关键字的构造方法（只能在构造方法中使用，并且不能与this 同时使用）的第一条语句。</font></p>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -3838,6 +4191,151 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/String字符串.html">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/String字符串.html" class="post-title-link" itemprop="url">String字符串</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-16 15:43:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:43:00+08:00">2019-08-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-24 11:28:44" itemprop="dateModified" datetime="2019-08-24T11:28:44+08:00">2019-08-24</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>7.8k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>14 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="一-String-简介"><a href="#一-String-简介" class="headerlink" title="一. String 简介"></a>一. String 简介</h1>
+		  
+		     
+        
+          
+		  
+		  
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/String字符串.html#more" rel="contents">
+                阅读全文 »
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -3947,6 +4445,12 @@ h6 {
           <p>异常指的程序或者电脑发生不正常的现象所引发程序无法执行和崩溃，例如：文件找不到，网络连接失败等待。  </p>
 <p>在 java 中，异常都是对象，是 Throwable 的子类，Throwable 的子类都描述着不同的异常和错误。如下图，Java 异常类层次结构图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7DBBB42C24B944968DDF205FF43B3C99/7930" alt="image"></p>
 <h2 id="一-异常的架构体系"><a href="#一-异常的架构体系" class="headerlink" title="一 异常的架构体系"></a>一 异常的架构体系</h2><h3 id="1-1Throwable（超类）"><a href="#1-1Throwable（超类）" class="headerlink" title="1.1Throwable（超类）"></a>1.1Throwable（超类）</h3><p>所有异常的祖先，用两个重要的子类：Exception（异常），Error（错误），两者各自也包含了大量的子类。</p>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -3963,129 +4467,14 @@ h6 {
     
     
     
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
 
-    
-        <article itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/String字符串.html">
+	<div>
+     
+   </div>
 
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="志者">
-      <meta itemprop="description" content="I was born to break these chains">
-      <meta itemprop="image" content="/images/avatar3.jpeg">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小碗宽面">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/String字符串.html" class="post-title-link" itemprop="url">String字符串</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-16 15:43:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:43:00+08:00">2019-08-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-24 11:28:44" itemprop="dateModified" datetime="2019-08-24T11:28:44+08:00">2019-08-24</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>7.8k</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              
-              <span>14 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="一-String-简介"><a href="#一-String-简介" class="headerlink" title="一. String 简介"></a>一. String 简介</h1>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/String字符串.html#more" rel="contents">
-                阅读全文 »
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+	<div>
       
     </div>
-
-    
-    
-    
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -4187,6 +4576,14 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -4300,6 +4697,12 @@ h6 {
 <h1 id="常用集合"><a href="#常用集合" class="headerlink" title="常用集合"></a>常用集合</h1><blockquote>
 <p>Map 中常用的集合为 HashMap 集合，LinkedHashMap 集合。</p>
 </blockquote>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -4316,6 +4719,14 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -4429,6 +4840,12 @@ h6 {
 <p>数组实现，查询块，增删慢，轻量级。（线程不安全）  </p>
 </blockquote>
 <p>底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。</p>
+		  
+		     
+        
+          
+		  
+		  
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -4445,6 +4862,14 @@ h6 {
     
     
     
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
       <footer class="post-footer">
           <div class="post-eof"></div>
         
@@ -4466,6 +4891,7 @@ h6 {
 
           </div>
           
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NjIxOC8yMjcyOQ=="></div>
 
         </div>
           
@@ -4477,8 +4903,10 @@ h6 {
       <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
   </div>
-
+    
+ 
   <aside class="sidebar">
+
     <div class="sidebar-inner">
 
       <ul class="sidebar-nav motion-element">
@@ -4641,7 +5069,7 @@ h6 {
       <div class="footer-inner">
         <div class="copyright">© <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">志者</span>
     <span class="post-meta-divider">|</span>
@@ -4697,6 +5125,8 @@ h6 {
 
 
 
+  
+
 
 
 
@@ -4716,6 +5146,12 @@ h6 {
 
   
 
+
+  copy<!-- 代码块复制功能 -->
+  
+
+
+  
 
 
 <script type="text/javascript" src="/bundle.js"></script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
