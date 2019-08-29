@@ -1,0 +1,349 @@
+// Custom styles
+// Custom styles. //mobile style keep default mostly.
+//修该背景图片
+body {
+  padding: 10px 0;//距离顶部
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+   background-attachment: fixed; // 不随屏幕滚动而滚动fixed,scroll,inherit
+  background-repeat: no-repeat; // 如果背景图不够屏幕大小则重复铺，改为no-repeat则表示不重复铺
+  background-size: cover; // contain等比例铺满屏幕 //cover拉伸铺满
+  background-position: bottom;//x,y轴调整
+}
+
+//background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+//background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+//background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+//background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+.site-meta {
+  height: 100px;
+  background: none;
+  background-image: url(https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/D41B083810FF47069BEC3F73462C8205/10228);
+  background-size: cover;
+  +mobile(){
+    height: 80px;
+    //background: #222;
+	background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  }
+}
+/自定义 note 风格
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-info {
+    color: #3a87ad;
+    background-color: #e2eaee;
+    border-color: #c5d5dd;
+}
+.alert-warning {
+    color: #c09853;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-danger {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+
+copy//代码块复制按钮
+.highlight{
+  //方便copy代码按钮（btn-copy）的定位
+  position: relative;
+}
+.btn-copy {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee);
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    -webkit-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    padding: 2px 6px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: 0;
+}
+.btn-copy span {
+    margin-left: 5px;
+}
+.highlight:hover .btn-copy{
+  opacity: 1;
+}
+//自定义样式 引用
+blockquote.question {
+    color: #555;
+    border-left: 4px solid rgb(16, 152, 173);
+    background-color: rgb(227, 242, 253);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-bottom: 20px;
+}
+// 自定义的数字块
+span#inline-toc {
+    display: inline-block;
+    border-radius: 80% 100% 90% 20%;
+    background-color: rgb(227, 242, 253);
+    color: #555;
+    padding: 0.05em 0.4em;
+    margin: 2px 5px 2px 0px;
+    line-height: 1.5;
+}
+//顶部条
+.headband {
+  height: 0px;
+}
+//修改默认按钮样式#bdc3c7
+.post-button {
+  text-align: right;
+}
+.btn {
+  padding: 3px 15px
+  color: #000 !important;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 15px;
+
+  &:hover {
+    color: #fff !important;
+    background: #34495e;
+    text-decoration: none !important;
+  }
+
+  +mobile(){
+    background-color: #bdc3c7;
+  }
+}
+//多级菜单栏
+.sub-menu {
+  //width: 40%;
+  background: rgba(255, 255, 255, 1)!important;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  +mobile(){
+    background: #fff!important;
+    border-radius: 0px;
+  }
+}
+.sub-menu .menu-item-active a {
+  background: none!important;
+  +mobile(){
+    background: #fff!important;
+  }
+}
+//菜单栏
+.header-inner {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  +mobile(){
+    background: white;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 14px #cacbcb;
+    -moz-box-shadow: 0 0 14px #cacbcb;
+    box-shadow: 0 0 14px #cacbcb;
+  }
+}
+.menu-item-active a {
+  background: rgba(255,255,255.0.5);
+  +mobile(){
+    background: #fff;
+  }
+}
+//侧栏（下方侧栏）
+.sidebar{
+  background: none;
+  border-radius: 10px;
+}
+.sidebar-inner{
+  padding: 10px 10px 10px;
+  background: rgba(255,255,255,1);
+  border-radius: 10px;
+}
+//选中文字的颜色
+::selection {
+    background: #285943;
+    color: #fff;
+}
+// 自定义的文章摘要图片样式
+img.img-topic {
+    width: 100%;
+}
+// 代码自定义颜色
+code {
+    color: #ff7600;
+    background: #fbf7f8;
+    margin: 2px;
+}
+// 大代码块的自定义样式
+.highlight, pre {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+/*--------------------------------------关于文章-------------------------/
+/* 自定义的文章置顶样式 */
+.post-sticky-flag {
+    font-size: inherit;
+    float: left;
+    color: rgb(0, 0, 0);
+    cursor: help;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.post-sticky-flag:hover {
+    color: #07b39b;
+}
+.highlight, code, pre {
+    border: 1px solid #d6d6d6;
+}
+// 文章内链接文本样式
+.post-body p a{
+  color: #EC7357;
+  border-bottom: none;
+  border-bottom: 1px solid #EC7357;
+  &:hover {
+    color: #9055A2;
+    border-bottom: none;
+    border-bottom: 1px solid #9055A2;
+  }
+  &:active {
+    color: #EC7357;
+    border-bottom: none;
+    border-bottom: 1px solid #EC7357;
+  }
+}
+// 主页文章添加阴影效果
+.post {
+  margin-bottom: 50px;
+   padding: 20px;
+   background: rgba(255,255,255,0.5)
+  border-radius: 10px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+    +mobile(){
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+ }
+//文章样式修改
+.post-block {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+    padding: 70px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+#posts > article + article .post-block {
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+    margin-top: 12px;
+}
+.posts-expand {
+    margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7)
+  border-radius: 10px;
+  +mobile(){
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.content-wrap {
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);//none透明
+  +mobile(){
+    padding: 0px;
+    border-radius: 0px;
+    background: white;//rgba(255, 255, 255, 0.1)
+  }
+}
+//评论区
+.comments{
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7);
+  margin: 0;
+  border-radius: 10px;
+  +mobile(){
+    margin: 20px;
+    padding: 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+
+//页码栏
+.pagination, .pagination .prev, .pagination .next, .pagination .page-number {
+  border:none;
+}
+.pagination .page-number.current {
+  border-radius: 14px;
+  background: #519D9E;
+}
+.pagination {
+  margin: 30px auto 0;
+}
+//文章标题
+.post-body h1,h2,h3,h4,h5,h6{
+  font-family: Comic Sans MS;
+}
+.posts-expand .post-title {
+  font-size: 21px
+  border-left: #649ab6 2px solid;
+  font-weight: bold;
+  padding-left: 10px;
+}
+//标题显示右侧
+.posts-expand .post-title, .posts-expand .post-meta {
+  text-align: right;
+}
+.page-post-detail .post-title, .page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+//标题高度
+.posts-expand .post-title-link{
+  line-height: 2.5;
+}
