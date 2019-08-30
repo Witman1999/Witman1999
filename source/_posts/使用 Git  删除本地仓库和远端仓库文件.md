@@ -1,7 +1,7 @@
 ---
 title: 使用 Git 删除本地仓库和远端仓库文件
 date: 2019-08-26 17:11:12
-tags:
+tags: GitHub
 categories: Git Bash
 copyright: true
 ---

@@ -1,8 +1,9 @@
 ---
 title: 解决hexo引用网络图片显示错误的问题
 date: 2019-08-24 14:10:00
-tags: 
-categories: 其他
+tags: 博客
+categories: hexo
+keywords: hexo引用网络的图片
 copyright: true
 ---
 ## 问题
