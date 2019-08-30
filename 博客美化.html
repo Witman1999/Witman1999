@@ -1,0 +1,4179 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-32.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16.jpg">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+
+
+
+
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.3.0',
+    exturl: false,
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":true},
+    copycode: {"enable":true,"show_result":false,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    }
+  };
+</script>
+
+  <meta name="description" content="1. 更改主题 通过网络下载主题 将解压后的文件存到（我的本地博客文件夹为 myblog） myblog/themes/ 下 打开主题配置文件 myblog/config.yml 找到以下代码1theme: landscape    修改成： 12theme: name# name 就是你解压后的文件夹名字  2. 更改主题样式（以 nextT 为例子） 打开 themes/next/config">
+<meta name="keywords" content="next美化,博客美化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客美化">
+<meta property="og:url" content="http://witman1999.github.io/博客美化.html">
+<meta property="og:site_name" content="小碗宽面">
+<meta property="og:description" content="1. 更改主题 通过网络下载主题 将解压后的文件存到（我的本地博客文件夹为 myblog） myblog/themes/ 下 打开主题配置文件 myblog/config.yml 找到以下代码1theme: landscape    修改成： 12theme: name# name 就是你解压后的文件夹名字  2. 更改主题样式（以 nextT 为例子） 打开 themes/next/config">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/6b702a0e5841b5b72270d23f2db099f4/xmlnote/2EBAB568DF9D4DF1A4901C8E1BC5AC62/9626">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/6b702a0e5841b5b72270d23f2db099f4/xmlnote/581A322D394C40E9B931445C468EE4E1/9632">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7D47B426DA694D05AA3AE7416DDAD22A/9906">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/BE9EDE529B2E4FD7883738EC6A6FE165/9922">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4AA6020D17EE45318084AEDE0E52D3FA/9936">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/CDBBED999A584A29AF06356BCE29CCD4/9955">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/FB0BBF287D6E445AA967AD9FDDFCE397/9970">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/96A6DDE515C9491A8420516F7F87DCB7/9985">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/A96825909F154DF2B5A8C77EE1D2FC14/9993">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/08917159080C49CE92AC33D61D5BFBA5/10096">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4230AD1BC9504A31BF40A8913F1ADA11/10108">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/579E58643BA04677B8EBF9C42BAD2540/10112">
+<meta property="og:updated_time" content="2019-08-30T03:38:25.635Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博客美化">
+<meta name="twitter:description" content="1. 更改主题 通过网络下载主题 将解压后的文件存到（我的本地博客文件夹为 myblog） myblog/themes/ 下 打开主题配置文件 myblog/config.yml 找到以下代码1theme: landscape    修改成： 12theme: name# name 就是你解压后的文件夹名字  2. 更改主题样式（以 nextT 为例子） 打开 themes/next/config">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/6b702a0e5841b5b72270d23f2db099f4/xmlnote/2EBAB568DF9D4DF1A4901C8E1BC5AC62/9626">
+  <link rel="canonical" href="http://witman1999.github.io/博客美化">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<meta name="google-site-verification" content="S02dSO8Ii6nJgcdTzOt678zkMEwYZXjpdKTeLfNwoO0">
+<meta name="referrer" content="no-referrer">
+  <title>博客美化 | 小碗宽面</title>
+  <meta name="generator" content="Hexo 3.9.0">
+  
+
+
+
+
+
+
+
+
+  <style>html {
+  line-height: 1.15; 
+  -webkit-text-size-adjust: 100%; 
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box; 
+  height: 0; 
+  overflow: visible; 
+}
+pre {
+  font-family: monospace, monospace; 
+  font-size: 1em; 
+}
+a {
+  background-color: transparent;
+}
+abbr[title] {
+  border-bottom: none; 
+  text-decoration: underline; 
+  text-decoration: underline dotted; 
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; 
+  font-size: 1em; 
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; 
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0; 
+}
+button,
+input {
+
+  overflow: visible;
+}
+button,
+select {
+
+  text-transform: none;
+}
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box; 
+  color: inherit; 
+  display: table; 
+  max-width: 100%; 
+  padding: 0; 
+  white-space: normal; 
+}
+progress {
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type='checkbox'],
+[type='radio'] {
+  box-sizing: border-box; 
+  padding: 0; 
+}
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+[type='search'] {
+  outline-offset: -2px; 
+  -webkit-appearance: textfield; 
+}
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  font: inherit; 
+  -webkit-appearance: button; 
+}
+details {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+::selection {
+  background: #262a30;
+  color: #fff;
+}
+body {
+  background: #eee;
+  color: #555;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
+}
+@media (max-width: 991px) {
+  body {
+    padding-right: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 20px 0 15px;
+  padding: 0;
+}
+h1 {
+  font-size: 1.75em;
+}
+h2 {
+  font-size: 1.625em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.375em;
+}
+h5 {
+  font-size: 1.25em;
+}
+h6 {
+  font-size: 1.125em;
+}
+p {
+  margin: 0 0 20px 0;
+}
+a,
+span.exturl {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: transparent;
+  border-bottom: 1px solid #999;
+  color: #555;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+span.exturl:hover {
+  border-bottom-color: #222;
+  color: #222;
+}
+iframe,
+img,
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+hr {
+  background-color: #ddd;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 4px, transparent 4px, transparent 8px);
+  border: 0;
+  height: 3px;
+  margin: 40px 0;
+}
+blockquote {
+  border-left: 4px solid #ddd;
+  color: #666;
+  margin: 0;
+  padding: 0 15px;
+}
+blockquote cite::before {
+  content: '-';
+  padding: 0 5px;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0;
+  padding: 0;
+}
+kbd {
+  background-color: #f9f9f9;
+  background-image: linear-gradient(top, #eee, #fff, #eee);
+  border: 1px solid #ccc;
+  border-radius: 0.2em;
+  box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.1);
+  font-family: inherit;
+  padding: 0.1em 0.3em;
+  white-space: nowrap;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+.pullquote {
+  width: 45%;
+}
+.pullquote.left {
+  float: left;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.pullquote.right {
+  float: right;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.affix {
+  position: fixed;
+}
+.translation {
+  color: #999;
+  font-size: 0.875em;
+  margin-top: -20px;
+}
+.table-container {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 0.875em;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+table > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+caption,
+th,
+td {
+  font-weight: normal;
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
+}
+th {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+td {
+  border-bottom-width: 1px;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  position: relative;
+}
+.header-inner {
+  margin: 0 auto;
+  padding: 100px 0 70px;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1200px) {
+  .container .header-inner {
+    width: 1160px;
+  }
+}
+@media (min-width: 1600px) {
+  .container .header-inner {
+    width: 73%;
+  }
+}
+.main-inner {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1200px) {
+  .container .main-inner {
+    width: 1160px;
+  }
+}
+@media (min-width: 1600px) {
+  .container .main-inner {
+    width: 73%;
+  }
+}
+.footer {
+  padding: 20px 0;
+}
+.footer-inner {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1200px) {
+  .container .footer-inner {
+    width: 1160px;
+  }
+}
+@media (min-width: 1600px) {
+  .container .footer-inner {
+    width: 73%;
+  }
+}
+.highlight-wrap {
+  position: relative;
+}
+.highlight-wrap:hover .copy-btn,
+.highlight-wrap .copy-btn:focus {
+  opacity: 1;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.6;
+  opacity: 0;
+  outline: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition: opacity 0.3s ease-in-out;
+  vertical-align: middle;
+  white-space: nowrap;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #fff;
+  font-size: 14px;
+  right: 0;
+  top: 2px;
+}
+.highlight-wrap {
+  background: #21252b;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.4);
+  padding-top: 30px;
+}
+.highlight-wrap::before {
+  background: #fc625d;
+  border-radius: 50%;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  content: ' ';
+  height: 12px;
+  left: 12px;
+  margin-top: -20px;
+  position: absolute;
+  width: 12px;
+}
+pre,
+.highlight {
+  background: #f7f7f7;
+  color: #4d4d4c;
+  line-height: 1.6;
+  margin: 0 auto 20px;
+}
+pre,
+code {
+  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+}
+code {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background: #eee;
+  border-radius: 3px;
+  color: #555;
+  padding: 2px 4px;
+}
+pre {
+  overflow: auto;
+  padding: 10px;
+}
+pre code {
+  background: none;
+  color: #4d4d4c;
+  font-size: 0.875em;
+  padding: 0;
+  text-shadow: none;
+}
+.highlight *::selection {
+  background: #d6d6d6;
+}
+.highlight pre {
+  border: 0;
+  margin: 0;
+  padding: 10px 0;
+}
+.highlight table {
+  border: 0;
+  margin: 0;
+  width: auto;
+}
+.highlight td {
+  border: 0;
+  padding: 0;
+}
+.highlight figcaption {
+  background: #eee;
+  border-bottom: 1px solid #e9e9e9;
+  color: #4d4d4c;
+  line-height: 1em;
+  margin: 0;
+  padding: 0.5em;
+}
+.highlight figcaption::before,
+.highlight figcaption::after {
+  content: ' ';
+  display: table;
+}
+.highlight figcaption::after {
+  clear: both;
+}
+.highlight figcaption a {
+  color: #4d4d4c;
+  float: right;
+}
+.highlight figcaption a:hover {
+  border-bottom-color: #4d4d4c;
+}
+.highlight .gutter pre {
+  background-color: #eff2f3;
+  color: #869194;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+.highlight .code pre {
+  background-color: #f7f7f7;
+  padding-left: 10px;
+  width: 100%;
+}
+.gutter {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.gist table {
+  width: auto;
+}
+.gist table td {
+  border: 0;
+}
+pre .deletion {
+  background: #fdd;
+}
+pre .addition {
+  background: #dfd;
+}
+pre .meta {
+  color: #eab700;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+pre .comment {
+  color: #8e908c;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .name,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #c82829;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .builtin-name,
+pre .literal,
+pre .params,
+pre .constant,
+pre .command {
+  color: #f5871f;
+}
+pre .ruby .class .title,
+pre .css .rules .attribute,
+pre .string,
+pre .symbol,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata,
+pre .special,
+pre .formula {
+  color: #718c00;
+}
+pre .title,
+pre .css .hexcolor {
+  color: #3e999f;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #4271ae;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #8959a8;
+}
+.blockquote-center {
+  border-left: none;
+  margin: 40px 0;
+  padding: 0;
+  position: relative;
+  text-align: center;
+}
+.blockquote-center::before,
+.blockquote-center::after {
+  background-position: 0 -6px;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+  content: ' ';
+  display: block;
+  height: 24px;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+}
+.blockquote-center::before {
+  background-image: url("../images/quote-l.svg");
+  border-top: 1px solid #ccc;
+  top: -20px;
+}
+.blockquote-center::after {
+  background-image: url("../images/quote-r.svg");
+  background-position: 100% 8px;
+  border-bottom: 1px solid #ccc;
+  bottom: -20px;
+}
+.blockquote-center p,
+.blockquote-center div {
+  text-align: center;
+}
+.post-body .group-picture img {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 3px;
+}
+.post-body .group-picture-row {
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+.post-body .group-picture-column {
+  float: left;
+  margin-bottom: 10px;
+}
+.post-body .label {
+  display: inline;
+  padding: 0 2px;
+}
+.post-body .label.default {
+  background-color: #f0f0f0;
+}
+.post-body .label.primary {
+  background-color: #efe6f7;
+}
+.post-body .label.info {
+  background-color: #e5f2f8;
+}
+.post-body .label.success {
+  background-color: #e7f4e9;
+}
+.post-body .label.warning {
+  background-color: #fcf6e1;
+}
+.post-body .label.danger {
+  background-color: #fae8eb;
+}
+.post-body .tabs {
+  margin-bottom: 20px;
+}
+.post-body .tabs,
+.tabs-comment {
+  display: block;
+  padding-top: 10px;
+  position: relative;
+}
+.post-body .tabs ul.nav-tabs,
+.tabs-comment ul.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: -1px;
+  padding: 0;
+}
+@media (max-width: 413px) {
+  .post-body .tabs ul.nav-tabs,
+  .tabs-comment ul.nav-tabs {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+.post-body .tabs ul.nav-tabs li.tab,
+.tabs-comment ul.nav-tabs li.tab {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 3px solid transparent;
+  flex-grow: 1;
+  list-style-type: none;
+}
+@media (max-width: 413px) {
+  .post-body .tabs ul.nav-tabs li.tab,
+  .tabs-comment ul.nav-tabs li.tab {
+    border-bottom: 1px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid transparent;
+  }
+}
+.post-body .tabs ul.nav-tabs li.tab a,
+.tabs-comment ul.nav-tabs li.tab a {
+  border-bottom: initial;
+  display: block;
+  line-height: 1.8em;
+  outline: 0;
+  padding: 0.25em 0.75em;
+  text-align: center;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.post-body .tabs ul.nav-tabs li.tab a i,
+.tabs-comment ul.nav-tabs li.tab a i {
+  width: 1.285714285714286em;
+}
+.post-body .tabs ul.nav-tabs li.tab.active,
+.tabs-comment ul.nav-tabs li.tab.active {
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-top: 3px solid #fc6423;
+}
+@media (max-width: 413px) {
+  .post-body .tabs ul.nav-tabs li.tab.active,
+  .tabs-comment ul.nav-tabs li.tab.active {
+    border-bottom: 1px solid #ddd;
+    border-left: 3px solid #fc6423;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+  }
+}
+.post-body .tabs ul.nav-tabs li.tab.active a,
+.tabs-comment ul.nav-tabs li.tab.active a {
+  color: #555;
+  cursor: default;
+}
+.post-body .tabs .tab-content .tab-pane,
+.tabs-comment .tab-content .tab-pane {
+  border: 1px solid #ddd;
+  padding: 20px 20px 0 20px;
+}
+.post-body .tabs .tab-content .tab-pane:not(.active),
+.tabs-comment .tab-content .tab-pane:not(.active) {
+  display: none;
+}
+.post-body .tabs .tab-content .tab-pane.active,
+.tabs-comment .tab-content .tab-pane.active {
+  display: block;
+}
+.post-body .note {
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+  background-color: #f9f9f9;
+  border: initial;
+  border-left: 3px solid #eee;
+  border-radius: 3px;
+}
+.post-body .note h2,
+.post-body .note h3,
+.post-body .note h4,
+.post-body .note h5,
+.post-body .note h6 {
+  margin-top: 3px;
+  border-bottom: initial;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+.post-body .note p:first-child,
+.post-body .note ul:first-child,
+.post-body .note ol:first-child,
+.post-body .note table:first-child,
+.post-body .note pre:first-child,
+.post-body .note blockquote:first-child,
+.post-body .note img:first-child {
+  margin-top: 0;
+}
+.post-body .note p:last-child,
+.post-body .note ul:last-child,
+.post-body .note ol:last-child,
+.post-body .note table:last-child,
+.post-body .note pre:last-child,
+.post-body .note blockquote:last-child,
+.post-body .note img:last-child {
+  margin-bottom: 0;
+}
+.post-body .note:not(.no-icon) {
+  padding-left: 45px;
+}
+.post-body .note:not(.no-icon)::before {
+  font-family: 'FontAwesome';
+  font-size: larger;
+  left: 15px;
+  position: absolute;
+  top: 13px;
+}
+.post-body .note.default {
+  background-color: #f7f7f7;
+  border-left-color: #777;
+}
+.post-body .note.default h2,
+.post-body .note.default h3,
+.post-body .note.default h4,
+.post-body .note.default h5,
+.post-body .note.default h6 {
+  color: #777;
+}
+.post-body .note.default:not(.no-icon)::before {
+  content: "\f0a9";
+  color: #777;
+}
+.post-body .note.primary {
+  background-color: #f5f0fa;
+  border-left-color: #6f42c1;
+}
+.post-body .note.primary h2,
+.post-body .note.primary h3,
+.post-body .note.primary h4,
+.post-body .note.primary h5,
+.post-body .note.primary h6 {
+  color: #6f42c1;
+}
+.post-body .note.primary:not(.no-icon)::before {
+  content: "\f055";
+  color: #6f42c1;
+}
+.post-body .note.info {
+  background-color: #eef7fa;
+  border-left-color: #428bca;
+}
+.post-body .note.info h2,
+.post-body .note.info h3,
+.post-body .note.info h4,
+.post-body .note.info h5,
+.post-body .note.info h6 {
+  color: #428bca;
+}
+.post-body .note.info:not(.no-icon)::before {
+  content: "\f05a";
+  color: #428bca;
+}
+.post-body .note.success {
+  background-color: #eff8f0;
+  border-left-color: #5cb85c;
+}
+.post-body .note.success h2,
+.post-body .note.success h3,
+.post-body .note.success h4,
+.post-body .note.success h5,
+.post-body .note.success h6 {
+  color: #5cb85c;
+}
+.post-body .note.success:not(.no-icon)::before {
+  content: "\f058";
+  color: #5cb85c;
+}
+.post-body .note.warning {
+  background-color: #fdf8ea;
+  border-left-color: #f0ad4e;
+}
+.post-body .note.warning h2,
+.post-body .note.warning h3,
+.post-body .note.warning h4,
+.post-body .note.warning h5,
+.post-body .note.warning h6 {
+  color: #f0ad4e;
+}
+.post-body .note.warning:not(.no-icon)::before {
+  content: "\f06a";
+  color: #f0ad4e;
+}
+.post-body .note.danger {
+  background-color: #fcf1f2;
+  border-left-color: #d9534f;
+}
+.post-body .note.danger h2,
+.post-body .note.danger h3,
+.post-body .note.danger h4,
+.post-body .note.danger h5,
+.post-body .note.danger h6 {
+  color: #d9534f;
+}
+.post-body .note.danger:not(.no-icon)::before {
+  content: "\f056";
+  color: #d9534f;
+}
+.btn {
+  background: #fff;
+  border: 2px solid #555;
+  border-radius: 2px;
+  color: #555;
+  display: inline-block;
+  font-size: 0.875em;
+  line-height: 2;
+  padding: 0 20px;
+  text-decoration: none;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color;
+}
+.btn:hover {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+.btn + .btn {
+  margin: 0 0 8px 8px;
+}
+.btn .fa-fw {
+  text-align: left;
+  width: 1.285714285714286em;
+}
+.btn-bar {
+  background: #555;
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+}
+.btn-bar + .btn-bar {
+  margin-top: 4px;
+}
+.page-number-basic,
+.pagination .prev,
+.pagination .next,
+.pagination .page-number,
+.pagination .space {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 11px;
+  position: relative;
+  top: -1px;
+}
+@media (max-width: 767px) {
+  .page-number-basic,
+  .pagination .prev,
+  .pagination .next,
+  .pagination .page-number,
+  .pagination .space {
+    margin: 0 5px;
+  }
+}
+.pagination {
+  border-top: 1px solid #eee;
+  margin: 120px 0 40px;
+  text-align: center;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border-bottom: 0;
+  border-top: 1px solid #eee;
+  transition-property: border-color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover {
+  border-top-color: #222;
+}
+.pagination .space {
+  margin: 0;
+  padding: 0;
+}
+.pagination .prev {
+  margin-left: 0;
+}
+.pagination .next {
+  margin-right: 0;
+}
+.pagination .page-number.current {
+  background: #ccc;
+  border-top-color: #ccc;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .pagination {
+    border-top: none;
+  }
+  .pagination .prev,
+  .pagination .next,
+  .pagination .page-number {
+    border-bottom: 1px solid #eee;
+    border-top: 0;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+  .pagination .prev:hover,
+  .pagination .next:hover,
+  .pagination .page-number:hover {
+    border-bottom-color: #222;
+  }
+}
+.comments {
+  margin: 60px 20px 0;
+  overflow: hidden;
+}
+.comment-button-group {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin: 1em 0;
+}
+.comment-button-group .comment-button {
+  margin: 0.1em 0.2em;
+}
+.comment-button-group .comment-button.active {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+.comment-position {
+  display: none;
+}
+.comment-position.active {
+  display: block;
+}
+.tabs-comment {
+  background: #fff;
+  margin-top: 4em;
+  padding-top: 0;
+}
+.tabs-comment .comments {
+  border: 0;
+  box-shadow: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.back-to-top {
+  background: #222;
+  bottom: -100px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  left: 30px;
+  opacity: 0.6;
+  padding: 0 6px;
+  position: fixed;
+  text-align: center;
+  transition-property: bottom;
+  z-index: 1050;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  width: 24px;
+}
+.back-to-top span {
+  display: none;
+}
+.back-to-top:hover {
+  color: #fc6423;
+}
+.back-to-top.back-to-top-on {
+  bottom: 30px;
+}
+@media (max-width: 991px) {
+  .back-to-top {
+    left: 20px;
+    opacity: 0.8;
+  }
+}
+.header {
+  background: transparent;
+}
+.header-inner {
+  position: relative;
+}
+.headband {
+  background: #222;
+  height: 3px;
+}
+.site-meta {
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .site-meta {
+    text-align: center;
+  }
+}
+.brand {
+  background: #222;
+  border-bottom: none;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.375em;
+  padding: 0 40px;
+  position: relative;
+}
+.brand:hover {
+  color: #fff;
+}
+.logo {
+  display: inline-block;
+  line-height: 36px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.site-title {
+  display: inline-block;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1.375em;
+  font-weight: normal;
+  line-height: 1.5;
+  vertical-align: top;
+}
+.site-subtitle {
+  color: #ddd;
+  font-size: 0.8125em;
+  margin-top: 10px;
+}
+.use-motion .brand {
+  opacity: 0;
+}
+.use-motion .logo,
+.use-motion .site-title,
+.use-motion .site-subtitle,
+.use-motion .custom-logo-image {
+  opacity: 0;
+  position: relative;
+  top: -10px;
+}
+.site-nav-toggle {
+  display: none;
+  left: 10px;
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .site-nav-toggle {
+    display: block;
+  }
+}
+.site-nav-toggle button {
+  background: transparent;
+  border: 0;
+  margin-top: 2px;
+  padding: 9px 10px;
+}
+.site-nav {
+  display: block;
+}
+@media (max-width: 767px) {
+  .site-nav {
+    border-top: 1px solid #ddd;
+    clear: both;
+    display: none;
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
+}
+.menu {
+  margin-top: 20px;
+  padding-left: 0;
+  text-align: center;
+}
+.menu-item {
+  display: inline-block;
+  list-style: none;
+  margin: 0 10px;
+}
+@media (max-width: 767px) {
+  .menu-item {
+    margin-top: 10px;
+  }
+}
+.menu-item a,
+.menu-item span.exturl {
+  border-bottom: 1px solid transparent;
+  display: block;
+  font-size: 0.8125em;
+  line-height: inherit;
+  transition-property: border-color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.menu-item a:hover,
+.menu-item span.exturl:hover {
+  border-bottom-color: #222;
+}
+.menu-item .fa {
+  margin-right: 5px;
+}
+.use-motion .menu-item {
+  opacity: 0;
+}
+.post-body {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+@media (min-width: 1200px) {
+  .post-body {
+    font-size: 1.125em;
+  }
+}
+@media (max-width: 767px) {
+  .post-body {
+    font-size: 0.875em;
+  }
+}
+.post-body span.exturl .fa {
+  font-size: 0.875em;
+  margin-left: 4px;
+}
+.post-body .image-caption,
+.post-body .figure .caption {
+  color: #999;
+  font-size: 0.875em;
+  font-weight: bold;
+  line-height: 1;
+  margin: -20px auto 15px;
+  text-align: center;
+}
+.post-sticky-flag {
+  display: inline-block;
+  transform: rotate(30deg);
+}
+.use-motion .post-block,
+.use-motion .pagination,
+.use-motion .comments {
+  opacity: 0;
+}
+.use-motion .post-header {
+  opacity: 0;
+}
+.use-motion .post-body {
+  opacity: 0;
+}
+.use-motion .collection-header {
+  opacity: 0;
+}
+.post-button {
+  margin-top: 40px;
+}
+.posts-collapse {
+  margin-left: 55px;
+  position: relative;
+  z-index: 1010;
+}
+@media (max-width: 767px) {
+  .posts-collapse {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.posts-collapse .collection-title {
+  font-size: 1.125em;
+  position: relative;
+}
+.posts-collapse .collection-title::before {
+  background: #999;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  content: ' ';
+  height: 10px;
+  left: 0;
+  margin-left: -6px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+.posts-collapse .collection-year {
+  margin: 60px 0;
+  position: relative;
+}
+.posts-collapse .collection-year::before {
+  background: #bbb;
+  border-radius: 50%;
+  content: ' ';
+  height: 8px;
+  left: 0;
+  margin-left: -4px;
+  margin-top: -4px;
+  position: absolute;
+  top: 50%;
+  width: 8px;
+}
+.posts-collapse .collection-header {
+  margin: 0 0 0 20px;
+}
+.posts-collapse .collection-header small {
+  color: #bbb;
+  margin-left: 5px;
+}
+.posts-collapse article {
+  margin: 30px 0;
+}
+.posts-collapse .post-header {
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: border;
+}
+.posts-collapse .post-header::before {
+  background: #bbb;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  content: ' ';
+  height: 6px;
+  left: 0;
+  margin-left: -4px;
+  position: absolute;
+  top: 0.75em;
+  width: 6px;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background;
+}
+.posts-collapse .post-header:hover {
+  border-bottom-color: #666;
+}
+.posts-collapse .post-header:hover::before {
+  background: #222;
+}
+.posts-collapse .post-title {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: inherit;
+  margin-bottom: 0;
+  margin-left: 3.75em;
+}
+.posts-collapse .post-title::after {
+  margin-left: 3px;
+  opacity: 0.6;
+}
+.posts-collapse .post-title a,
+.posts-collapse .post-title span.exturl {
+  border-bottom: none;
+  color: #666;
+}
+.posts-collapse .post-meta {
+  font-size: 0.75em;
+  left: 20px;
+  position: absolute;
+  top: 5px;
+}
+.posts-collapse::after {
+  background: #f5f5f5;
+  content: ' ';
+  height: 100%;
+  left: 0;
+  margin-left: -2px;
+  position: absolute;
+  top: 1.25em;
+  width: 4px;
+  z-index: -1;
+}
+.posts-collapse .fa-external-link {
+  font-size: 0.875em;
+  margin-left: 5px;
+}
+.post-eof {
+  background: #ccc;
+  height: 1px;
+  margin: 80px auto 60px;
+  text-align: center;
+  width: 8%;
+}
+.post:last-child .post-eof {
+  display: none;
+}
+.posts-expand {
+  padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .posts-expand {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 992px) {
+  .post-body {
+    text-align: justify;
+  }
+}
+@media (max-width: 991px) {
+  .post-body {
+    text-align: justify;
+  }
+}
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+  padding-top: 10px;
+}
+.post-body h2 .header-anchor,
+.post-body h3 .header-anchor,
+.post-body h4 .header-anchor,
+.post-body h5 .header-anchor,
+.post-body h6 .header-anchor {
+  border-bottom-style: none;
+  color: #ccc;
+  float: right;
+  margin-left: 10px;
+  visibility: hidden;
+}
+.post-body h2 .header-anchor:hover,
+.post-body h3 .header-anchor:hover,
+.post-body h4 .header-anchor:hover,
+.post-body h5 .header-anchor:hover,
+.post-body h6 .header-anchor:hover {
+  color: inherit;
+}
+.post-body h2:hover .header-anchor,
+.post-body h3:hover .header-anchor,
+.post-body h4:hover .header-anchor,
+.post-body h5:hover .header-anchor,
+.post-body h6:hover .header-anchor {
+  visibility: visible;
+}
+.post-body img {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 3px;
+}
+@media (max-width: 767px) {
+  .post-body img {
+    padding: initial;
+  }
+}
+.post-body iframe,
+.post-body img,
+.post-body video {
+  margin-bottom: 20px;
+}
+.post-body .video-container {
+  height: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+.post-body .video-container iframe,
+.post-body .video-container object,
+.post-body .video-container embed {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.post-gallery {
+  border-collapse: separate;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.post-gallery-row {
+  display: table-row;
+}
+.post-gallery .post-gallery-img {
+  border: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.post-gallery .post-gallery-img img {
+  border: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+.fancybox-close,
+.fancybox-close:hover {
+  border: 0;
+}
+.posts-expand .post-meta {
+  color: #999;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  margin: 3px 0 60px 0;
+  text-align: center;
+}
+.posts-expand .post-meta .post-description {
+  font-size: 0.875em;
+  margin-top: 2px;
+}
+.posts-expand .post-meta time {
+  border-bottom: 1px dashed #999;
+  cursor: help;
+}
+.post-meta .post-meta-item + .post-meta-item::before {
+  content: '|';
+  margin: 0 0.5em;
+}
+.post-meta .post-meta-item {
+  font-size: 0.75em;
+}
+.post-meta-divider {
+  margin: 0 0.5em;
+}
+.post-meta-item-icon {
+  margin-right: 3px;
+}
+@media (max-width: 991px) {
+  .post-meta-item-icon {
+    display: inline-block;
+  }
+}
+@media (max-width: 991px) {
+  .post-meta-item-text {
+    display: none;
+  }
+}
+.post-nav {
+  border-top: 1px solid #eee;
+  display: table;
+  margin-top: 15px;
+  width: 100%;
+}
+.post-nav-divider {
+  display: table-cell;
+  width: 10%;
+}
+.post-nav-item {
+  display: table-cell;
+  padding: 10px 0 0 0;
+  vertical-align: top;
+  width: 45%;
+}
+.post-nav-item a {
+  border-bottom: none;
+  color: #555;
+  display: block;
+  font-size: 0.875em;
+  line-height: 1.6;
+  position: relative;
+}
+.post-nav-item a:hover {
+  border-bottom: none;
+  color: #222;
+}
+.post-nav-item a:active {
+  top: 2px;
+}
+.post-nav-item .fa {
+  font-size: 0.75em;
+  margin-right: 5px;
+}
+.post-nav-next a {
+  padding-left: 5px;
+}
+.post-nav-prev {
+  text-align: right;
+}
+.post-nav-prev a {
+  padding-right: 5px;
+}
+.post-nav-prev .fa {
+  margin-left: 5px;
+}
+.rtl.post-body p,
+.rtl.post-body a,
+.rtl.post-body h1,
+.rtl.post-body h2,
+.rtl.post-body h3,
+.rtl.post-body h4,
+.rtl.post-body h5,
+.rtl.post-body h6,
+.rtl.post-body li,
+.rtl.post-body ul,
+.rtl.post-body ol {
+  direction: rtl;
+  font-family: UKIJ Ekran;
+}
+.rtl.post-title {
+  font-family: UKIJ Ekran;
+}
+.post-tags {
+  margin-top: 40px;
+  text-align: center;
+}
+.post-tags a {
+  display: inline-block;
+  font-size: 0.8125em;
+  margin-right: 10px;
+}
+.posts-expand .post-title {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  font-weight: 400;
+  margin: initial;
+  text-align: center;
+}
+.posts-expand .post-title-link {
+  border-bottom: none;
+  color: #555;
+  display: inline-block;
+  line-height: 1.2;
+  position: relative;
+  vertical-align: top;
+}
+.posts-expand .post-title-link::before {
+  background-color: #000;
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  visibility: hidden;
+  width: 100%;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.posts-expand .post-title-link:hover::before {
+  transform: scaleX(1);
+  visibility: visible;
+}
+.posts-expand .post-title-link .fa {
+  font-size: 0.875em;
+  margin-left: 5px;
+}
+.post-widgets {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+  text-align: center;
+}
+.wp_rating {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-top: 6px;
+  text-align: center;
+}
+.social-like {
+  display: flex;
+  font-size: 0.875em;
+  justify-content: center;
+  text-align: center;
+}
+.vk_like {
+  align-self: center;
+  height: 21px;
+  padding-top: 7px;
+  width: 85px;
+}
+.fb_like {
+  align-self: center;
+  height: 30px;
+}
+.my_post_copyright {
+  width: 85%;
+  max-width: 45em;
+  margin: 2.8em auto 0;
+  padding: 0.5em 1em;
+  border: 1px solid #d3d3d3;
+  font-size: 0.93rem;
+  line-height: 1.6em;
+  word-break: break-all;
+  background: rgba(255,255,255,0.4);
+}
+.my_post_copyright p {
+  margin: 0;
+}
+.my_post_copyright span {
+  display: inline-block;
+  width: 5.2em;
+  color: #333;
+  font-weight: bold;
+}
+.my_post_copyright .raw {
+  margin-left: 1em;
+  width: 5em;
+}
+.my_post_copyright a {
+  color: #808080;
+  border-bottom: 0;
+}
+.my_post_copyright a:hover {
+  color: #0593d3;
+  text-decoration: underline;
+}
+.my_post_copyright:hover .fa-clipboard {
+  color: #000;
+}
+.my_post_copyright .post-url:hover {
+  font-weight: normal;
+}
+.my_post_copyright .copy-path {
+  margin-left: 1em;
+  width: 1em;
+}
+@media (max-width: 767px) {
+  .my_post_copyright .copy-path {
+    display: none;
+  }
+}
+.my_post_copyright .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}
+.sidebar {
+  background: #222;
+  bottom: 0;
+  box-shadow: inset 0 2px 6px #000;
+  position: fixed;
+  top: 0;
+  z-index: 1040;
+}
+.sidebar a,
+.sidebar span.exturl {
+  border-bottom-color: #555;
+  color: #999;
+}
+.sidebar a:hover,
+.sidebar span.exturl:hover {
+  border-bottom-color: #eee;
+  color: #eee;
+}
+.sidebar-inner {
+  color: #999;
+  padding: 20px 10px;
+  text-align: center;
+}
+.site-overview-wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.cc-license {
+  margin-top: 10px;
+  text-align: center;
+}
+.cc-license .cc-opacity {
+  border-bottom: none;
+  opacity: 0.7;
+}
+.cc-license .cc-opacity:hover {
+  opacity: 0.9;
+}
+.cc-license img {
+  display: inline-block;
+}
+.site-author-image {
+  border: 1px solid #eee;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 120px;
+  padding: 2px;
+  border-radius: 50%;
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
+}
+.site-author-name {
+  color: #222;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+.site-description {
+  color: #999;
+  font-size: 0.8125em;
+  margin-top: 0;
+  text-align: center;
+}
+.links-of-author {
+  margin-top: 20px;
+}
+.links-of-author a,
+.links-of-author span.exturl {
+  border-bottom-color: #555;
+  display: inline-block;
+  font-size: 0.8125em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.links-of-author a::before,
+.links-of-author span.exturl::before {
+  background: #c79f09;
+  border-radius: 50%;
+  content: ' ';
+  display: inline-block;
+  height: 4px;
+  margin-right: 3px;
+  vertical-align: middle;
+  width: 4px;
+}
+.feed-link,
+.chat {
+  margin-top: 10px;
+}
+.feed-link a,
+.chat a {
+  border: 1px solid #fc6423;
+  border-radius: 4px;
+  color: #fc6423;
+  display: inline-block;
+  padding: 0 15px;
+}
+.feed-link a .fa,
+.chat a .fa {
+  margin-right: 5px;
+}
+.feed-link a:hover,
+.chat a:hover {
+  background: #fc6423;
+  border: 1px solid #fc6423;
+  color: #fff;
+}
+.feed-link a:hover .fa,
+.chat a:hover .fa {
+  color: #fff;
+}
+.links-of-blogroll {
+  font-size: 0.8125em;
+  margin-top: 10px;
+}
+.links-of-blogroll-title {
+  font-size: 0.875em;
+  font-weight: 600;
+  margin-top: 0;
+}
+.links-of-blogroll-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.links-of-blogroll-item {
+  padding: 2px 10px;
+}
+.links-of-blogroll-item a,
+.links-of-blogroll-item span.exturl {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#sidebar-dimmer {
+  display: none;
+}
+@media (max-width: 767px) {
+  #sidebar-dimmer {
+    background: #000;
+    display: block;
+    height: 100%;
+    left: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+  }
+  .sidebar-active + #sidebar-dimmer {
+    opacity: 0.7;
+    transform: translateX(-100%);
+    transition: opacity 0.5s;
+  }
+}
+.sidebar-nav {
+  margin: 0 0 20px;
+  padding-left: 0;
+}
+.sidebar-nav li {
+  border-bottom: 1px solid transparent;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+}
+.sidebar-nav li.sidebar-nav-overview {
+  margin-left: 10px;
+}
+.sidebar-nav li:hover {
+  color: #fc6423;
+}
+.sidebar-nav .sidebar-nav-active {
+  border-bottom-color: #fc6423;
+  color: #fc6423;
+}
+.sidebar-nav .sidebar-nav-active:hover {
+  color: #fc6423;
+}
+.sidebar-panel {
+  display: none;
+}
+.sidebar-panel-active {
+  display: block;
+}
+.sidebar-toggle {
+  background: #222;
+  bottom: 45px;
+  cursor: pointer;
+  height: 14px;
+  left: 30px;
+  line-height: 0;
+  padding: 5px;
+  position: fixed;
+  width: 14px;
+  z-index: 1050;
+}
+@media (max-width: 991px) {
+  .sidebar-toggle {
+    left: 20px;
+    opacity: 0.8;
+  }
+}
+.sidebar-toggle-line {
+  background: #fff;
+  display: inline-block;
+  height: 2px;
+  margin-top: 3px;
+  position: relative;
+  transition: all 0.4s;
+  vertical-align: top;
+  width: 100%;
+}
+.sidebar-toggle-line:first-child {
+  margin-top: 0;
+}
+.sidebar-toggle:hover .sidebar-toggle-line {
+  background: #fc6423;
+}
+.post-toc-wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.post-toc {
+  font-size: 0.875em;
+}
+.post-toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 2px 5px 10px;
+  text-align: left;
+}
+.post-toc ol > ol {
+  padding-left: 0;
+}
+.post-toc ol a {
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  border-bottom-color: #ccc;
+  color: #666;
+  transition-property: all;
+}
+.post-toc ol a:hover {
+  border-bottom-color: #000;
+  color: #000;
+}
+.post-toc .nav-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.8;
+}
+.post-toc .nav .nav-child {
+  display: none;
+}
+.post-toc .nav .active > .nav-child {
+  display: block;
+}
+.post-toc .nav .active-current > .nav-child {
+  display: block;
+}
+.post-toc .nav .active-current > .nav-child > .nav-item {
+  display: block;
+}
+.post-toc .nav .active > a {
+  border-bottom-color: #fc6423;
+  color: #fc6423;
+}
+.post-toc .nav .active-current > a {
+  color: #fc6423;
+}
+.post-toc .nav .active-current > a:hover {
+  color: #fc6423;
+}
+.site-state {
+  display: flex;
+  justify-content: center;
+  line-height: 1.4;
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+.site-state-item {
+  border-left: 1px solid #eee;
+  padding: 0 15px;
+}
+.site-state-item:first-child {
+  border-left: none;
+}
+.site-state-item a {
+  border-bottom: none;
+}
+.site-state-item-count {
+  color: inherit;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+.site-state-item-name {
+  color: #999;
+  font-size: 0.8125em;
+}
+.footer {
+  color: #999;
+  font-size: 0.875em;
+}
+.footer img {
+  border: 0;
+}
+.footer-inner {
+  text-align: center;
+}
+#animate {
+  animation: iconAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+  color: #ff0000;
+  display: inline-block;
+  margin: 0 5px;
+}
+.powered-by,
+.theme-info {
+  display: inline-block;
+}
+@-moz-keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+@-o-keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+@keyframes iconAnimate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    transform: scale(1.1);
+  }
+}
+.search-pop-overlay {
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2080;
+}
+.search-popup {
+  background: #fff;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+  height: 80%;
+  left: 50%;
+  margin-left: -350px;
+  padding: 0;
+  position: fixed;
+  top: 10%;
+  width: 700px;
+  z-index: 9999;
+}
+@media (max-width: 767px) {
+  .search-popup {
+    border-radius: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+.search-popup .search-icon,
+.search-popup .popup-btn-close {
+  color: #999;
+  display: inline-block;
+  font-size: 18px;
+  height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 18px;
+}
+.search-popup .popup-btn-close {
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  float: right;
+}
+.search-popup .popup-btn-close:hover .fa {
+  color: #222;
+}
+.search-popup .search-header {
+  background: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+}
+.search-popup ul.search-result-list {
+  margin: 0 5px;
+  padding: 0;
+}
+.search-popup p.search-result {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+}
+.search-popup a.search-result-title {
+  font-weight: bold;
+}
+.search-popup .search-keyword {
+  border-bottom: 1px dashed #f00;
+  color: #f00;
+  font-weight: bold;
+}
+.search-popup #search-result {
+  height: calc(100% - 55px);
+  overflow: auto;
+  padding: 5px 25px;
+  position: relative;
+}
+.search-popup .search-input-container {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 5px;
+  position: absolute;
+  width: calc(100% - 90px);
+}
+.search-popup .search-input-container input {
+  background: transparent;
+  border: 0;
+  display: block;
+  height: 20px;
+  outline: none;
+  padding: 8px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.search-popup #no-result {
+  color: #ccc;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.category-all-page .category-all-title {
+  text-align: center;
+}
+.category-all-page .category-all {
+  margin-top: 20px;
+}
+.category-all-page .category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.category-all-page .category-list-item {
+  margin: 5px 10px;
+}
+.category-all-page .category-list-count {
+  color: #bbb;
+}
+.category-all-page .category-list-count::before {
+  content: ' (';
+  display: inline;
+}
+.category-all-page .category-list-count::after {
+  content: ') ';
+  display: inline;
+}
+.category-all-page .category-list-child {
+  padding-left: 10px;
+}
+#event-list {
+  padding: 0px;
+}
+#event-list hr {
+  background: #222;
+  margin: 20px 0 45px 0;
+}
+#event-list hr::after {
+  background: #222;
+  color: #fff;
+  content: 'NOW';
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 5px;
+  text-align: right;
+}
+#event-list li.event {
+  background: #f9f9f9;
+  margin: 20px 0;
+  min-height: 40px;
+  padding-left: 10px;
+}
+#event-list li.event h2.event-summary {
+  margin: 0;
+  padding-bottom: 3px;
+}
+#event-list li.event h2.event-summary::before {
+  color: #bbb;
+  content: '\f111';
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+#event-list li.event span.event-relative-time {
+  color: #bbb;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 12px;
+}
+#event-list li.event span.event-details {
+  color: #bbb;
+  display: block;
+  line-height: 18px;
+  margin-left: 56px;
+  padding-bottom: 6px;
+  padding-top: 3px;
+  text-indent: -24px;
+}
+#event-list li.event span.event-details::before {
+  color: #bbb;
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 9px;
+  text-align: center;
+  text-indent: 0;
+  width: 14px;
+}
+#event-list li.event span.event-details.event-location::before {
+  content: '\f041';
+}
+#event-list li.event span.event-details.event-duration::before {
+  content: '\f017';
+}
+#event-list li.event-past {
+  background: #fcfcfc;
+  padding: 15px 0 15px 10px;
+}
+#event-list li.event-past > * {
+  opacity: 0.9;
+}
+#event-list li.event-past h2.event-summary {
+  color: #bbb;
+}
+#event-list li.event-past h2.event-summary::before {
+  color: #dfdfdf;
+}
+#event-list li.event-now {
+  background: #222;
+  color: #fff;
+  padding: 15px 0 15px 10px;
+}
+#event-list li.event-now h2.event-summary::before {
+  animation: dot-flash 1s alternate infinite ease-in-out;
+  color: #fff;
+}
+#event-list li.event-now * {
+  color: #fff !important;
+}
+#event-list li.event-future {
+  background: #222;
+  color: #fff;
+  padding: 15px 0 15px 10px;
+}
+#event-list li.event-future h2.event-summary::before {
+  animation: dot-flash 1s alternate infinite ease-in-out;
+  color: #fff;
+}
+#event-list li.event-future * {
+  color: #fff !important;
+}
+@-moz-keyframes dot-flash {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes dot-flash {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@-o-keyframes dot-flash {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@keyframes dot-flash {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+ul.breadcrumb {
+  font-size: 0.75em;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0 2em;
+  text-align: center;
+}
+ul.breadcrumb li {
+  display: inline;
+}
+ul.breadcrumb li + li::before {
+  content: '/\00a0';
+  font-weight: normal;
+  padding: 0.5em;
+}
+ul.breadcrumb li + li:last-child {
+  font-weight: bold;
+}
+.tag-cloud {
+  text-align: center;
+}
+.tag-cloud a {
+  display: inline-block;
+  margin: 10px;
+}
+.tag-cloud a:hover {
+  color: #222 !important;
+}
+.header {
+  margin: 0 auto;
+  position: relative;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1200px) {
+  .header {
+    width: 1160px;
+  }
+}
+@media (min-width: 1600px) {
+  .header {
+    width: 73%;
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    width: auto;
+  }
+}
+.header-inner {
+  background: #fff;
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+@media (min-width: 1200px) {
+  .container .header-inner {
+    width: 240px;
+  }
+}
+@media (max-width: 991px) {
+  .header-inner {
+    border-radius: initial;
+    position: relative;
+    width: auto;
+  }
+}
+.main::before,
+.main::after {
+  content: ' ';
+  display: table;
+}
+.main::after {
+  clear: both;
+}
+@media (max-width: 991px) {
+  .container .main-inner {
+    width: auto;
+  }
+}
+.content-wrap {
+  background: #fff;
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  float: right;
+  min-height: 700px;
+  padding: 40px;
+  width: calc(100% - 252px);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-wrap {
+    border-radius: initial;
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    border-radius: initial;
+    min-height: auto;
+    padding: 20px;
+    width: 100%;
+  }
+}
+.sidebar {
+  background: #eee;
+  box-shadow: none;
+  float: left;
+  margin-left: -100%;
+  position: static;
+  width: 240px;
+}
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+}
+.sidebar-toggle {
+  display: none;
+}
+.footer-inner {
+  padding-left: 260px;
+}
+@media (max-width: 991px) {
+  .footer-inner {
+    padding: 0;
+    width: auto;
+  }
+}
+.header-inner {
+  right: 0;
+}
+.content-wrap {
+  float: left;
+}
+.sidebar {
+  float: right;
+}
+.book-mark-link {
+  left: 30px;
+}
+.footer-inner {
+  padding-left: 0;
+  padding-right: 260px;
+}
+.site-brand-container {
+  position: relative;
+}
+.site-meta {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+@media (max-width: 991px) {
+  .site-meta {
+    box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  }
+}
+.brand {
+  background: none;
+  padding: 0;
+}
+.brand:hover {
+  color: #fff;
+}
+.site-subtitle {
+  font-weight: initial;
+  margin: 10px 10px 0;
+}
+.custom-logo-image {
+  margin-top: 20px;
+}
+@media (max-width: 991px) {
+  .custom-logo-image {
+    display: none;
+  }
+}
+.site-nav-toggle {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav-toggle {
+    display: block;
+  }
+}
+.site-nav {
+  border-top: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav {
+    display: none;
+  }
+  .site-nav.site-nav-on {
+    display: block;
+  }
+}
+.menu-item-active a,
+.menu .menu-item a:hover,
+.menu .menu-item span.exturl:hover {
+  background: #f9f9f9;
+  border-bottom-color: #fff;
+}
+.menu-item-active a::after,
+.menu .menu-item a:hover::after,
+.menu .menu-item span.exturl:hover::after {
+  background-color: #bbb;
+  border-radius: 50%;
+  content: ' ';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 6px;
+}
+.menu .menu-item {
+  display: block;
+  margin: 0;
+}
+.menu .menu-item a,
+.menu .menu-item span.exturl {
+  box-sizing: border-box;
+  line-height: inherit;
+  padding: 5px 20px;
+  position: relative;
+  text-align: left;
+  transition-property: background-color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+@media (hover: none) {
+  .menu .menu-item a:hover,
+  .menu .menu-item span.exturl:hover {
+    background: none;
+  }
+}
+.menu .menu-item .badge {
+  background-color: #ccc;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.35em 0 0 0;
+  padding: 2px 5px;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.menu .menu-item br {
+  display: none;
+}
+.btn-bar {
+  background-color: #fff;
+}
+.sub-menu {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 6px 0;
+}
+.sub-menu .menu-item {
+  display: inline-block;
+}
+.sub-menu .menu-item a,
+.sub-menu .menu-item span.exturl {
+  margin: 5px 10px;
+  padding: initial;
+}
+.sub-menu .menu-item a:hover,
+.sub-menu .menu-item span.exturl:hover {
+  background: initial;
+  color: #fc6423;
+}
+.sub-menu .menu-item-active a {
+  background: #fff;
+  border-bottom-color: #fc6423;
+  color: #fc6423;
+}
+.sub-menu .menu-item-active a:hover {
+  background: #fff;
+  border-bottom-color: #fc6423;
+}
+.sub-menu .menu-item-active a::after {
+  content: initial;
+}
+.sidebar {
+  bottom: auto;
+  right: auto;
+}
+.sidebar a,
+.sidebar span.exturl {
+  color: #555;
+}
+.sidebar a:hover,
+.sidebar span.exturl:hover {
+  border-bottom-color: #222;
+  color: #222;
+}
+.sidebar-inner {
+  background: #fff;
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  box-sizing: border-box;
+  color: #555;
+  width: 240px;
+  opacity: 0;
+}
+.sidebar-inner.affix {
+  position: fixed;
+  top: 12px;
+}
+.sidebar-inner.affix-bottom {
+  position: absolute;
+}
+.site-author::before,
+.site-author::after {
+  content: ' ';
+  display: table;
+}
+.site-author::after {
+  clear: both;
+}
+.site-state-item {
+  padding: 0 10px;
+}
+.feed-link,
+.chat {
+  border-bottom: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  text-align: center;
+}
+.feed-link a,
+.chat a {
+  border: 0;
+  color: #fc6423;
+  display: block;
+}
+.feed-link a:hover,
+.chat a:hover {
+  background: none;
+  border: 0;
+  color: #e34603;
+}
+.feed-link a:hover .fa,
+.chat a:hover .fa {
+  color: #e34603;
+}
+.links-of-author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.links-of-author-item {
+  margin: 5px 0 0;
+  width: 50%;
+}
+.links-of-author-item a,
+.links-of-author-item span.exturl {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 0;
+  max-width: 216px;
+  overflow: hidden;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.links-of-author-item a,
+.links-of-author-item span.exturl {
+  border-bottom: none;
+  display: block;
+  text-decoration: none;
+}
+.links-of-author-item a::before,
+.links-of-author-item span.exturl::before {
+  display: none;
+}
+.links-of-author-item a:hover,
+.links-of-author-item span.exturl:hover {
+  background: #eee;
+  border-radius: 4px;
+}
+.links-of-author-item .fa {
+  margin-right: 2px;
+}
+.links-of-blogroll {
+  padding: 3px 0 0;
+  text-align: center;
+}
+.links-of-blogroll-item {
+  padding: 0;
+}
+.content-wrap {
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  padding: initial;
+}
+.post-block {
+  background: #fff;
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  padding: 40px;
+}
+#posts > article + article .post-block {
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
+}
+.comments {
+  background: #fff;
+  border-radius: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin: auto;
+  margin-top: 12px;
+  padding: 40px;
+}
+.tabs-comment {
+  margin-top: 1em;
+}
+.posts-expand {
+  padding-top: initial;
+}
+.posts-expand .post-title-link {
+  line-height: inherit;
+}
+.post-nav-divider {
+  width: 4%;
+}
+.post-nav-item {
+  width: 48%;
+}
+.post-eof {
+  display: none;
+}
+.pagination {
+  background: #fff;
+  border-radius: initial;
+  border-top: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin: 12px 0 0;
+  padding: 10px 0 10px;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  margin-bottom: initial;
+  top: initial;
+}
+.main {
+  padding-bottom: initial;
+}
+.footer {
+  bottom: auto;
+}
+.sub-menu {
+  border-bottom: initial;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+.sub-menu + #content > #posts .post-block {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sub-menu + #content > #posts .post-block {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .sub-menu + #content > #posts .post-block {
+    margin-top: 8px;
+  }
+}
+.post-body h1,
+.post-body h2 {
+  border-bottom: 1px solid #eee;
+}
+.post-body h3 {
+  border-bottom: 1px dotted #eee;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .content-wrap {
+    padding: 10px;
+  }
+  .posts-expand {
+    margin: initial;
+  }
+  .posts-expand .post-button {
+    margin-top: 20px;
+  }
+  .post-block {
+    border-radius: initial;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+    padding: 20px;
+  }
+  #posts > article + article .post-block {
+    margin-top: 10px;
+  }
+  .comments {
+    margin-top: 10px;
+    padding: 10px 20px;
+  }
+  .pagination {
+    margin: 10px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: 8px;
+  }
+  .posts-expand {
+    margin: initial;
+  }
+  .posts-expand .post-button {
+    margin: 12px 0;
+  }
+  .post-block {
+    border-radius: initial;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+    min-height: auto;
+    padding: 12px;
+  }
+  #posts > article + article .post-block {
+    margin-top: 8px;
+  }
+  .comments {
+    margin-top: 8px;
+    padding: 10px 12px;
+  }
+  .pagination {
+    margin: 8px 0 0;
+  }
+}
+body {
+  padding: 10px 0;
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.site-meta {
+  height: 100px;
+  background: none;
+  background-image: url("https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/D41B083810FF47069BEC3F73462C8205/10228");
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .site-meta {
+    height: 80px;
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  }
+}
+自定义 note 风格,
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #3a87ad;
+  background-color: #e2eaee;
+  border-color: #c5d5dd;
+}
+.alert-warning {
+  color: #c09853;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+copy,
+.highlight {
+  position: relative;
+}
+.btn-copy {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #333;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  padding: 2px 6px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  opacity: 0;
+}
+.btn-copy span {
+  margin-left: 5px;
+}
+.highlight:hover .btn-copy {
+  opacity: 1;
+}
+blockquote.question {
+  color: #555;
+  border-left: 4px solid #1098ad;
+  background-color: #e3f2fd;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: 20px;
+}
+span#inline-toc {
+  display: inline-block;
+  border-radius: 80% 100% 90% 20%;
+  background-color: #e3f2fd;
+  color: #555;
+  padding: 0.05em 0.4em;
+  margin: 2px 5px 2px 0px;
+  line-height: 1.5;
+}
+.headband {
+  height: 0px;
+}
+.post-button {
+  text-align: right;
+}
+.btn {
+  padding: 3px 15px;
+  color: #000 !important;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 15px;
+}
+.btn:hover {
+  color: #fff !important;
+  background: #34495e;
+  text-decoration: none !important;
+}
+@media (max-width: 767px) {
+  .btn {
+    background-color: #bdc3c7;
+  }
+}
+.sub-menu {
+  background: #fff !important;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+}
+@media (max-width: 767px) {
+  .sub-menu {
+    background: #fff !important;
+    border-radius: 0px;
+  }
+}
+.sub-menu .menu-item-active a {
+  background: none !important;
+}
+@media (max-width: 767px) {
+  .sub-menu .menu-item-active a {
+    background: #fff !important;
+  }
+}
+.header-inner {
+  background: #fff;
+  border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .header-inner {
+    background: #fff;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 14px #cacbcb;
+    -moz-box-shadow: 0 0 14px #cacbcb;
+    box-shadow: 0 0 14px #cacbcb;
+  }
+}
+.menu-item-active a {
+  background: rgba(255,255,255,0.5);
+}
+@media (max-width: 767px) {
+  .menu-item-active a {
+    background: #fff;
+  }
+}
+.sidebar {
+  background: none;
+  border-radius: 10px;
+}
+.sidebar-inner {
+  padding: 10px 10px 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+::selection {
+  background: #285943;
+  color: #fff;
+}
+img.img-topic {
+  width: 100%;
+}
+code {
+  color: #c21f30;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.post-sticky-flag {
+  font-size: inherit;
+  float: left;
+  color: #000;
+  cursor: help;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+.post-sticky-flag:hover {
+  color: #07b39b;
+}
+.highlight,
+code,
+pre {
+  border: 1px solid #d6d6d6;
+}
+.post-body p a {
+  color: #ec7357;
+  border-bottom: none;
+  border-bottom: 1px solid #ec7357;
+}
+.post-body p a:hover {
+  color: #9055a2;
+  border-bottom: none;
+  border-bottom: 1px solid #9055a2;
+}
+.post-body p a:active {
+  color: #ec7357;
+  border-bottom: none;
+  border-bottom: 1px solid #ec7357;
+}
+.post {
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+@media (max-width: 767px) {
+  .post {
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.post-block {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  padding: 70px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#posts > article + article .post-block {
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
+  margin-top: 12px;
+}
+.posts-expand {
+  margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .posts-expand {
+    padding: 2px 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.content-wrap {
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.4);
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: 0px;
+    border-radius: 0px;
+    background: #fff;
+  }
+}
+.comments {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: rgba(255,255,255,0.7);
+  margin: 0;
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .comments {
+    margin: 20px;
+    padding: 12px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 1px #cacbcb;
+    -moz-box-shadow: 0 0 1px #cacbcb;
+    box-shadow: 0 0 1px #cacbcb;
+  }
+}
+.pagination,
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  border: none;
+}
+.pagination .page-number.current {
+  border-radius: 14px;
+  background: #519d9e;
+}
+.pagination {
+  margin: 30px auto 0;
+}
+.post-body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Comic Sans MS;
+}
+.posts-expand .post-title {
+  font-size: 21px;
+  border-left: #649ab6 2px solid;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.posts-expand .post-title,
+.posts-expand .post-meta {
+  text-align: right;
+}
+.page-post-detail .post-title,
+.page-post-detail .post-meta {
+  text-align: center;
+  border-left: none;
+  padding-left: 0;
+}
+.posts-expand .post-title-link {
+  line-height: 2.5;
+}</style><noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');loadCss('http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css');</script><noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css"></noscript></head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小碗宽面</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">努力的，都将以另一种方式呈现。</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="搜索..." spellcheck="false" type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/博客美化.html">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">博客美化
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-21 22:10:00" itemprop="dateCreated datePublished" datetime="2019-08-21T22:10:00+08:00">2019-08-21</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-30 11:38:25" itemprop="dateModified" datetime="2019-08-30T11:38:25+08:00">2019-08-30</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>16k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>29 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="1-更改主题"><a href="#1-更改主题" class="headerlink" title="1. 更改主题"></a>1. 更改主题</h3><ol>
+<li>通过网络下载主题</li>
+<li>将解压后的文件存到（我的本地博客文件夹为 myblog） myblog/themes/ 下</li>
+<li>打开主题配置文件 myblog/config.yml</li>
+<li>找到以下代码<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p>修改成：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">theme: name</span><br><span class="line"># name 就是你解压后的文件夹名字</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="2-更改主题样式（以-nextT-为例子）"><a href="#2-更改主题样式（以-nextT-为例子）" class="headerlink" title="2. 更改主题样式（以 nextT 为例子）"></a>2. 更改主题样式（以 nextT 为例子）</h3><ol>
+<li>打开 themes/next/config.yml 文件（主题配置文件）</li>
+<li>找到如下代码<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Schemes</span><br><span class="line">scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">#scheme: Gemini</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p>有四种，只要将当前的样式（前面没 # 号的）屏蔽，也就是前面加个 # 号，要选择的删除掉 # 字符就行。</p>
+<a id="more"></a>
+<h3 id="3-增加侧边栏选项"><a href="#3-增加侧边栏选项" class="headerlink" title="3. 增加侧边栏选项"></a>3. 增加侧边栏选项</h3><p>打开主题配置文件 themes/next/config.yml 找到如下代码：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  #schedule: /schedule/ || calendar</span><br><span class="line">  #sitemap: /sitemap.xml || sitemap</span><br><span class="line">  #commonweal: /404/ || heartbeat</span><br></pre></td></tr></tbody></table></figure>
+
+<p>想要的取消屏蔽就行</p>
+<h3 id="4-更改语言"><a href="#4-更改语言" class="headerlink" title="4. 更改语言"></a>4. 更改语言</h3><p>打开站点配置文件 config.yml<br>找到对应的代码：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 不忘什么心？</span><br><span class="line">subtitle: 努力的，都将以另一种方式呈现。</span><br><span class="line">description: 努力的，都将以另一种方式呈现</span><br><span class="line">keywords:</span><br><span class="line">author: 志者</span><br><span class="line">language: zh-Hans</span><br><span class="line">timezone:</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改对应的 language 字段</p>
+<h3 id="5-首页显示文章的部分"><a href="#5-首页显示文章的部分" class="headerlink" title="5. 首页显示文章的部分"></a>5. 首页显示文章的部分</h3><p>打开主题配置文件 themes/next/config.yml ，找到代码修改</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">    enable: true</span><br><span class="line">    length: 280</span><br><span class="line"># length 为长度</span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="https://note.youdao.com/yws/public/resource/6b702a0e5841b5b72270d23f2db099f4/xmlnote/2EBAB568DF9D4DF1A4901C8E1BC5AC62/9626" alt="image"></p>
+<h3 id="6-开启图标"><a href="#6-开启图标" class="headerlink" title="6. 开启图标"></a>6. 开启图标</h3><p>如图：<br><img src="https://note.youdao.com/yws/public/resource/6b702a0e5841b5b72270d23f2db099f4/xmlnote/581A322D394C40E9B931445C468EE4E1/9632" alt="image"><br>打开主题配置文件 themes/next/config.yml</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/yourname || github</span><br><span class="line">  E-Mail: mailto:yourname@gmail.com || envelope</span><br><span class="line">  Google: https://plus.google.com/yourname || google</span><br><span class="line">  Twitter: https://twitter.com/yourname || twitter</span><br><span class="line">  #FB Page: https://www.facebook.com/yourname || facebook</span><br><span class="line">  #VK Group: https://vk.com/yourname || vk</span><br><span class="line">  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow</span><br><span class="line">  #YouTube: https://youtube.com/yourname || youtube</span><br><span class="line">  #Instagram: https://instagram.com/yourname || instagram</span><br><span class="line">  #Skype: skype:yourname?call|chat || skype</span><br></pre></td></tr></tbody></table></figure>
+
+<p>取消屏蔽就行</p>
+<h3 id="7-点击头像回到博客首页"><a href="#7-点击头像回到博客首页" class="headerlink" title="7 点击头像回到博客首页"></a>7 点击头像回到博客首页</h3><ol>
+<li>把头像avatar.gif放在~/blog/source/uploads/下，则：<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">修改主题配置文件，位置：~/myblog/themes/next/_config.yml</span><br><span class="line"># Sidebar Avatar</span><br><span class="line"># in theme directory(source/images): /images/avatar.gif</span><br><span class="line"># in site  directory(source/uploads): /uploads/avatar.gif</span><br><span class="line">avatar: /uploads/avatar.gif</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p>然后编辑文件：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">修改文件，位置：~/blog/themes/next/layout/_macro/sidebar.swig</span><br><span class="line">       &lt;a href="/"&gt;</span><br><span class="line">          &lt;img class="site-author-image" itemprop="image"</span><br><span class="line">               src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"</span><br><span class="line">               alt="{{ theme.author }}" /&gt;</span><br><span class="line">       &lt;/a&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="8-移动端显示-back-to-top-按钮和侧栏"><a href="#8-移动端显示-back-to-top-按钮和侧栏" class="headerlink" title="8. 移动端显示 back-to-top 按钮和侧栏"></a>8. 移动端显示 back-to-top 按钮和侧栏</h3><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文件位置：~/blog/themes/next/_config.yml</span><br><span class="line"># Enable sidebar on narrow view</span><br><span class="line">onmobile: true</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="9-更改标签云的颜色"><a href="#9-更改标签云的颜色" class="headerlink" title="9. 更改标签云的颜色"></a>9. 更改标签云的颜色</h3><p>文件位置：~/blog/themes/next/layout/page.swig</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{{ tagcloud({min_font: 13, max_font: 31, amount: 1000, color: true, start_color: '#9733EE', end_color: '#FF512F'}) }}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改对应参数值即可，参数说明见 Hexo 官方文档，颜色可以参考这个网站，自己去纠结……</p>
+<h3 id="10-修改文章底部的那个带-号的标签"><a href="#10-修改文章底部的那个带-号的标签" class="headerlink" title="10. 修改文章底部的那个带#号的标签"></a>10. 修改文章底部的那个带#号的标签</h3><p>实现效果图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7D47B426DA694D05AA3AE7416DDAD22A/9906" alt="image"><br>具体实现方法<br>修改模板 <code>/themes/next/layout/_macro/post.swig</code>，搜索 <code>rel="tag"&gt;#</code>，将 # 换成 <code>&lt;i class="fa fa-tag"&gt;&lt;/i&gt;</code></p>
+<h3 id="11-在每篇文章末尾统一添加“本文结束”标记"><a href="#11-在每篇文章末尾统一添加“本文结束”标记" class="headerlink" title="11. 在每篇文章末尾统一添加“本文结束”标记"></a>11. 在每篇文章末尾统一添加“本文结束”标记</h3><p>实现效果图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/BE9EDE529B2E4FD7883738EC6A6FE165/9922" alt="image"><br>具体实现方法<br>在路径 <strong>\themes\next\layout_macro</strong> 中新建 <strong>passage-end-tag.swig</strong> 文件,并添加以下内容：</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    {% if not is_index %}</span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align:center;color: #ccc;font-size:14px;"</span>&gt;</span>-------------本文结束<span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-paw"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>感谢您的阅读-------------<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    {% endif %}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>接着打开 <code>\themes\next\layout\_macro\post.swig</code> 文件，在 <code>post-body</code> 之后，  <code>post-footer</code> 之前添加如下画红色部分代码（<code>post-footer之前两个DIV</code>）：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4AA6020D17EE45318084AEDE0E52D3FA/9936" alt="image"><br>代码如下：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  {% if not is_index %}</span><br><span class="line">    {% include 'passage-end-tag.swig' %}</span><br><span class="line">  {% endif %}</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后打开主题配置文件 <code>（_config.yml)</code>,在末尾添加：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="11-修改-代码块自定义样式"><a href="#11-修改-代码块自定义样式" class="headerlink" title="11. 修改``代码块自定义样式"></a>11. 修改``代码块自定义样式</h3><p><strong>实现效果图</strong><br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/CDBBED999A584A29AF06356BCE29CCD4/9955" alt="image"><br><strong>具体实现方法</strong><br>打开 <code>\themes\next\source\css\_custom\custom.styl</code> ,向里面加入：(颜色可以自己定义)  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// Custom styles.</span><br><span class="line">code {</span><br><span class="line">    color: #ff7600;</span><br><span class="line">    background: #fbf7f8;</span><br><span class="line">    margin: 2px;</span><br><span class="line">}</span><br><span class="line">// 大代码块的自定义样式</span><br><span class="line">.highlight, pre {</span><br><span class="line">    margin: 5px 0;</span><br><span class="line">    padding: 5px;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">}</span><br><span class="line">.highlight, code, pre {</span><br><span class="line">    border: 1px solid #d6d6d6;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="12-侧边栏社交小图标设置"><a href="#12-侧边栏社交小图标设置" class="headerlink" title="12. 侧边栏社交小图标设置"></a>12. 侧边栏社交小图标设置</h3><p><strong>实现效果图</strong><br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/FB0BBF287D6E445AA967AD9FDDFCE397/9970" alt="image"><br><strong>实现方法</strong><br>打开主题配置文件（<code>_config.yml</code>），搜索<code>social:</code>,在图标库找自己喜欢的小<a href="http://fontawesome.io/icons/" target="_blank" rel="noopener">图标</a>，并将名字复制在如下位置，保存即可<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/96A6DDE515C9491A8420516F7F87DCB7/9985" alt="image"></p>
+<h3 id="13-网站底部字数统计"><a href="#13-网站底部字数统计" class="headerlink" title="13. 网站底部字数统计"></a>13. 网站底部字数统计</h3><p><strong>实现效果图</strong><br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/A96825909F154DF2B5A8C77EE1D2FC14/9993" alt="image"><br><strong>具体实现方法</strong><br>切换到根目录下，然后运行如下代码<br><code>npm install hexo-wordcount --save</code><br>然后在<code>/themes/next/layout/_partials/footer.swig</code>文件尾部加上：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class="theme-info"&gt;</span><br><span class="line">  &lt;div class="powered-by"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;span class="post-count"&gt;博客全站共{{ totalcount(site) }}字&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="14-添加“404”页面"><a href="#14-添加“404”页面" class="headerlink" title="14. 添加“404”页面"></a>14. 添加“404”页面</h3><p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！效果如下 <a href="http://www.ixirong.com/404.html，" target="_blank" rel="noopener">http://www.ixirong.com/404.html，</a> 使用方法，新建 404.html 页面，放到主题的 source 目录下，内容如下：</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"your site url "</span></span></span><br><span class="line"><span class="tag">        <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="15-文章置顶"><a href="#15-文章置顶" class="headerlink" title="15. 文章置顶"></a>15. 文章置顶</h3><p>首先移除默认安装的插件：<br><code>npm uninstall hexo-generator-index --save</code><br>然后安装新插件：<br><code>npm install hexo-generator-index-pin-top --save</code><br>最后编辑有这需求的相关文章时，在 Front-matter（文件最上方以 — 分隔的区域）加上一行：<br><code>top: true</code><br>然后就行了。如果你置顶了多篇，怎么控制顺序呢？设置 top 的值（大的在前面），比如：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Post a.md</span><br><span class="line">title: a</span><br><span class="line">top: 1</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可是，没有任何标记啊，读者怎么知道文章置顶了,编辑文件：</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">// 文件位置：~/blog/node_modules/hexo-generator-index-pin-top/lib/generator.js</span><br><span class="line"></span><br><span class="line">'use strict';</span><br><span class="line">var pagination = require('hexo-pagination');</span><br><span class="line">module.exports = function(locals){</span><br><span class="line">  var config = this.config;</span><br><span class="line">  var posts = locals.posts;</span><br><span class="line">    posts.data = posts.data.sort(function(a, b) {</span><br><span class="line">        if(a.sticky &amp;&amp; b.sticky) { // 两篇文章sticky都有定义</span><br><span class="line">            if(a.sticky == b.sticky) return b.date - a.date; // 若sticky值一样则按照文章日期降序排</span><br><span class="line">            else return b.sticky - a.sticky; // 否则按照sticky值降序排</span><br><span class="line">        }</span><br><span class="line">        else if(a.sticky &amp;&amp; !b.sticky) { // 以下是只有一篇文章sticky有定义，那么将有sticky的排在前面（这里用异或操作居然不行233）</span><br><span class="line">            return -1;</span><br><span class="line">        }</span><br><span class="line">        else if(!a.sticky &amp;&amp; b.sticky) {</span><br><span class="line">            return 1;</span><br><span class="line">        }</span><br><span class="line">        else return b.date - a.date; // 都没定义按照文章日期降序排</span><br><span class="line">    });</span><br><span class="line">  var paginationDir = config.pagination_dir || 'page';</span><br><span class="line">  return pagination('', posts, {</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: ['index', 'archive'],</span><br><span class="line">    format: paginationDir + '/%d/',</span><br><span class="line">    data: {</span><br><span class="line">      __index: true</span><br><span class="line">    }</span><br><span class="line">  });</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+
+<p>也就是将 top 全部替换为 NexT 原有的 sticky，然后将 Front-matter 中的 top 替换为 sticky。</p>
+<p>最后可以自定义一下样式：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/* 文件位置：~/blog/themes/next/source/css/_custom/custom.styl */</span><br><span class="line"></span><br><span class="line">/* 自定义的文章置顶样式 */</span><br><span class="line">.post-sticky-flag {</span><br><span class="line">    font-size: inherit;</span><br><span class="line">    float: left;</span><br><span class="line">    color: rgb(0, 0, 0);</span><br><span class="line">    cursor: help;</span><br><span class="line">    transition-duration: 0.2s;</span><br><span class="line">    transition-timing-function: ease-in-out;</span><br><span class="line">    transition-delay: 0s;</span><br><span class="line">}</span><br><span class="line">.post-sticky-flag:hover {</span><br><span class="line">    color: #07b39b;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="16-建立模板文件"><a href="#16-建立模板文件" class="headerlink" title="16. 建立模板文件"></a>16. 建立模板文件</h3><p>如果你是在站点文件夹根目录用 <code>hexo new post &lt;title&gt;</code> 新建的文章，那么其实它就是将文章的模版文件 <code>post.md</code>「复制」了一份到 <code>~/myblog/source/_posts/</code> 下，所以这也意味着：</p>
+<ol>
+<li>你可以直接通过在 <code>~/blog/source/_posts/</code> 下新建<code>.md</code> 结尾的文件来写新的文章。</li>
+<li>你可以通过自定义文章的模版文件，从而每次命令行新建的文章都会有你自定义的内容。</li>
+<li>如果自己直接新建文件，一定要记得加上文件最上方的参数，即下面的相关内容，还有编码请用 UTF-8。<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"># ！！！！！！！！！！</span><br><span class="line"># 每一项的 : 后面均有一个空格</span><br><span class="line"># 且 : 为英文符号</span><br><span class="line"># ！！！！！！！！！！</span><br><span class="line"></span><br><span class="line">title:</span><br><span class="line"># 文章标题，可以为中文</span><br><span class="line"></span><br><span class="line">date:</span><br><span class="line"># 建立日期，如果自己手动添加，请按固定格式</span><br><span class="line"></span><br><span class="line">updated:</span><br><span class="line"># 更新日期，其它与上面的建立日期类似</span><br><span class="line"></span><br><span class="line">permalink:</span><br><span class="line"># 若站点配置文件下的 permalink 配置了 title</span><br><span class="line"># 则可以替换文章 URL 里面的 title（文章标题）</span><br><span class="line"></span><br><span class="line">categories:</span><br><span class="line"># 分类，支持多级，比如：</span><br><span class="line"></span><br><span class="line">tags:</span><br><span class="line"># 标签</span><br><span class="line"># 多个可以这样写 [标签1,标签2,标签3]</span><br><span class="line"></span><br><span class="line">description:</span><br><span class="line"># 文章的描述，在每篇文章标题下方显示</span><br><span class="line"># 并且作为网页的 description 元数据</span><br><span class="line"># 如果不写，则自动取 <span class="comment">&lt;!-- more --&gt;</span></span><br><span class="line"># 之前的文字作为网页的 description 元数据</span><br><span class="line"></span><br><span class="line">keywords:</span><br><span class="line"># 关键字，并且作为网页的 keywords 元数据</span><br><span class="line"># 如果不写，则自动取 tags 里的项</span><br><span class="line"></span><br><span class="line">comments:</span><br><span class="line"># 是否开启评论</span><br><span class="line"># 默认值是 true</span><br><span class="line"># 要关闭写 false</span><br><span class="line"></span><br><span class="line">layout:</span><br><span class="line"># 页面布局，默认值是 post，默认值可以在</span><br><span class="line"># 站点配置文件中修改 default_layout</span><br><span class="line"># 另：404 页面可能用到，将其值改为 false</span><br><span class="line"></span><br><span class="line">type:</span><br><span class="line"># categories，目录页面</span><br><span class="line"># tags，标签页面</span><br><span class="line"># picture，用来生成 group-pictures</span><br><span class="line"># quote？</span><br><span class="line"># https://io-oi.me/tech/test/</span><br><span class="line"></span><br><span class="line">photos:</span><br><span class="line"># Gallery support，用来支持画廊╱相册，用法如下：</span><br><span class="line"># - photo_url_1</span><br><span class="line"># - photo_url_2</span><br><span class="line"># - photo_url_3</span><br><span class="line"># https://io-oi.me/tech/test/</span><br><span class="line"></span><br><span class="line">link:</span><br><span class="line"># 文章的外部链接</span><br><span class="line"># https://io-oi.me/tech/test/</span><br><span class="line"></span><br><span class="line">image:</span><br><span class="line"># 自定义的文章摘要图片，只在页面展示，文章内消失</span><br><span class="line"># 先配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">sticky:</span><br><span class="line"># 文章置顶</span><br><span class="line"># 先配置好，否则请勿添加！</span><br><span class="line"></span><br><span class="line">password:</span><br><span class="line"># 文章密码，此项只有参考教程：</span><br><span class="line"># http://shenzekun.cn/hexo的next主题个性化配置教程.html</span><br><span class="line"># 第 24 节，配置好，否则请勿添加！</span><br><span class="line"># 发现还是有 bug 的，就是右键在新标签中打开</span><br><span class="line"># 然后无论是否输入密码，都能看到内容</span><br></pre></td></tr></tbody></table></figure>
+
+</li>
+</ol>
+<p>附加：<br>如果要应用多个类别层次结构，请使用名称列表而不是单个名称。如果Hexo在帖子上看到以这种方式定义的任何类别，它会将该帖子的每个类别视为其自己的独立层次结构。  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">categories:</span><br><span class="line">- [Sports, Baseball]</span><br><span class="line">- [MLB, American League, Boston Red Sox]</span><br><span class="line">- [MLB, American League, New York Yankees]</span><br><span class="line">- Rivalries</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="17-文章图片"><a href="#17-文章图片" class="headerlink" title="17. 文章图片"></a>17. 文章图片</h3><p>文章摘要（excerpt）是指每篇文章（post）在页面（page）上显示的那部分内容，[Read More] 之前的文章内容。由于它会展示在页面，因此在每篇文章的文章摘要中加一张图片。但会出现你想从文章中选一张图片作为文章摘要图片，而这张图片由于写作要求，必须添加在文章的末尾，这样点 [Read More] 查看文章时，这张图片就会重复出现了。咋办？</p>
+<p>前提是在主题配置文件中：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 文件位置：~/blog/themes/next/_config.yml</span><br><span class="line"></span><br><span class="line">excerpt_description: false</span><br><span class="line"></span><br><span class="line">auto_excerpt:</span><br><span class="line">  enable: false</span><br></pre></td></tr></tbody></table></figure>
+
+<p>首先加代码：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 文件位置：~/blog/themes/next/layout/_macro/post.swig --&gt;</span></span><br><span class="line"></span><br><span class="line">      {% if is_index %}</span><br><span class="line">        {% if post.description and theme.excerpt_description %}</span><br><span class="line">          {{ post.description }}</span><br><span class="line">          <span class="comment">&lt;!--noindex--&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-button text-center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">href</span>=<span class="string">"{{ url_for(post.path) }}"</span>&gt;</span></span><br><span class="line">              {{ __('post.read_more') }} &amp;raquo;</span><br><span class="line">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="comment">&lt;!--/noindex--&gt;</span></span><br><span class="line">        {% elif post.excerpt  %}</span><br><span class="line">          {{ post.excerpt }}</span><br><span class="line">+          </span><br><span class="line">+        {% if post.image %}</span><br><span class="line">+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"out-img-topic"</span>&gt;</span></span><br><span class="line">+          <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">{{</span> <span class="attr">post.image</span> }} <span class="attr">class</span>=<span class="string">"img-topic"</span> /&gt;</span></span><br><span class="line">+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">+        {% endif %}</span><br><span class="line">+          </span><br><span class="line">          <span class="comment">&lt;!--noindex--&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"post-button text-center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"btn"</span> <span class="attr">href</span>=<span class="string">"{{ url_for(post.path) }}{% if theme.scroll_to_more %}#{{ __('post.more') }}{% endif %}"</span> <span class="attr">rel</span>=<span class="string">"contents"</span>&gt;</span></span><br><span class="line">              {{ __('post.read_more') }} &amp;raquo;</span><br><span class="line">            <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">          <span class="comment">&lt;!--/noindex--&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>为了防止有的图片宽度不够导致风格不够统一，页面不美观，需要在 custom.styl 中加入：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">/* 文件位置：~/blog/themes/next/source/css/_custom/custom.styl */</span><br><span class="line"></span><br><span class="line">/* 自定义的文章摘要图片样式 */</span><br><span class="line">img.img-topic {</span><br><span class="line">    width: 100%;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>最后编辑有这需求的相关文章时，在 Front-matter（文件最上方以 — 分隔的区域）加上一行：<br><code>image: url</code><br>参考：<a href="https://io-oi.me/tech/hexo-next-optimization/#%E9%99%84%E4%B8%8A%E6%88%91%E7%9A%84-custom-styl" target="_blank" rel="noopener">这里</a>  </p>
+<h3 id="18-添加评论"><a href="#18-添加评论" class="headerlink" title="18. 添加评论"></a>18. 添加评论</h3><p>效果图<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/08917159080C49CE92AC33D61D5BFBA5/10096" alt="image"><br>首先在<code>_config.yml</code>文件添加如下配置  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Support for LiveRe comments system.</span><br><span class="line"># You can get your uid from https://livere.com/insight/myCode (General web site)</span><br><span class="line">livere_uid: your uid</span><br></pre></td></tr></tbody></table></figure>
+
+<p>其中<code>your uid</code>在<a href="https://note.youdao.com/" target="_blank" rel="noopener">来必力</a>注册获得，注册完后点击右上角如图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4230AD1BC9504A31BF40A8913F1ADA11/10108" alt="image"><br>在这里放上自己的博客网站，之后点击认证就可以获取安装代码（City版），然后代码中的<code>data-uid</code>就是<code>your uid</code><br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/579E58643BA04677B8EBF9C42BAD2540/10112" alt="image"><br>然后在 <code>layout/_scripts/third-party/comments/</code> 目录中添加 <code>livere.swig</code>，文件内容如下：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname and not theme.disqus_shortname and not theme.hypercomments_id and not theme.gentie_productKey %}</span><br><span class="line">  {% if theme.livere_uid %}</span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line">      (function(d, s) {</span><br><span class="line">        var j, e = d.getElementsByTagName(s)[0];</span><br><span class="line">        if (typeof LivereTower === 'function') { return; }</span><br><span class="line">        j = d.createElement(s);</span><br><span class="line">        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';</span><br><span class="line">        j.async = true;</span><br><span class="line">        e.parentNode.insertBefore(j, e);</span><br><span class="line">      })(document, 'script');</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  {% endif %}</span><br><span class="line">{% endif %}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>然后在 <code>layout/_scripts/third-party/comments.swig</code>文件中追加：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{% include './comments/livere.swig' %}</span><br></pre></td></tr></tbody></table></figure>
+
+<p> 最后，在 ``layout/_partials/comments.swig `文件中条件最后追加 LiveRe 插件是否引用的判断逻辑：<br> </p><figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{% elseif theme.livere_uid %}</span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"lv-container"</span> <span class="attr">data-id</span>=<span class="string">"city"</span> <span class="attr">data-uid</span>=<span class="string">"{{ theme.livere_uid }}"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">{% endif %}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>参考：<a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">这里</a></p>
+<h3 id="19-文章底部添加版权信息"><a href="#19-文章底部添加版权信息" class="headerlink" title="19. 文章底部添加版权信息"></a>19. 文章底部添加版权信息</h3><p>在目录 <code>next/layout/_macro/</code>下添加 <code>my-copyright.swig</code></p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">{% if page.copyright %}</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"my_post_copyright"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">&lt;!-- JS库 sweetalert 可修改路径 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://unpkg.com/sweetalert/dist/sweetalert.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>本文标题:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"{{ url_for(page.path) }}"</span>&gt;</span>{{ page.title }}<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>文章作者:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/"</span> <span class="attr">title</span>=<span class="string">"访问 {{ theme.author }} 的个人博客"</span>&gt;</span>{{ theme.author }}<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>发布时间:<span class="tag">&lt;/<span class="name">span</span>&gt;</span>{{ page.date.format("YYYY年MM月DD日 - HH:mm") }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>最后更新:<span class="tag">&lt;/<span class="name">span</span>&gt;</span>{{ page.updated.format("YYYY年MM月DD日 - HH:mm") }}<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>原始链接:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"{{ url_for(page.path) }}"</span> <span class="attr">title</span>=<span class="string">"{{ page.title }}"</span>&gt;</span>{{ page.permalink }}<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"copy-path"</span>  <span class="attr">title</span>=<span class="string">"点击复制文章链接"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-clipboard"</span> <span class="attr">data-clipboard-text</span>=<span class="string">"{{ page.permalink }}"</span>  <span class="attr">aria-label</span>=<span class="string">"复制成功！"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">span</span>&gt;</span>许可协议:<span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fa fa-creative-commons"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span> <span class="tag">&lt;<span class="name">a</span> <span class="attr">rel</span>=<span class="string">"license"</span> <span class="attr">href</span>=<span class="string">"https://creativecommons.org/licenses/by-nc-nd/4.0/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">title</span>=<span class="string">"Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"</span>&gt;</span>署名-非商业性使用-禁止演绎 4.0 国际<span class="tag">&lt;/<span class="name">a</span>&gt;</span> 转载请保留原文链接及作者。<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span> </span><br><span class="line">    var clipboard = new Clipboard('.fa-clipboard');</span><br><span class="line">    $(".fa-clipboard").click(function(){</span><br><span class="line">      clipboard.on('success', function(){</span><br><span class="line">        swal({   </span><br><span class="line">          title: "",   </span><br><span class="line">          text: '复制成功',</span><br><span class="line">          icon: "success", </span><br><span class="line">          showConfirmButton: true</span><br><span class="line">          });</span><br><span class="line">	});</span><br><span class="line">    });  </span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">{% endif %}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>在目录<code>next/source/css/_common/components/post/`下添加`my-post-copyright.styl</code>  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">.my_post_copyright {</span><br><span class="line">  width: 85%;</span><br><span class="line">  max-width: 45em;</span><br><span class="line">  margin: 2.8em auto 0;</span><br><span class="line">  padding: 0.5em 1.0em;</span><br><span class="line">  border: 1px solid #d3d3d3;</span><br><span class="line">  font-size: 0.93rem;</span><br><span class="line">  line-height: 1.6em;</span><br><span class="line">  word-break: break-all;</span><br><span class="line">  background: rgba(255,255,255,0.4);</span><br><span class="line">}</span><br><span class="line">.my_post_copyright p{margin:0;}</span><br><span class="line">.my_post_copyright span {</span><br><span class="line">  display: inline-block;</span><br><span class="line">  width: 5.2em;</span><br><span class="line">  color: #b5b5b5;</span><br><span class="line">  font-weight: bold;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright .raw {</span><br><span class="line">  margin-left: 1em;</span><br><span class="line">  width: 5em;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright a {</span><br><span class="line">  color: #808080;</span><br><span class="line">  border-bottom:0;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright a:hover {</span><br><span class="line">  color: #a3d2a3;</span><br><span class="line">  text-decoration: underline;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright:hover .fa-clipboard {</span><br><span class="line">  color: #000;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright .post-url:hover {</span><br><span class="line">  font-weight: normal;</span><br><span class="line">}</span><br><span class="line">.my_post_copyright .copy-path {</span><br><span class="line">  margin-left: 1em;</span><br><span class="line">  width: 1em;</span><br><span class="line">  +mobile(){display:none;}</span><br><span class="line">}</span><br><span class="line">.my_post_copyright .copy-path:hover {</span><br><span class="line">  color: #808080;</span><br><span class="line">  cursor: pointer;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改<code>next/layout/_macro/post.swig</code>，在代码</p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">      {% if not is_index %}</span><br><span class="line">        {% include 'wechat-subscriber.swig' %}</span><br><span class="line">      {% endif %}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>之前添加增加如下代码：  </p>
+<figure class="highlight html"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">      {% if not is_index %}</span><br><span class="line">        {% include 'my-copyright.swig' %}</span><br><span class="line">      {% endif %}</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改<code>next/source/css/_common/components/post/post.styl</code>文件，在最后一行增加代码：<br><code>@import "my-post-copyright"</code><br>保存重新生成即可。<br>如果要在该博文下面增加版权信息的显示，需要在 Markdown 中增加copyright: true的设置，类似：</p>
+<h3 id="20-代码块添加复制功能"><a href="#20-代码块添加复制功能" class="headerlink" title="20 代码块添加复制功能"></a>20 代码块添加复制功能</h3><div class="alert alert-info"><i class="fa fa-info"></i> 在新版本的 next7.3 下已经内置了复制按钮，在主题配置文件设置即可，且提供不同主题风格（default / flat / mac）进行选择。。</div>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">copy_button:</span><br><span class="line">   enable: true</span><br><span class="line">   # Show text copy result.</span><br><span class="line">   show_result: false</span><br><span class="line">   # Available values: default | flat | mac</span><br><span class="line">   style: mac</span><br></pre></td></tr></tbody></table></figure>
+
+
+<hr>
+<h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2><p>以上皆为参考别人博客记录，下面一一列出。  </p>
+<ol>
+<li><a href="https://io-oi.me/tech/hexo-next-optimization/#%E9%99%84%E4%B8%8A%E6%88%91%E7%9A%84-custom-styl" target="_blank" rel="noopener">打造个性超赞博客 Hexo + NexT + GitHub Pages的超深度优化</a>  </li>
+<li><a href="http://www.ehcoo.com/seo.html" target="_blank" rel="noopener">【搜索优化】Hexo-next百度和谷歌搜索优化</a>  </li>
+<li><a href="https://juejin.im/post/5ae7fc18518825672565a7f0#heading-8" target="_blank" rel="noopener">Hexo 个人博客 SEO 优化（3）：改造你的博客，提升搜索引擎排名</a>  </li>
+<li><a href="https://blog.csdn.net/yaoyao_liu/article/details/85948136" target="_blank" rel="noopener">Hexo博客Next主题SEO优化方法</a></li>
+<li><a href="https://www.cnblogs.com/penglei-it/p/hexo_next_baseset.html" target="_blank" rel="noopener">白衣秀才</a></li>
+<li><a href="https://github.com/Lruihao/hexo-theme-next" target="_blank" rel="noopener">博采众长</a></li>
+<li><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">hexo史上最全搭建教程</a></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+	<div>
+     
+       
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  
+
+  <p><span>本文标题:</span>博客美化</p>
+  <p><span>文章作者:</span>志者</p>
+  <p><span>发布时间:</span>2019年08月21日 - 22:10:00</p>
+  <p><span>最后更新:</span>2019年08月30日 - 11:38:25</p>
+  <p><span>原始链接:</span><a href="/博客美化.html" title="博客美化">http://witman1999.github.io/博客美化.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/博客美化.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">署名-非商业性使用-相同方式共享 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+         button: false
+        });
+      });
+    }));  
+</script>
+
+     
+   </div>
+
+	<div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/博客/" rel="tag"><i class="fa fa-tag"></i> 博客</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/搭建博客（hexo）.html" rel="next" title="搭建博客（hexo）">
+                  <i class="fa fa-chevron-left"></i> 搭建博客（hexo）
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/测试评论.html" rel="prev" title="测试评论">
+                  测试评论 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjIxOC8yMjcyOQ=="></div>
+  </div>
+  
+  
+ 
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+    
+ 
+  <aside class="sidebar">
+
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc" data-target="post-toc-wrap">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-更改主题"><span class="nav-number">1.</span> <span class="nav-text">1. 更改主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-更改主题样式（以-nextT-为例子）"><span class="nav-number">2.</span> <span class="nav-text">2. 更改主题样式（以 nextT 为例子）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-增加侧边栏选项"><span class="nav-number">3.</span> <span class="nav-text">3. 增加侧边栏选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-更改语言"><span class="nav-number">4.</span> <span class="nav-text">4. 更改语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-首页显示文章的部分"><span class="nav-number">5.</span> <span class="nav-text">5. 首页显示文章的部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-开启图标"><span class="nav-number">6.</span> <span class="nav-text">6. 开启图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-点击头像回到博客首页"><span class="nav-number">7.</span> <span class="nav-text">7 点击头像回到博客首页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-移动端显示-back-to-top-按钮和侧栏"><span class="nav-number">8.</span> <span class="nav-text">8. 移动端显示 back-to-top 按钮和侧栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-更改标签云的颜色"><span class="nav-number">9.</span> <span class="nav-text">9. 更改标签云的颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-修改文章底部的那个带-号的标签"><span class="nav-number">10.</span> <span class="nav-text">10. 修改文章底部的那个带#号的标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-在每篇文章末尾统一添加“本文结束”标记"><span class="nav-number">11.</span> <span class="nav-text">11. 在每篇文章末尾统一添加“本文结束”标记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-修改-代码块自定义样式"><span class="nav-number">12.</span> <span class="nav-text">11. 修改``代码块自定义样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-侧边栏社交小图标设置"><span class="nav-number">13.</span> <span class="nav-text">12. 侧边栏社交小图标设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-网站底部字数统计"><span class="nav-number">14.</span> <span class="nav-text">13. 网站底部字数统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-添加“404”页面"><span class="nav-number">15.</span> <span class="nav-text">14. 添加“404”页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-文章置顶"><span class="nav-number">16.</span> <span class="nav-text">15. 文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-建立模板文件"><span class="nav-number">17.</span> <span class="nav-text">16. 建立模板文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-文章图片"><span class="nav-number">18.</span> <span class="nav-text">17. 文章图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-添加评论"><span class="nav-number">19.</span> <span class="nav-text">18. 添加评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-文章底部添加版权信息"><span class="nav-number">20.</span> <span class="nav-text">19. 文章底部添加版权信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-代码块添加复制功能"><span class="nav-number">21.</span> <span class="nav-text">20 代码块添加复制功能</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#参考博客"><span class="nav-number"></span> <span class="nav-text">参考博客</span></a></li></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" src="/images/avatar3.jpeg" alt="志者">
+  <p class="site-author-name" itemprop="name">志者</p>
+  <div class="site-description" itemprop="description">I was born to break these chains</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">15</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/witman1999" title="GitHub → https://github.com/witman1999" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://me.csdn.net/qq_37391214" title="CSDN → https://me.csdn.net/qq_37391214" rel="noopener" target="_blank"><i class="fa fa-fw fa-contao"></i>CSDN</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/images/qq.jpg" title="QQ → /images/qq.jpg"><i class="fa fa-fw fa-qq"></i>QQ</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="/images/wechat.png" title="微信 → /images/wechat.png"><i class="fa fa-fw fa-wechat"></i>微信</a>
+      </span>
+    
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">© <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">志者</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">64k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:56</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.3.0</div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+  copy<!-- 代码块复制功能 -->
+  
+
+
+  
+
+
+<script type="text/javascript" src="/bundle.js"></script><script type="text/javascript">window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
