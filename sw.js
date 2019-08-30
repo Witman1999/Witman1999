@@ -10,7 +10,7 @@
 
 'use strict';
 
-var precacheConfig = [["/about/index.html","aa25d6a48900b6b0b07d0889605e4ea6"],["/archives/index.html","138d49429a7e8a1fec9976448ad8a7a5"]];
+var precacheConfig = [["/about/index.html","94fb8f8a9baae2a989964d79609ac13c"],["/archives/index.html","eb9982996f35d592fa12bf75686fcd62"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 var firstRegister = 1; // 默认1是首次安装SW， 0是SW更新
 
