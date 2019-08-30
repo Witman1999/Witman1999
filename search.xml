@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[解决hexo引用网络图片显示错误的问题]]></title>
+    <title><![CDATA[分支管理-创建分支]]></title>
     <url>%2F%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86-%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF.html</url>
     <content type="text"><![CDATA[前言我们知道，在我们编程开发的时候，和别人合作，会遇到对同一个项目开发，你可能写得他快，会导致对项目的覆盖。或者你还没写完就提交上去，会导致别人看不懂，但是不提交上去又有丢失进度的风险。特别是对于大型的项目，不对项目做出分支，会造成很多冲突，你的可能会把被人的覆盖掉，别人会不乐意这样做，无形中就造成了矛盾。利用Git的分支和合并管理方法，在我们所在的项目（master分支）上建立一个分支，你在分支上的可以进行更改包括上传自己的进度，等到完成时在合并到 master 分支上。还有退回版本等等操作。这里可以这样想，我们从 git clone开始，也就是创造了一个本地分支，从远端仓库复制过来，经过本地的修改，然后推送回去 git push就是合并了。 正文在这里我们想象 每次的提交的时候，Git 就像把他们串成一条时间线。刚开始的时候，只有一条时间线也叫做主分支，master分支。head是指向的是当前分支。每次提交，master分支都会前进一步，后面则是越来越长。当我们创建新分支例如dev时候，就有新建了一条线。然后修改了head的指向。现在，对dev的修改和提交都不会对master影响，没次提交dev节点就往前一步。加入dev完成，就可以合并到master上，同时head指会master 示例以上述为例，首先，创建dev分支，然后切换到dev分支 1git checkout -b dev 这里相当于两条命令，-b 表示创建并切换。 12git branch devgit checkout dev 通过git branch查看当前分支 123$ git branch *dev master 如果是当前分支，前面会标记*号。后面也就是对分支的正常惯例提交方式（这里假设我添加了 test.txt） 123$ git add test.txt$ git commit -m &quot;add test.txt&quot;$ git push origin dev 切换到master上，我们查看一些没看到test.txt文件，因为那是在dev分支上，现在我们进行合并。 1$ git merge dev 这里的git merge使用于合并指定分支到当前分支。 常用指令 查看分支：git branch创建分支：git branch (name)切换分支：git checkout (name)创建和切换分支：git checkout -b (name)合并某个分支到当前分支：git merger (name)删除分支：git branch -d (name)]]></content>
       <categories>
