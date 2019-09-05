@@ -28,5 +28,10 @@ copyright: true
 代码为``%MAVEN_HOME\bin%``
 # 查看版本
 按快捷键``win+R``输入``cmd``，然后输入代码``mvn -v``查看是否存在。  
-![image](https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/DF373935CFDE46DEBF77863967E3FD86/11164)
+![image](https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/DF373935CFDE46DEBF77863967E3FD86/11164)  
+## 注意
+{% note warning %}
+因为 **maven** 是用于 **java** 工程，所以要提前安装好 **java** 的开发环境（JDk）。
+{% endnote %}
+
 
