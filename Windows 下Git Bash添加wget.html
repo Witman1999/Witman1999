@@ -47,22 +47,19 @@
   };
 </script>
 
-  <meta name="description" content="引言由于第一次使用maven遇到了一些错误，例如标题的这个错误，详细信息是Failure to transfer org.apache.maven.plugins:maven-compiler-plugin:jar:3.1通过网上的查找，在这里记录下来防止下一次踩坑。">
+  <meta name="description" content="Git Bash 作为一个管理工具，在windows上可以替代cmd,但是也会缺少一些工具。">
 <meta name="keywords" content="witman1999,志者">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Maven基础知识">
-<meta property="og:url" content="http://witman1999.github.io/Maven“Failure to transfer org....”的解决方法.html">
+<meta property="og:title" content="Windows 下Git Bash配置wget">
+<meta property="og:url" content="http://witman1999.github.io/Windows 下Git Bash添加wget.html">
 <meta property="og:site_name" content="小碗宽面">
-<meta property="og:description" content="引言由于第一次使用maven遇到了一些错误，例如标题的这个错误，详细信息是Failure to transfer org.apache.maven.plugins:maven-compiler-plugin:jar:3.1通过网上的查找，在这里记录下来防止下一次踩坑。">
+<meta property="og:description" content="Git Bash 作为一个管理工具，在windows上可以替代cmd,但是也会缺少一些工具。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/1AFAB6990BCC4CDCB7858EC6B201CF3B/11418">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/CD6C086D3AE9491DBD13249C9D6D0017/11423">
-<meta property="og:updated_time" content="2019-09-05T09:33:33.766Z">
+<meta property="og:updated_time" content="2019-09-11T08:12:23.380Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Maven基础知识">
-<meta name="twitter:description" content="引言由于第一次使用maven遇到了一些错误，例如标题的这个错误，详细信息是Failure to transfer org.apache.maven.plugins:maven-compiler-plugin:jar:3.1通过网上的查找，在这里记录下来防止下一次踩坑。">
-<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/1AFAB6990BCC4CDCB7858EC6B201CF3B/11418">
-  <link rel="canonical" href="http://witman1999.github.io/Maven“Failure to transfer org....”的解决方法">
+<meta name="twitter:title" content="Windows 下Git Bash配置wget">
+<meta name="twitter:description" content="Git Bash 作为一个管理工具，在windows上可以替代cmd,但是也会缺少一些工具。">
+  <link rel="canonical" href="http://witman1999.github.io/Windows 下Git Bash添加wget">
 
 
 <script id="page-configurations">
@@ -77,7 +74,7 @@
 </script>
 <meta name="google-site-verification" content="S02dSO8Ii6nJgcdTzOt678zkMEwYZXjpdKTeLfNwoO0">
 <meta name="referrer" content="no-referrer">
-  <title>Maven基础知识 | 小碗宽面</title>
+  <title>Windows 下Git Bash配置wget | 小碗宽面</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -3544,7 +3541,7 @@ h6 {
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/Maven“Failure to transfer org....”的解决方法.html">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/Windows 下Git Bash添加wget.html">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="志者">
@@ -3556,7 +3553,7 @@ h6 {
       <meta itemprop="name" content="小碗宽面">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Maven基础知识
+        <h1 class="post-title" itemprop="name headline">Windows 下Git Bash配置wget
 
           
         </h1>
@@ -3572,7 +3569,7 @@ h6 {
                 
               
 
-              <time title="创建时间：2019-09-05 17:16:00 / 修改时间：17:33:33" itemprop="dateCreated datePublished" datetime="2019-09-05T17:16:00+08:00">2019-09-05</time>
+              <time title="创建时间：2019-09-11 16:00:00 / 修改时间：16:12:23" itemprop="dateCreated datePublished" datetime="2019-09-11T16:00:00+08:00">2019-09-11</time>
             </span>
           
             
@@ -3585,7 +3582,7 @@ h6 {
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Maven/" itemprop="url" rel="index"><span itemprop="name">Maven</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Git-Bash/" itemprop="url" rel="index"><span itemprop="name">Git Bash</span></a></span>
 
                 
                 
@@ -3602,7 +3599,7 @@ h6 {
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>490</span>
+              <span>219</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -3625,11 +3622,15 @@ h6 {
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>由于第一次使用<code>maven</code>遇到了一些错误，例如标题的这个错误，详细信息是<code>Failure to transfer org.apache.maven.plugins:maven-compiler-plugin:jar:3.1</code>通过网上的查找，在这里记录下来防止下一次踩坑。</p>
+        <p>Git Bash 作为一个管理工具，在windows上可以替代cmd,但是也会缺少一些工具。</p>
 <a id="more"></a>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><p>其实这个 ERROR 是一个很平常的错误 <strong>maven下载不完整导致的</strong> ，只要根据错误提示找到相应的目录删除相应的文件夹，重新下载即可。</p>
-<h2 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h2><p>通过提示，在我们的本地仓库下，找<code>org</code>-&gt;<code>apache</code>-&gt;<code>maven</code>-&gt;<code>plugins</code>-&gt;<code>maven-compiler-plugin</code>。<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/1AFAB6990BCC4CDCB7858EC6B201CF3B/11418" alt="image"><br>我的是3.1的版本有问题，可以打开看一下。<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/CD6C086D3AE9491DBD13249C9D6D0017/11423" alt="image"><br>这是我的已经完整的版本，如果是没有下载完的，可能会缺少 jar 包或者少几个文件，或者有<code>lastUpdated</code>后缀名的文件，这就代表没有下载完整。可能是由于网络或者误操作没有下载完整。我这里直接整个文件夹删除掉了。  </p>
-<h2 id="重新下载"><a href="#重新下载" class="headerlink" title="重新下载"></a>重新下载</h2><p>这里就简单了，打开遇到问题的项目，右键-&gt;<code>maven</code>-&gt;<code>Update Project</code>。选中要更新的工程，OK 就能自动下载了。</p>
+<h2 id="安装-wget"><a href="#安装-wget" class="headerlink" title="安装 wget"></a>安装 wget</h2><ol>
+<li>下载<code>wget</code>的二进制安装包，点击<a href="https://eternallybored.org/misc/wget/" target="_blank" rel="noopener">地址</a></li>
+<li>解压安装包，将 <code>wget.exe</code> 移动到 <code>C:\Program Files\Git\mingw64\bin</code> （这里其实也可以将 <code>wget.exe</code>路径添加到环境变量中）<div class="note warning">
+            <p>这里的放的路径指的是<code>Git Bash</code>安装路径，上面的只是示例，依照个人的安装路径为准。</p>
+          </div>
+</li>
+</ol>
 
     </div>
 
@@ -3648,12 +3649,12 @@ h6 {
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   
 
-  <p><span>本文标题:</span>Maven基础知识</p>
+  <p><span>本文标题:</span>Windows 下Git Bash配置wget</p>
   <p><span>文章作者:</span>志者</p>
-  <p><span>发布时间:</span>2019年09月05日 - 17:16:00</p>
-  <p><span>最后更新:</span>2019年09月05日 - 17:33:33</p>
-  <p><span>原始链接:</span><a href="/Maven“Failure to transfer org....”的解决方法.html" title="Maven基础知识">http://witman1999.github.io/Maven“Failure to transfer org....”的解决方法.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/Maven“Failure to transfer org....”的解决方法.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年09月11日 - 16:00:00</p>
+  <p><span>最后更新:</span>2019年09月11日 - 16:12:23</p>
+  <p><span>原始链接:</span><a href="/Windows 下Git Bash添加wget.html" title="Windows 下Git Bash配置wget">http://witman1999.github.io/Windows 下Git Bash添加wget.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/Windows 下Git Bash添加wget.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">署名-非商业性使用-相同方式共享 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -3694,8 +3695,8 @@ h6 {
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/Maven 导入 Eclipse.html" rel="next" title="Maven 导入 Eclipse">
-                  <i class="fa fa-chevron-left"></i> Maven 导入 Eclipse
+                <a href="/Maven介绍.html" rel="next" title="Maven介绍">
+                  <i class="fa fa-chevron-left"></i> Maven介绍
                 </a>
               
             </div>
@@ -3703,10 +3704,6 @@ h6 {
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-              
-                <a href="/Maven 基础知识.html" rel="prev" title="Maven基础知识">
-                  Maven基础知识 <i class="fa fa-chevron-right"></i>
-                </a>
               
             </div>
           </div>
@@ -3765,7 +3762,7 @@ h6 {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#引言"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除文件夹"><span class="nav-number">2.1.</span> <span class="nav-text">删除文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重新下载"><span class="nav-number">2.2.</span> <span class="nav-text">重新下载</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-wget"><span class="nav-number">1.</span> <span class="nav-text">安装 wget</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
