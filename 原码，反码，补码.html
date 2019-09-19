@@ -63,7 +63,7 @@
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/88763E7E5CB14FE88905B23F4756DA2C/11951">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/2BE575AF73A546D183DBE4C52B3825FE/11954">
 <meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/45F821156EA64BCF8ADD53FA221CC0E8/11959">
-<meta property="og:updated_time" content="2019-09-19T15:10:22.879Z">
+<meta property="og:updated_time" content="2019-09-19T15:14:34.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="原码，反码，补码和移码">
 <meta name="twitter:description" content="以下都是以有符号数为基础。 原码实际上，我们把符号数字化或者符号数值化，就已经给出了一种机器数的表现形式，我们把这种方式称为 原码表示法    定义一共分为整数和小数  整数   第一个表达式，n代表数值上的位数，”0，x”的0表示符号位。x 是真值的数值部分 例子      小数   例子                      无论是整数的的逗号或者小数点，在计算机中是不需要存储的，这里只是">
@@ -1909,7 +1909,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffe4ff;
+  background: #ff1a4b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3578,7 +3578,7 @@ h6 {
                 
               
 
-              <time title="创建时间：2019-09-19 15:50:00 / 修改时间：23:10:22" itemprop="dateCreated datePublished" datetime="2019-09-19T15:50:00+08:00">2019-09-19</time>
+              <time title="创建时间：2019-09-19 15:50:00 / 修改时间：23:14:34" itemprop="dateCreated datePublished" datetime="2019-09-19T15:50:00+08:00">2019-09-19</time>
             </span>
           
             
@@ -3633,7 +3633,7 @@ h6 {
       
         <p>以下都是以有符号数为基础。</p>
 <h1 id="原码"><a href="#原码" class="headerlink" title="原码"></a>原码</h1><p>实际上，我们把符号数字化或者符号数值化，就已经给出了一种机器数的表现形式，我们把这种方式称为 <strong>原码表示法</strong>   </p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>一共分为整数和小数</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>一共分为整数和小数</p>
 <ul>
 <li>整数<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/A55788FFDB9A4E7F813C4A89C13CD891/11767.jpg" alt="image">  <ul>
 <li>第一个表达式，n代表数值上的位数，”0，x”的0表示符号位。x 是真值的数值部分</li>
@@ -3669,7 +3669,7 @@ h6 {
             <p>这样就没有问题。但是我们发现，正数加上一个负数等于正数减去一个负数。，要根据符号为判断，很麻烦。但是要怎么把减法统一成加法。<br>这里举个例子，平时我们的时钟如果走快了，本来是八点，走到了十点，那么怎么进行拨回去？</p><ul><li>逆时针拨两个小时 10-2=8</li><li>顺时针拨10个小时 10+10=20<br>可见，-2 可用 +10 代替 减法 -&gt; 加法<br>记作 -2=+10 （mod 12）<br>同理 -4=+8  （mod 12）<br>时钟以12为模  </li></ul>
           </div>
 <p>这里我们就得到结论</p>
-<h3 id="补数"><a href="#补数" class="headerlink" title="补数"></a>补数</h3><p>一个负数加上“模“ 即得该负数的补数<br>一个正数和负数互为补数时，它们绝对值之和为 模 数。</p>
+<h2 id="补数"><a href="#补数" class="headerlink" title="补数"></a>补数</h2><p>一个负数加上“模“ 即得该负数的补数<br>一个正数和负数互为补数时，它们绝对值之和为 模 数。</p>
 <h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><p>我们假设，寄存器是四位，那么就是模16，一但大于16将会舍去。<br>1011 -&gt; 0000 ?</p>
 <ul>
 <li><p>第一种</p>
@@ -3715,9 +3715,9 @@ h6 {
 <div class="note primary">
             <p><strong>移码就是在真值 X 上加上一个常数（偏置值），通常这个常数去 2^n</strong></p>
           </div>
-<h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[x]移=2^n+x</span><br><span class="line">（我这里理解2^n其实可以理解为科学计数法的10^n）</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[x]移=2^n+x</span><br><span class="line">（我这里理解2^n其实可以理解为科学计数法的10^n）</span><br></pre></td></tr></tbody></table></figure>
 
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><div class="note primary">
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><div class="note primary">
             <ul><li>一个真值，它的补码和移码除了符号位不同，其他都相同。只要对补码的符号位取反就可以得到移码。  </li><li>移码保留了数的大小顺序，大的数移码也大，小的数移码也小。  </li></ul>
           </div>
 <p><strong>那移码怎么找回原码</strong><br>++比如移码0111 1110的真值++。<br>减去偏置值1000 0000对应的无符号数真值128得到移码真值 :<br>126-128=-2<br>或者：<br>0111 1110-1000 0000=1111 1110<br>对应真值-2</p>
@@ -3742,7 +3742,7 @@ h6 {
   <p><span>本文标题:</span>原码，反码，补码和移码</p>
   <p><span>文章作者:</span>志者</p>
   <p><span>发布时间:</span>2019年09月19日 - 15:50:00</p>
-  <p><span>最后更新:</span>2019年09月19日 - 23:10:22</p>
+  <p><span>最后更新:</span>2019年09月19日 - 23:14:34</p>
   <p><span>原始链接:</span><a href="/原码，反码，补码.html" title="原码，反码，补码和移码">http://witman1999.github.io/原码，反码，补码.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/原码，反码，补码.html" aria-label="复制成功！"></i></span>
   </p>
@@ -3861,7 +3861,7 @@ h6 {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#原码"><span class="nav-number">1.</span> <span class="nav-text">原码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-number">1.0.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#补码"><span class="nav-number">2.</span> <span class="nav-text">补码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#补数"><span class="nav-number">2.0.1.</span> <span class="nav-text">补数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#举例"><span class="nav-number">2.1.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-1"><span class="nav-number">2.2.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反码"><span class="nav-number">3.</span> <span class="nav-text">反码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原补反的相互转换"><span class="nav-number">4.</span> <span class="nav-text">原补反的相互转换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#移码"><span class="nav-number">5.</span> <span class="nav-text">移码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义-2"><span class="nav-number">5.0.0.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">5.0.0.2.</span> <span class="nav-text">总结</span></a></li></ol></li></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#原码"><span class="nav-number">1.</span> <span class="nav-text">原码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#补码"><span class="nav-number">2.</span> <span class="nav-text">补码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#补数"><span class="nav-number">2.1.</span> <span class="nav-text">补数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#举例"><span class="nav-number">2.2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-1"><span class="nav-number">2.3.</span> <span class="nav-text">定义</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反码"><span class="nav-number">3.</span> <span class="nav-text">反码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原补反的相互转换"><span class="nav-number">4.</span> <span class="nav-text">原补反的相互转换</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#移码"><span class="nav-number">5.</span> <span class="nav-text">移码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义-2"><span class="nav-number">5.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">5.2.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
