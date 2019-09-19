@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[原码，反码，补码和移码]]></title>
+    <url>%2F%E5%8E%9F%E7%A0%81%EF%BC%8C%E5%8F%8D%E7%A0%81%EF%BC%8C%E8%A1%A5%E7%A0%81.html</url>
+    <content type="text"><![CDATA[以下都是以有符号数为基础。 原码实际上，我们把符号数字化或者符号数值化，就已经给出了一种机器数的表现形式，我们把这种方式称为 原码表示法 定义一共分为整数和小数 整数 第一个表达式，n代表数值上的位数，”0，x”的0表示符号位。x 是真值的数值部分 例子 小数 例子 无论是整数的的逗号或者小数点，在计算机中是不需要存储的，这里只是我们为了阅读和理解写的整个表示起来，也就是，如果是整数，也就是加一个符号位，和一个逗号，如果是小数，也就是加一个符号为和一个小数点（将原来小数点的左边的那位变成符号位）。 补码 用于减法的操作 123456//实际上，计算机的加法操作和平时的加法操作一样，只是缝二进一 无符号数 有符号数 00001110 14 14+ 10001110 142 -14________________ 10011100 156 0 这里我们发现，答案是不同的，在有符号数的清空下，但是如果我们这里要是可以这样，把14+（-14）变成14-14 1234 00001110- 00001110__________________ 0 这样就没有问题。但是我们发现，正数加上一个负数等于正数减去一个负数。，要根据符号为判断，很麻烦。但是要怎么把减法统一成加法。这里举个例子，平时我们的时钟如果走快了，本来是八点，走到了十点，那么怎么进行拨回去？逆时针拨两个小时 10-2=8顺时针拨10个小时 10+10=20可见，-2 可用 +10 代替 减法 -&gt; 加法记作 -2=+10 （mod 12）同理 -4=+8 （mod 12）时钟以12为模 这里我们就得到结论 补数一个负数加上“模“ 即得该负数的补数一个正数和负数互为补数时，它们绝对值之和为 模 数。 举例我们假设，寄存器是四位，那么就是模16，一但大于16将会舍去。1011 -&gt; 0000 ? 第一种 1234 1011- 1011______________ 0000 第二种 1234 0101+ 1011______________ 10000 这个时候多出来的 1 ，将会被舍掉，利用时钟的思想，这样的话，寄存器还是存在 0000。减掉1011和加上0101是等价的，互为补数。这样的减法操作可以用加法替代。记作 -1011 = +0101 （mod2^4） 这里就提出了补码的概念对于正数，补码与原码的表示相同。对于负数，原码符号位不变，数值部分按位取反，末位加1 （取反加1），此规则也同样适用于由补码求原码。 定义 纯整数的补码 例子： 小数的补码 例子 反码 作为原码和补码的过渡 对于正数，反码与原码的表示相同。对于负数，原码符号位不变，数值部分按位取反 ，此规则也同样适用于由反码求原码。表示范围和原码一样 原补反的相互转换 最高位为符号位，书写用”，“（整数）或”.“（小数）将数值部分和符号位隔开。 对于正数，原码=补码=反码 对于负数，符号位为 1，其数值部分 原码除符号位外每位都取反末位加 1 -&gt; 补码。 原码除符号位外每位都取反 -&gt; 反码 移码 易于比较大小我们的补码是很难表示真值大小，如以下例子： 12345十进制 二进制 补码+21 +10101 0，10101-21 -10101 1，01011+31 +11111 0，11111-31 -11111 1，00001 如果我们直接比较的话，我们看看-21和-31都比+21和+31来得大。直接看数值的话。这个时候我们加上 2^5 次方，如果有进位的话，将舍去进位的，这里涉及到溢出问题。 1234+10101+100000 = 110101-10101+100000 = 001011+11111+100000 = 111111-11111+100000 = 000001 很明显，上面的就比下面的大了。这里就给出了移码的概念。 移码就是在真值 X 上加上一个常数（偏置值），通常这个常数去 2^n 定义12[x]移=2^n+x（我这里理解2^n其实可以理解为科学计数法的10^n） 总结 一个真值，它的补码和移码除了符号位不同，其他都相同。只要对补码的符号位取反就可以得到移码。 移码保留了数的大小顺序，大的数移码也大，小的数移码也小。 那移码怎么找回原码++比如移码0111 1110的真值++。减去偏置值1000 0000对应的无符号数真值128得到移码真值 :126-128=-2或者：0111 1110-1000 0000=1111 1110对应真值-2]]></content>
+      <categories>
+        <category>计算机原理</category>
+      </categories>
+      <tags>
+        <tag>基础知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Windows 下Git Bash配置wget]]></title>
     <url>%2FWindows%20%E4%B8%8BGit%20Bash%E6%B7%BB%E5%8A%A0wget.html</url>
     <content type="text"><![CDATA[Git Bash 作为一个管理工具，在windows上可以替代cmd,但是也会缺少一些工具。 安装 wget 下载wget的二进制安装包，点击地址 解压安装包，将 wget.exe 移动到 C:\Program Files\Git\mingw64\bin （这里其实也可以将 wget.exe路径添加到环境变量中） 这里的放的路径指的是Git Bash安装路径，上面的只是示例，依照个人的安装路径为准。]]></content>
@@ -156,17 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[原码，反码，补码]]></title>
-    <url>%2F%E5%8E%9F%E7%A0%81%EF%BC%8C%E5%8F%8D%E7%A0%81%EF%BC%8C%E8%A1%A5%E7%A0%81.html</url>
-    <content type="text"><![CDATA[原码 最简单的机器数表示法，最高位表示符号位，“ 1 ”表示符号，“0”表示正号。其他位存放该数的二进制的绝对值 若以带符号位的四位二进制数为例子 123451010 ： 最高位为‘1’,表示这是一个负数，其他三位为‘010’， 即（0*2^2）+（1*2^1）+（0*2^0）=2（‘^’表示幂运算符） 所以1010表示十进制数（-2）。 补码用于解决减法运算因为原码的最大问题在于一个数加上他的相反数不等于0，所以，既然一个负数是一个整数的相反数，那我们把那个负数转化为正数，按位取反，来表示这个负数 正数的反码还是等于原码负数的反码就是他的原码除符号位外，按位取反 1234563是正数，反码与原码相同，则可以表示为0011-3的原码是1011，符号位保持不变，低三位（011）按位取反得（100）所以-3的反码为1100 补码用于解决符号问题 正数的补码等于他的原码负数的补码等于反码+1 我们再次强调原码，反码，补码的引入是为了解决做减法的问题。在原码，反码表示法中，我们把减法化为加法的思维是减去一个数，等于加上一个数的相反数，结果发现引入了符号位，却因为符号位造成了各种意向不到的问题。]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>基础知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[字符串和数字转换]]></title>
     <url>%2F%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E6%95%B0%E5%AD%97%E8%BD%AC%E6%8D%A2.html</url>
     <content type="text"><![CDATA[12345678910111213public class Test &#123; public static void main(String[] args) &#123; String str = "123"; Integer num1 = new Integer(str); int num2 = Integer.parseInt(str); Integer num3 = Integer.valueOf(str); System.out.println(num1 + "\t" + num2 + "\t" + num3);//123 123 123 &#125;&#125; 在上面代码中，演示了三个方式的转化，分别是new了新对象和调用静态方法，我们查看内部的变化 Interger 类的构造函数123public Integer(String s) throws NumberFormatException &#123; this.value = parseInt(s, 10); &#125; 从代码中看的，构造函数时调用了一个parseInt(s,10)的内部函数 parseInt(s)123public static int parseInt(String s) throws NumberFormatException &#123; return parseInt(s,10); &#125; 从代码中看到也是调用了一个parseInt(s,10)的内部函数 Integer.valueOf(s)123public static Integer valueOf(String s) throws NumberFormatException &#123; return Integer.valueOf(parseInt(s, 10)); &#125; 从代码中看到也是调用了一个&ensp;parseInt(s,10)&ensp;的内部函数我们可以看出其实都调用了&ensp;parseInt(String s,int radix);&ensp;让我们看看他内部实现 parseInt(String s,int radix)1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950public static int parseInt(String s, int radix) throws NumberFormatException &#123; /* * WARNING: This method may be invoked early during VM initialization * before IntegerCache is initialized. Care must be taken to not use * the valueOf method. */ if (s == null) &#123; throw new NumberFormatException("null"); &#125; if (radix &lt; Character.MIN_RADIX) &#123; throw new NumberFormatException("radix " + radix + " less than Character.MIN_RADIX"); &#125; if (radix &gt; Character.MAX_RADIX) &#123; throw new NumberFormatException("radix " + radix + " greater than Character.MAX_RADIX"); &#125; int result = 0; boolean negative = false; int i = 0, len = s.length(); int limit = -Integer.MAX_VALUE; int multmin; int digit; if (len &gt; 0) &#123; char firstChar = s.charAt(0); if (firstChar &lt; '0') &#123; // Possible leading "+" or "-" if (firstChar == '-') &#123; negative = true; limit = Integer.MIN_VALUE; &#125; else if (firstChar != '+') throw NumberFormatException.forInputString(s); if (len == 1) // Cannot have lone "+" or "-" throw NumberFormatException.forInputString(s); i++; &#125; ...... ...... ...... &#125; else &#123; throw NumberFormatException.forInputString(s); &#125; return negative ? result : -result; &#125; 从代码中看出，==字符串不能为空值以及字符串得为数字==，不然会报异常（&ensp;NumberFormatException&ensp;）]]></content>
@@ -200,6 +200,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[类]]></title>
+    <url>%2F%E7%B1%BB.html</url>
+    <content type="text"><![CDATA[类的组成当类的成员没有初始化的时候，都会给默认变量定义类的例子 1234567//访问限定词 关键词 类名public class ClassName&#123; //属性（变量，字段） //方法 &#125; 一 变量格式：修饰符+变量名(定义并初始化值)，如果是final 关键字修饰，则该变量是一个常量，常量不可以重新赋值 二 方法格式：修饰符+返回值+方法名(参数){执行体|方法体} 三 修饰词 3.1 public简称公共的，被修饰的类，属性以及方法不仅可以被跨类访问，而且也许跨包访问 3.2 private简称私有的，被修饰的类，属性以及方法只能被该类的对象访问（同类不同对象可以访问其私有变量），其子类不能访问，更不能跨包访问。 3.3 protect介于 public 和 private 之间的一种访问修饰符，被其修饰的类，属性以及方法只能被本身的方法以及子类访问，即使子类在不同的包中也可以访问，并且本包下的其他类也可以访问 3.4 default只能在本包下被访问，无论是类，接口等。 构造函数格式：修饰符+类名（）{} 注意：没有返回值，也不能用static静态修饰。如果一个我们没有给他定义构造函数时系统会为其创建一个无参的构造函数。 作用：通过该构造函数来创建这个类的实例对象。初始化这个类的信息。也可以通过构造函数传参。 修饰词public代码块静态代码块12345public class test&#123; static&#123; System.out.println("静态代码块"); &#125;&#125; 执行时机静态代码块在类被加载的时候就运行了，而且只能被运行一次，并且优先于各种代码块以及构造函数，如果有多个静态代码块，会按照书写顺序依次执行。 作用一个项目启动需要加载的很多配置文件等资源，我们就可以都放入静态代码块中。 注意 静态代码不能存在任何方法体中 静态代码块不能访问普通变量构造代码块少了 static 关键字12345public class test&#123; &#123; System.out.println("构造代码块"); &#125;&#125; 执行时机构造代码块在创建对象时被调用，每次创建对象都会调用一次，但是优先于构造函数执行。需要注意的是，听名字我们就知道，构造代码块不是优先于构造函数执行，而是依托于构造函数，也就是说，如果你不实例化对象，构造代码块是不会执行的。怎么理解呢？我们看看下面这段代码： 12345678public class test&#123; &#123; System.out.println(&quot;构造代码块&quot;); &#125; public test()&#123; System.out.println(&quot;无参构造函数&quot;); &#125;&#125; 反编译生成的 class 文件 123456public class test&#123; public test()&#123; System.out.println("构造代码块"); System.out.println("无参构造函数"); &#125;&#125; 如果是多个构造代码块，则执行顺序按照书写顺序依次进行。 普通代码块普通代码块和构造代码块的区别是，构造代码块是在类中定义的，而普通代码块是在方法体中定义的。且普通代码块的执行顺序和书写顺序一致。 123public void sayHello()&#123; System.out.println("普通代码块");&#125; 执行顺序静态代码块&gt;构造代码块&gt;构造函数&gt;普通代码块类的生成对象内存分布图]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>名词</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[集合]]></title>
     <url>%2F%E9%9B%86%E5%90%88.html</url>
     <content type="text"><![CDATA[简介大致分为四种 Set : 代表无需，不可重复的集合。 List： 代表有序，重复的集合 Map： 代表具有映射关系的集合 Queue： 代表队列集合实现 和数组的区别 数组长度必须得初始化长度，长度是要提前知道。容易固定无法动态改变。但是集合可以保存数量不确定的数据。同时还能保存映射关系数据（键值对 key-value） 数组的元素可以对象或者基本类型，而集合只能是对象（保存对象的引用而非本身） 集合有着封装，继承，多态的特性，通过方法和属性实现复杂操作。 图例MAP 类图例Map由key和value两个值组成。里面的key是不可重复的，key用户标识集合里的每项数据。接口Collection 接口 集合框架的根接口（Collection 继承了Iterable）其中包含的增删改查等多个方法操作，其中还有 lterator 来遍历集合元素。 lterator 迭代器 主要用法是为了遍历集合，其中有两个主要方法 12boolean hasNext();//如果有元素可以迭代，则返回truenext();//返回迭代的下一个元素 以下例子怎么迭代 123456789101112131415161718public class Demo &#123; public static void main(String[] args)&#123; //创建集合，添加元素 Collection&lt;String&gt; temp = new ArrayList&lt;String&gt;(); for(int i =0;i&lt;10;i++)&#123; temp.add(String.valueof(i)); &#125; //获取days集合的迭代器 Iterator&lt;String&gt; iterator = temp.iterator(); while(iterator.hasNext())&#123;//判断是否有下一个元素 String next = iterator.next();//取出该元素 //逐个遍历，取得元素后进行后续操作 ..... &#125; &#125;&#125; 注意：修改迭代变量的值是不会修改集合本身的元素。因为 lterator 并不是把集合元素传给迭代变量，只是传来值，如同参数传递。 set集合Set 就是 Collection ,没有添加新的方法，只是 Set 不也许添加重复元素，不同的行为。 List 集合元素有序，可重复的集合。集合中每个元素都有其对应的顺序索引。List集合允许使用重复元素，可以通过索引来访问指定位置的集合元素 。List集合默认按元素的添加顺序设置元素的索引，例如第一个添加的元素索引为0，第二个添加的元素索引为1……List作为Collection接口的子接口，可以使用Collection接口里的全部方法。而且由于List是有序集合，因此List集合里增加了一些根据索引来操作集合元素的方法。 Map 集合Map用户保存具有映射关系的数据，因此Map集合里保存着两组数，一组值用户保存Map里的key,另一组值用户保存Map里的value，key和value都可以是任何引用类型的数据。Map的key不允许重复，value可以重复。 Queue 集合Queue用户模拟队列这种数据结构，队列通常是指“先进先出”(FIFO，first-in-first-out)的容器。队列的头部是在队列中存放时间最长的元素，队列的尾部是保存在队列中存放时间最短的元素。新元素插入（offer）到队列的尾部，访问元素（poll）操作会返回队列头部的元素。通常，队列不允许随机访问队列中的元素。]]></content>
@@ -219,17 +230,6 @@
       </categories>
       <tags>
         <tag>基础知识</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[类]]></title>
-    <url>%2F%E7%B1%BB.html</url>
-    <content type="text"><![CDATA[类的组成当类的成员没有初始化的时候，都会给默认变量定义类的例子 1234567//访问限定词 关键词 类名public class ClassName&#123; //属性（变量，字段） //方法 &#125; 一 变量格式：修饰符+变量名(定义并初始化值)，如果是final 关键字修饰，则该变量是一个常量，常量不可以重新赋值 二 方法格式：修饰符+返回值+方法名(参数){执行体|方法体} 三 修饰词 3.1 public简称公共的，被修饰的类，属性以及方法不仅可以被跨类访问，而且也许跨包访问 3.2 private简称私有的，被修饰的类，属性以及方法只能被该类的对象访问（同类不同对象可以访问其私有变量），其子类不能访问，更不能跨包访问。 3.3 protect介于 public 和 private 之间的一种访问修饰符，被其修饰的类，属性以及方法只能被本身的方法以及子类访问，即使子类在不同的包中也可以访问，并且本包下的其他类也可以访问 3.4 default只能在本包下被访问，无论是类，接口等。 构造函数格式：修饰符+类名（）{} 注意：没有返回值，也不能用static静态修饰。如果一个我们没有给他定义构造函数时系统会为其创建一个无参的构造函数。 作用：通过该构造函数来创建这个类的实例对象。初始化这个类的信息。也可以通过构造函数传参。 修饰词public代码块静态代码块12345public class test&#123; static&#123; System.out.println("静态代码块"); &#125;&#125; 执行时机静态代码块在类被加载的时候就运行了，而且只能被运行一次，并且优先于各种代码块以及构造函数，如果有多个静态代码块，会按照书写顺序依次执行。 作用一个项目启动需要加载的很多配置文件等资源，我们就可以都放入静态代码块中。 注意 静态代码不能存在任何方法体中 静态代码块不能访问普通变量构造代码块少了 static 关键字12345public class test&#123; &#123; System.out.println("构造代码块"); &#125;&#125; 执行时机构造代码块在创建对象时被调用，每次创建对象都会调用一次，但是优先于构造函数执行。需要注意的是，听名字我们就知道，构造代码块不是优先于构造函数执行，而是依托于构造函数，也就是说，如果你不实例化对象，构造代码块是不会执行的。怎么理解呢？我们看看下面这段代码： 12345678public class test&#123; &#123; System.out.println(&quot;构造代码块&quot;); &#125; public test()&#123; System.out.println(&quot;无参构造函数&quot;); &#125;&#125; 反编译生成的 class 文件 123456public class test&#123; public test()&#123; System.out.println("构造代码块"); System.out.println("无参构造函数"); &#125;&#125; 如果是多个构造代码块，则执行顺序按照书写顺序依次进行。 普通代码块普通代码块和构造代码块的区别是，构造代码块是在类中定义的，而普通代码块是在方法体中定义的。且普通代码块的执行顺序和书写顺序一致。 123public void sayHello()&#123; System.out.println("普通代码块");&#125; 执行顺序静态代码块&gt;构造代码块&gt;构造函数&gt;普通代码块类的生成对象内存分布图]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>名词</tag>
       </tags>
   </entry>
   <entry>
