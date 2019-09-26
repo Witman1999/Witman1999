@@ -1899,7 +1899,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #d520ff;
+  background: #c1f7fb;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3539,7 +3539,7 @@ h6 {
   
   
   <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/类.html">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/线程.html">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="志者">
@@ -3553,7 +3553,7 @@ h6 {
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/类.html" class="post-title-link" itemprop="url">类</a>
+            <a href="/线程.html" class="post-title-link" itemprop="url">线程</a>
           
         </h1>
 
@@ -3568,7 +3568,159 @@ h6 {
                 
               
 
-              <time title="创建时间：2019-08-16 15:46:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:46:00+08:00">2019-08-16</time>
+              <time title="创建时间：2019-08-16 15:48:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:48:00+08:00">2019-08-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-28 17:33:45" itemprop="dateModified" datetime="2019-08-28T17:33:45+08:00">2019-08-28</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>3.5k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>6 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h1><h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><p>是<font color="red">程序运行的基本单位，一个程序就是代表一个进程，进程与进程之间是相互独立的</font>，它们是由 CPU 进行调度的（分配内存空间） ，由于它们是<font color="red">相互独立所以各自的资源不共享</font>。一台电脑中可以运行多个程序，并且执行效率快，所以它是高效而且并发性的。在一个时间段中，可以执行多个进程（程序），一个进程是非常占内存空间的，对 CPU 的开销也是非常大的。</p>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2><p>是<font color="red">程序流中最小的执行单位，一个程序中至少存在一个线程，线程占空间内存是非常少的，一个进程中多个线程资源是可以共享的</font>。线程消耗的内存少执行效率高，同一时间段中可以执行多个线程，线程具有并发性的特点。（线程调度：（分时间）轮询调度和抢占式调度），资源共享；注意的是资源是否会丢失（安全）。</p>
+<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><ol>
+<li><p>一个程序至少有一个进程，一个进程至少有一个线程</p>
+</li>
+<li><p>线程的划分尺度小于进程，使得多线程程序的并发性高。</p>
+</li>
+<li><p>进程有独立的内存单元，而多个线程共享内存</p>
+</li>
+<li><p>线程必须依靠存在于应用程序中</p>
+</li>
+<li><p>多线程实在程序中多个部分同时执行，但是系统并没有把多个线程当场多个独立的应用，来实现进程的调度和管理资源分配。</p>
+</li>
+<li><p>线程开销小，不利于资源的管理和保护，进程正好相反。</p>
+</li>
+<li><p>线程数据共享</p></li></ol>
+		  
+		     
+        
+          
+		  
+		  
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/线程.html#more" rel="contents">
+                阅读全文 »
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/位运算.html">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/位运算.html" class="post-title-link" itemprop="url">位运算</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-16 15:47:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:47:00+08:00">2019-08-16</time>
             </span>
           
             
@@ -3629,8 +3781,13 @@ h6 {
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="类的组成"><a href="#类的组成" class="headerlink" title="类的组成"></a>类的组成</h1><p>当类的成员没有初始化的时候，都会给默认变量<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/11CD163F28A24A89ADAD01878D442E41/7390.jpg" alt="image"><br>定义类的例子</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问限定词   关键词    类名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassName</span></span>{</span><br><span class="line">    <span class="comment">//属性（变量，字段）</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+          <blockquote>
+<p>取出两个数的补码进行运算，在对补码（解决符号问题）进行位运算，然后反推原码就是结果  </p>
+</blockquote>
+<p>为什么</p>
+<blockquote>
+<p>因为负数在运算时，需要转换正数的反码，然后由于符号位的问题，我们知道类似于时钟，10点到八点可以（-2）或者（+10），它们总和为12，同余，每十二进一位，同理，对于负数反码的符号位问题，可以加1进位，解决符号问题（-2的理论对应的是14，就是1110，而1110去掉符号位就是-2的补码，所以要反码加1，用补码进行运算解决符号问题）</p>
+</blockquote>
 		  
 		     
         
@@ -3640,7 +3797,7 @@ h6 {
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/类.html#more" rel="contents">
+              <a class="btn" href="/位运算.html#more" rel="contents">
                 阅读全文 »
               </a>
             </div>
@@ -3800,6 +3957,144 @@ h6 {
           
             <div class="post-button text-center">
               <a class="btn" href="/集合.html#more" rel="contents">
+                阅读全文 »
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+	<div>
+     
+   </div>
+
+	<div>
+      
+    </div>
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        <article itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block home">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/类.html">
+
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
+
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/类.html" class="post-title-link" itemprop="url">类</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-16 15:46:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:46:00+08:00">2019-08-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-08-28 17:33:45" itemprop="dateModified" datetime="2019-08-28T17:33:45+08:00">2019-08-28</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>1.6k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>3 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="类的组成"><a href="#类的组成" class="headerlink" title="类的组成"></a>类的组成</h1><p>当类的成员没有初始化的时候，都会给默认变量<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/11CD163F28A24A89ADAD01878D442E41/7390.jpg" alt="image"><br>定义类的例子</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//访问限定词   关键词    类名</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassName</span></span>{</span><br><span class="line">    <span class="comment">//属性（变量，字段）</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">//方法</span></span><br><span class="line">    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+		  
+		     
+        
+          
+		  
+		  
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/类.html#more" rel="contents">
                 阅读全文 »
               </a>
             </div>
@@ -4636,292 +4931,6 @@ h6 {
   </article>
 
     
-        <article itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/Map集合.html">
-
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="志者">
-      <meta itemprop="description" content="I was born to break these chains">
-      <meta itemprop="image" content="/images/avatar3.jpeg">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小碗宽面">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/Map集合.html" class="post-title-link" itemprop="url">Map集合</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-16 15:42:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:42:00+08:00">2019-08-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-28 17:33:45" itemprop="dateModified" datetime="2019-08-28T17:33:45+08:00">2019-08-28</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>5.2k</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              
-              <span>9 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><blockquote>
-<p>对比 Collection 中的集合，Map 集合中的元素是成对存在，每个元素由键与值两部分组成，通过键找到所对应的值。    </p>
-</blockquote>
-<p>注意的是：<font color="red">Map 集合中不能包含重复的键，值可以重复；每个键对应一个值。</font></p>
-<h1 id="常用集合"><a href="#常用集合" class="headerlink" title="常用集合"></a>常用集合</h1><blockquote>
-<p>Map 中常用的集合为 HashMap 集合，LinkedHashMap 集合。</p>
-</blockquote>
-		  
-		     
-        
-          
-		  
-		  
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Map集合.html#more" rel="contents">
-                阅读全文 »
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-	<div>
-     
-   </div>
-
-	<div>
-      
-    </div>
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        <article itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/List集合.html">
-
-    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="志者">
-      <meta itemprop="description" content="I was born to break these chains">
-      <meta itemprop="image" content="/images/avatar3.jpeg">
-    </span>
-
-    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小碗宽面">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/List集合.html" class="post-title-link" itemprop="url">List集合</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-16 15:38:00" itemprop="dateCreated datePublished" datetime="2019-08-16T15:38:00+08:00">2019-08-16</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-08-28 17:33:45" itemprop="dateModified" datetime="2019-08-28T17:33:45+08:00">2019-08-28</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span>1k</span>
-            </span>
-          
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 ≈</span>
-              
-              <span>2 分钟</span>
-            </span>
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p>有序集合，可以存放重复的元素；</p>
-</blockquote>
-<h1 id="实现类"><a href="#实现类" class="headerlink" title="实现类"></a>实现类</h1><h2 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h2><blockquote>
-<p>数组实现，查询块，增删慢，轻量级。（线程不安全）  </p>
-</blockquote>
-<p>底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。</p>
-		  
-		     
-        
-          
-		  
-		  
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/List集合.html#more" rel="contents">
-                阅读全文 »
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-	<div>
-     
-   </div>
-
-	<div>
-      
-    </div>
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </div>
 
   
@@ -4975,7 +4984,7 @@ h6 {
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -5002,7 +5011,9 @@ h6 {
         
           
         
-        <span class="site-state-item-count">6</span>
+          
+        
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -5047,7 +5058,9 @@ h6 {
         
           
         
-        <span class="site-state-item-count">15</span>
+          
+        
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -5123,12 +5136,12 @@ h6 {
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">70k</span>
+    <span title="站点总字数">72k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:06</span>
+    <span title="站点阅读时长">2:11</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
   <span class="post-meta-divider">|</span>
