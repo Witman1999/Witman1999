@@ -202,7 +202,7 @@
   <entry>
     <title><![CDATA[搭建博客（hexo）]]></title>
     <url>%2F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%88hexo%EF%BC%89.html</url>
-    <content type="text"><![CDATA[一. 下载 nodejs点击 node.js 官网，就可以进行下载，例如下图： 安装之后，打开终端(win+R)，输入 cmd,之后在终端输入： 12node -vnpm -v 结果如图： 二 安装 hexo终端输入1npm install -g hexo-cli 验证在终端输入 1hexo -v 结果如图： 三 搭建 建立一个空文件夹，名字任意（我的为 myblog） 以后出错直接将该文件夹删掉重来就行 终端进入 myblog 文件夹 初始化博客，终端输入 hexo init 启动博客查看 hexo server(按 ctrl+c 停止服务) 浏览器输入 localhost::4000 新建文章 hexo new post “我的第一篇文章” 生成 hexo clean（清空） hexo g（配置） hexo s（开启服务）四. 部署到 GitHub 创建个人账户 在 GitHub 创建仓库 注意：用户部署个人博客的 GitHub 仓库的命名必须和 GitHub 用户名（昵称）一样 装 git 插件 终端输入： npm install -save hexo-deployer-git 修改 myblog 文件夹下的 config.yml（站点配置文件） 拉到底部看到 deploy 改成12345deploy: type: git repo: https://github.com/yourname/yourname.github.io.git branch: master# 其中yourname是你 GitHub 用户名（记住，仓库名必须和 GitHub 用户名一样） 部署远端 终端输入：hexo d五 更换主题以 nextT 主题为例子 下载的主题文件放到 myblog/themes/ 在 myblog 文件夹下，修改 config.yml（站点配置文件）找到如下代码 1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: landscape 改成 1theme: next 参考博客 Github+Hexo+NextT搭建个人博客 Hexo框架+NextT主题搭建博客教程(部署到coding net) hexo史上最全搭建教程]]></content>
+    <content type="text"><![CDATA[一. 下载 nodejs点击 node.js 官网，就可以进行下载，例如： 安装之后，打开终端(win+R)，输入 cmd,之后在终端输入： 12node -vnpm -v 结果如图： 二 安装 hexo终端输入1npm install -g hexo-cli 验证在终端输入 1hexo -v 结果如图： 三 搭建 建立一个空文件夹，名字任意（我的为 myblog） 以后出错直接将该文件夹删掉重来就行 终端进入 myblog 文件夹 初始化博客，终端输入 hexo init 启动博客查看 hexo server(按 ctrl+c 停止服务) 浏览器输入 localhost::4000 新建文章 hexo new post “我的第一篇文章” 生成 hexo clean（清空） hexo g（配置） hexo s（开启服务）四. 部署到 GitHub 创建个人账户 在 GitHub 创建仓库 注意：用户部署个人博客的 GitHub 仓库的命名必须和 GitHub 用户名（昵称）一样 装 git 插件 终端输入： npm install -save hexo-deployer-git 修改 myblog 文件夹下的 config.yml（站点配置文件） 拉到底部看到 deploy 改成12345deploy: type: git repo: https://github.com/yourname/yourname.github.io.git branch: master# 其中yourname是你 GitHub 用户名（记住，仓库名必须和 GitHub 用户名一样） 部署远端 终端输入：hexo d五 更换主题以 nextT 主题为例子 下载的主题文件放到 myblog/themes/ 在 myblog 文件夹下，修改 config.yml（站点配置文件）找到如下代码 1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: landscape 改成 1theme: next 参考博客 Github+Hexo+NextT搭建个人博客 Hexo框架+NextT主题搭建博客教程(部署到coding net) hexo史上最全搭建教程]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -244,6 +244,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[类]]></title>
+    <url>%2F%E7%B1%BB.html</url>
+    <content type="text"><![CDATA[类的组成当类的成员没有初始化的时候，都会给默认变量定义类的例子 1234567//访问限定词 关键词 类名public class ClassName&#123; //属性（变量，字段） //方法 &#125; 一 变量格式：修饰符+变量名(定义并初始化值)，如果是final 关键字修饰，则该变量是一个常量，常量不可以重新赋值 二 方法格式：修饰符+返回值+方法名(参数){执行体|方法体} 三 修饰词 3.1 public简称公共的，被修饰的类，属性以及方法不仅可以被跨类访问，而且也许跨包访问 3.2 private简称私有的，被修饰的类，属性以及方法只能被该类的对象访问（同类不同对象可以访问其私有变量），其子类不能访问，更不能跨包访问。 3.3 protect介于 public 和 private 之间的一种访问修饰符，被其修饰的类，属性以及方法只能被本身的方法以及子类访问，即使子类在不同的包中也可以访问，并且本包下的其他类也可以访问 3.4 default只能在本包下被访问，无论是类，接口等。 构造函数格式：修饰符+类名（）{} 注意：没有返回值，也不能用static静态修饰。如果一个我们没有给他定义构造函数时系统会为其创建一个无参的构造函数。 作用：通过该构造函数来创建这个类的实例对象。初始化这个类的信息。也可以通过构造函数传参。 修饰词public代码块静态代码块12345public class test&#123; static&#123; System.out.println("静态代码块"); &#125;&#125; 执行时机静态代码块在类被加载的时候就运行了，而且只能被运行一次，并且优先于各种代码块以及构造函数，如果有多个静态代码块，会按照书写顺序依次执行。 作用一个项目启动需要加载的很多配置文件等资源，我们就可以都放入静态代码块中。 注意 静态代码不能存在任何方法体中 静态代码块不能访问普通变量构造代码块少了 static 关键字12345public class test&#123; &#123; System.out.println("构造代码块"); &#125;&#125; 执行时机构造代码块在创建对象时被调用，每次创建对象都会调用一次，但是优先于构造函数执行。需要注意的是，听名字我们就知道，构造代码块不是优先于构造函数执行，而是依托于构造函数，也就是说，如果你不实例化对象，构造代码块是不会执行的。怎么理解呢？我们看看下面这段代码： 12345678public class test&#123; &#123; System.out.println(&quot;构造代码块&quot;); &#125; public test()&#123; System.out.println(&quot;无参构造函数&quot;); &#125;&#125; 反编译生成的 class 文件 123456public class test&#123; public test()&#123; System.out.println("构造代码块"); System.out.println("无参构造函数"); &#125;&#125; 如果是多个构造代码块，则执行顺序按照书写顺序依次进行。 普通代码块普通代码块和构造代码块的区别是，构造代码块是在类中定义的，而普通代码块是在方法体中定义的。且普通代码块的执行顺序和书写顺序一致。 123public void sayHello()&#123; System.out.println("普通代码块");&#125; 执行顺序静态代码块&gt;构造代码块&gt;构造函数&gt;普通代码块类的生成对象内存分布图]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>名词</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[编码规范]]></title>
     <url>%2F%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83.html</url>
     <content type="text"><![CDATA[类名首字母要大写，如果类名由几个单词构成，把么把它们拼接在一起（也就是说，不要用下划线来分隔名字），其中每个内部首字母都采用大写 方法，字段（成语变量）以及对象引用名称等，公认的风格与类的风格一样，只是标识符的第一个字母小写]]></content>
@@ -266,14 +277,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[类]]></title>
-    <url>%2F%E7%B1%BB.html</url>
-    <content type="text"><![CDATA[类的组成当类的成员没有初始化的时候，都会给默认变量定义类的例子 1234567//访问限定词 关键词 类名public class ClassName&#123; //属性（变量，字段） //方法 &#125; 一 变量格式：修饰符+变量名(定义并初始化值)，如果是final 关键字修饰，则该变量是一个常量，常量不可以重新赋值 二 方法格式：修饰符+返回值+方法名(参数){执行体|方法体} 三 修饰词 3.1 public简称公共的，被修饰的类，属性以及方法不仅可以被跨类访问，而且也许跨包访问 3.2 private简称私有的，被修饰的类，属性以及方法只能被该类的对象访问（同类不同对象可以访问其私有变量），其子类不能访问，更不能跨包访问。 3.3 protect介于 public 和 private 之间的一种访问修饰符，被其修饰的类，属性以及方法只能被本身的方法以及子类访问，即使子类在不同的包中也可以访问，并且本包下的其他类也可以访问 3.4 default只能在本包下被访问，无论是类，接口等。 构造函数格式：修饰符+类名（）{} 注意：没有返回值，也不能用static静态修饰。如果一个我们没有给他定义构造函数时系统会为其创建一个无参的构造函数。 作用：通过该构造函数来创建这个类的实例对象。初始化这个类的信息。也可以通过构造函数传参。 修饰词public代码块静态代码块12345public class test&#123; static&#123; System.out.println("静态代码块"); &#125;&#125; 执行时机静态代码块在类被加载的时候就运行了，而且只能被运行一次，并且优先于各种代码块以及构造函数，如果有多个静态代码块，会按照书写顺序依次执行。 作用一个项目启动需要加载的很多配置文件等资源，我们就可以都放入静态代码块中。 注意 静态代码不能存在任何方法体中 静态代码块不能访问普通变量构造代码块少了 static 关键字12345public class test&#123; &#123; System.out.println("构造代码块"); &#125;&#125; 执行时机构造代码块在创建对象时被调用，每次创建对象都会调用一次，但是优先于构造函数执行。需要注意的是，听名字我们就知道，构造代码块不是优先于构造函数执行，而是依托于构造函数，也就是说，如果你不实例化对象，构造代码块是不会执行的。怎么理解呢？我们看看下面这段代码： 12345678public class test&#123; &#123; System.out.println(&quot;构造代码块&quot;); &#125; public test()&#123; System.out.println(&quot;无参构造函数&quot;); &#125;&#125; 反编译生成的 class 文件 123456public class test&#123; public test()&#123; System.out.println("构造代码块"); System.out.println("无参构造函数"); &#125;&#125; 如果是多个构造代码块，则执行顺序按照书写顺序依次进行。 普通代码块普通代码块和构造代码块的区别是，构造代码块是在类中定义的，而普通代码块是在方法体中定义的。且普通代码块的执行顺序和书写顺序一致。 123public void sayHello()&#123; System.out.println("普通代码块");&#125; 执行顺序静态代码块&gt;构造代码块&gt;构造函数&gt;普通代码块类的生成对象内存分布图]]></content>
+    <title><![CDATA[关键字 surper 和 final]]></title>
+    <url>%2F%E5%85%B3%E9%94%AE%E5%AD%97%20surper%20%E5%92%8C%20final.html</url>
+    <content type="text"><![CDATA[surper 指向当前对象的父（超）类对象的一个指针，这个超类指的是离自己最近的一个父类 用法引用成员变量当子类的成员变量与父类同名使用 super.xxx。 来引用父类的成员。 引用成员方法当子类的成员方法与父类同名，可以用 super 来区分。写法也是 super.xxx(参数)。 引用构造函数super(参数)，调用父类的某个构造函数，并且要成为使用这个关键字的构造方法（只能在构造方法中使用，并且不能与this 同时使用）的第一条语句。 this 和 super 接近，它是表示自身的一个对象，代表对象本身（调用者），可以理解为：指向对象本身的指针。 用法引用成员变量和 super 类似，当方法参数和类中的成员变量同名，可以使用 this 来区别变量，用法 this.xxx; 引用成员方法用法 this.xxx(参数) 引用构造函数用法 this(参数)，并且要放在首行; 注意 super()和this()均需放在构造方法内第一行。 尽管可以用this调用一个构造器，但却不能调用两个。 this和super不能同时出现在一个构造函数里面，因为this必然会调用其它的构造函数，其它的构造函数必然也会有super语句的存在，所以在同一个构造函数里面有相同的语句，编译器也不会通过. this()和super()都指的是对象，所以，均不可以在static环境中使用。包括：static变量,static方法，static语句块。 super()和this()类似,区别是，super()从子类中调用父类的构造方法，this()在同一类内调用其它方法。 super 正常会在子类中的构造函数 隐晦调用 从本质上讲，this是一个指向本对象的指针, 然而super是一个Java关键字。 super 指父类，this 指子类]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
-        <tag>名词</tag>
+        <tag>关键字</tag>
       </tags>
   </entry>
   <entry>
@@ -288,14 +299,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关键字 surper 和 final]]></title>
-    <url>%2F%E5%85%B3%E9%94%AE%E5%AD%97%20surper%20%E5%92%8C%20final.html</url>
-    <content type="text"><![CDATA[surper 指向当前对象的父（超）类对象的一个指针，这个超类指的是离自己最近的一个父类 用法引用成员变量当子类的成员变量与父类同名使用 super.xxx。 来引用父类的成员。 引用成员方法当子类的成员方法与父类同名，可以用 super 来区分。写法也是 super.xxx(参数)。 引用构造函数super(参数)，调用父类的某个构造函数，并且要成为使用这个关键字的构造方法（只能在构造方法中使用，并且不能与this 同时使用）的第一条语句。 this 和 super 接近，它是表示自身的一个对象，代表对象本身（调用者），可以理解为：指向对象本身的指针。 用法引用成员变量和 super 类似，当方法参数和类中的成员变量同名，可以使用 this 来区别变量，用法 this.xxx; 引用成员方法用法 this.xxx(参数) 引用构造函数用法 this(参数)，并且要放在首行; 注意 super()和this()均需放在构造方法内第一行。 尽管可以用this调用一个构造器，但却不能调用两个。 this和super不能同时出现在一个构造函数里面，因为this必然会调用其它的构造函数，其它的构造函数必然也会有super语句的存在，所以在同一个构造函数里面有相同的语句，编译器也不会通过. this()和super()都指的是对象，所以，均不可以在static环境中使用。包括：static变量,static方法，static语句块。 super()和this()类似,区别是，super()从子类中调用父类的构造方法，this()在同一类内调用其它方法。 super 正常会在子类中的构造函数 隐晦调用 从本质上讲，this是一个指向本对象的指针, 然而super是一个Java关键字。 super 指父类，this 指子类]]></content>
+    <title><![CDATA[异常]]></title>
+    <url>%2F%E5%BC%82%E5%B8%B8.html</url>
+    <content type="text"><![CDATA[异常指的程序或者电脑发生不正常的现象所引发程序无法执行和崩溃，例如：文件找不到，网络连接失败等待。 在 java 中，异常都是对象，是 Throwable 的子类，Throwable 的子类都描述着不同的异常和错误。如下图，Java 异常类层次结构图 一 异常的架构体系1.1Throwable（超类）所有异常的祖先，用两个重要的子类：Exception（异常），Error（错误），两者各自也包含了大量的子类。 1.1.1 Error（错误）是程序无法处理的错误，意思是运行程序中较为严重的问题，表示 jvm 出现了问题,大多数与代码编写者的操作无关，例如 virtual machineError ，当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java虚拟机（JVM）一般会选择线程终止 1.1.2 Exception（异常）是程序本身可以处理的异常。Exception 有一重要的子类， RuntimeException。RuntimeException 类及其子类表示“JVM 常用操作”引发的错误。例如，若试图使用空值对象引用、除数为零或数组越界，则分别引发运行时异常。 1.1.3 可查异常 （checked exceptions） 编译器要求必须处置的异常 非运行时异常又叫做编译异常，除了 RuntimeException 及它的子类以外的 Excetion 的子类（都是可查异常），如果不处理是不会编译通过 1.1.4 不可查异常（unchecked exceptions ） 编译器不要求强制处理的异常，包括运行时异常（RuntimeException 以及它的子类 还有错误） 其中运行时异常），程序可以选择捕获处理也可以不处理。因为编译器是不会检查它，没有两种异常处理方式也能通过编译。 二 处理异常机制 一共有两种处理异常机制，分别是抛出异常，捕捉异常 2.1 捕捉异常 关键字 try catch finally 1. try-catch形式 12345678try&#123; //可能会发生的异常代码 //监控区域&#125;catch(Kind1 e)&#123; //捕获并处置try抛出的异常类型kind1&#125;catch(Kind2 e)&#123; //捕获并处置try抛出的异常类型kind2&#125; 当try中（监控区域出现异常）则抛出监控区域之外，Java 会试图寻找匹配的 catch 字句，以捕获异常，若有匹配则执行 catch 中的语句，try-catch 语句结束注意：catch 语句中的异常不一定匹配对应所抛出的异常，可以是对应的异常类，也可以对应的异常类的子类 一旦某个 catch 捕获到匹配的异常类型，就进入异常处理，并且其他的 catch 语句将不会被匹配和捕获异常的机会 对于多个异常，应尽量及将低层的类（子类）捕获的异常类的 catch 语句防止前面，相对高层的异常类放在后面，不然高层的父类放前面可能会屏蔽子类的。 2. finally语句 123456789try&#123; &#125;catch(Kind kind1)&#123; &#125;catch(Kind kind2)&#123; &#125;finally&#123; //无论发生什么异常，都将执行该语句块&#125; 注意：在 finally 语句中使用 return 语句以及抛出新的异常，会导致原有抛出的异常丢失。当 try 块或者 catch 语句块遇到 return 语句时，finally 语句块将在方法返回之前执行，如果 finally 同时也有 return 语句，try 和 catch 语句的 return 将被覆盖。 3. 执行顺序 try 没有捕获异常时： try 语句被逐一执行并且在执行完 try 之后的 catch 忽略， finally 和之后语句继续执行 当try捕获到异常，catch语句块里没有处理此异常的情况： 当try语句块里的某条语句出现异常时，而没有处理此异常的catch语句块时，此异常将会抛给JVM处理，finally语句块里的语句还是会被执行，但finally语句块后的语句不会被执行。 当try捕获到异常，catch语句块里有处理此异常的情况： 当执行某一条语句出现异常时，程序将逐一匹配 catch ，找到与之对应的处理程序，其他的catch语句块将不会被执行，而try语句块中，出现异常之后的语句也不会被执行，catch语句块执行完后，执行finally语句块里的语句，最后执行finally语句块后的语句； 2.2 抛出异常 throws 抛出异常 123public(...) void methodname throws Exception1,Exception2,,,&#123; //.......&#125; 如果一个方法可能会出现异常，但没有能力处理这种异常，可以在方法声明出用 throws 语句来声明抛出的异常。并且也可以在方法体内写 throw 语句 throws 语句用在方法定义时要抛出的类型。Exception 则是所有异常。多个类型用逗号分隔。此时抛出的异常，将交给调用该方法的方法处理。 注意： 如果时不可查异常，即Error，RuntimeException以及子类，那么可以不用 throws 声明要抛出的异常，由系统自动抛出。 如果时可查异常。即比如IOException ,就要么使用 try catch 来捕获，要么使用 throws 字句声明将他抛出。 仅仅抛出的异常，该方法的调用者必须处理或者重新抛出 覆盖一个方法，不能声明与覆盖方法不同的异常，必须是覆盖方法声明的异常同类或子类。 使用 throw 抛出异常 throw 是在方法体当中，抛出 Throwable 类型异常，程序会在 throw 语句之后立即结束程序 1throw new Exception(); 注意： 抛出的异常只能是 Throwable 类或者子类 如果抛出了检查异常，则还要在方法头部声明方法可能抛出的异常类型。该方法调用者也必须检查处理抛出的异常。 三 Throwable 常用的方法catch关键字后面括号中的Exception类型的参数e。Exception就是try代码块传递给catch代码块的变量类型，e就是变量名。catch代码块中语句”e.getMessage();”用于输出错误性质。通常异常处理常用3个函数来获取异常的有关信息: getCause()： 返回抛出异常的原因。如果 cause 不存在或未知，则返回 null。 getMeage()： 返回异常的消息信息。 printStackTrace()： 对象的堆栈跟踪输出至错误输出流，作为字段 System.err 的值。自定义异常只需要基础 Exception 类即可步骤 创建自定义异常类 在方法中通过 throw 关键字抛出异常对象 如果在当前抛出异常的方法中处理异常，可以使用try-catch语句捕获并处理；否则在方法的声明处通过throws关键字指明要抛出给方法调用者的异常，继续进行下一步操作。 在出现异常方法的调用者中捕获并处理异常。]]></content>
       <categories>
         <category>java</category>
       </categories>
       <tags>
-        <tag>关键字</tag>
+        <tag>Exception</tag>
       </tags>
   </entry>
   <entry>
@@ -307,17 +318,6 @@
       </categories>
       <tags>
         <tag>String</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[异常]]></title>
-    <url>%2F%E5%BC%82%E5%B8%B8.html</url>
-    <content type="text"><![CDATA[异常指的程序或者电脑发生不正常的现象所引发程序无法执行和崩溃，例如：文件找不到，网络连接失败等待。 在 java 中，异常都是对象，是 Throwable 的子类，Throwable 的子类都描述着不同的异常和错误。如下图，Java 异常类层次结构图 一 异常的架构体系1.1Throwable（超类）所有异常的祖先，用两个重要的子类：Exception（异常），Error（错误），两者各自也包含了大量的子类。 1.1.1 Error（错误）是程序无法处理的错误，意思是运行程序中较为严重的问题，表示 jvm 出现了问题,大多数与代码编写者的操作无关，例如 virtual machineError ，当 JVM 不再有继续执行操作所需的内存资源时，将出现 OutOfMemoryError。这些异常发生时，Java虚拟机（JVM）一般会选择线程终止 1.1.2 Exception（异常）是程序本身可以处理的异常。Exception 有一重要的子类， RuntimeException。RuntimeException 类及其子类表示“JVM 常用操作”引发的错误。例如，若试图使用空值对象引用、除数为零或数组越界，则分别引发运行时异常。 1.1.3 可查异常 （checked exceptions） 编译器要求必须处置的异常 非运行时异常又叫做编译异常，除了 RuntimeException 及它的子类以外的 Excetion 的子类（都是可查异常），如果不处理是不会编译通过 1.1.4 不可查异常（unchecked exceptions ） 编译器不要求强制处理的异常，包括运行时异常（RuntimeException 以及它的子类 还有错误） 其中运行时异常），程序可以选择捕获处理也可以不处理。因为编译器是不会检查它，没有两种异常处理方式也能通过编译。 二 处理异常机制 一共有两种处理异常机制，分别是抛出异常，捕捉异常 2.1 捕捉异常 关键字 try catch finally 1. try-catch形式 12345678try&#123; //可能会发生的异常代码 //监控区域&#125;catch(Kind1 e)&#123; //捕获并处置try抛出的异常类型kind1&#125;catch(Kind2 e)&#123; //捕获并处置try抛出的异常类型kind2&#125; 当try中（监控区域出现异常）则抛出监控区域之外，Java 会试图寻找匹配的 catch 字句，以捕获异常，若有匹配则执行 catch 中的语句，try-catch 语句结束注意：catch 语句中的异常不一定匹配对应所抛出的异常，可以是对应的异常类，也可以对应的异常类的子类 一旦某个 catch 捕获到匹配的异常类型，就进入异常处理，并且其他的 catch 语句将不会被匹配和捕获异常的机会 对于多个异常，应尽量及将低层的类（子类）捕获的异常类的 catch 语句防止前面，相对高层的异常类放在后面，不然高层的父类放前面可能会屏蔽子类的。 2. finally语句 123456789try&#123; &#125;catch(Kind kind1)&#123; &#125;catch(Kind kind2)&#123; &#125;finally&#123; //无论发生什么异常，都将执行该语句块&#125; 注意：在 finally 语句中使用 return 语句以及抛出新的异常，会导致原有抛出的异常丢失。当 try 块或者 catch 语句块遇到 return 语句时，finally 语句块将在方法返回之前执行，如果 finally 同时也有 return 语句，try 和 catch 语句的 return 将被覆盖。 3. 执行顺序 try 没有捕获异常时： try 语句被逐一执行并且在执行完 try 之后的 catch 忽略， finally 和之后语句继续执行 当try捕获到异常，catch语句块里没有处理此异常的情况： 当try语句块里的某条语句出现异常时，而没有处理此异常的catch语句块时，此异常将会抛给JVM处理，finally语句块里的语句还是会被执行，但finally语句块后的语句不会被执行。 当try捕获到异常，catch语句块里有处理此异常的情况： 当执行某一条语句出现异常时，程序将逐一匹配 catch ，找到与之对应的处理程序，其他的catch语句块将不会被执行，而try语句块中，出现异常之后的语句也不会被执行，catch语句块执行完后，执行finally语句块里的语句，最后执行finally语句块后的语句； 2.2 抛出异常 throws 抛出异常 123public(...) void methodname throws Exception1,Exception2,,,&#123; //.......&#125; 如果一个方法可能会出现异常，但没有能力处理这种异常，可以在方法声明出用 throws 语句来声明抛出的异常。并且也可以在方法体内写 throw 语句 throws 语句用在方法定义时要抛出的类型。Exception 则是所有异常。多个类型用逗号分隔。此时抛出的异常，将交给调用该方法的方法处理。 注意： 如果时不可查异常，即Error，RuntimeException以及子类，那么可以不用 throws 声明要抛出的异常，由系统自动抛出。 如果时可查异常。即比如IOException ,就要么使用 try catch 来捕获，要么使用 throws 字句声明将他抛出。 仅仅抛出的异常，该方法的调用者必须处理或者重新抛出 覆盖一个方法，不能声明与覆盖方法不同的异常，必须是覆盖方法声明的异常同类或子类。 使用 throw 抛出异常 throw 是在方法体当中，抛出 Throwable 类型异常，程序会在 throw 语句之后立即结束程序 1throw new Exception(); 注意： 抛出的异常只能是 Throwable 类或者子类 如果抛出了检查异常，则还要在方法头部声明方法可能抛出的异常类型。该方法调用者也必须检查处理抛出的异常。 三 Throwable 常用的方法catch关键字后面括号中的Exception类型的参数e。Exception就是try代码块传递给catch代码块的变量类型，e就是变量名。catch代码块中语句”e.getMessage();”用于输出错误性质。通常异常处理常用3个函数来获取异常的有关信息: getCause()： 返回抛出异常的原因。如果 cause 不存在或未知，则返回 null。 getMeage()： 返回异常的消息信息。 printStackTrace()： 对象的堆栈跟踪输出至错误输出流，作为字段 System.err 的值。自定义异常只需要基础 Exception 类即可步骤 创建自定义异常类 在方法中通过 throw 关键字抛出异常对象 如果在当前抛出异常的方法中处理异常，可以使用try-catch语句捕获并处理；否则在方法的声明处通过throws关键字指明要抛出给方法调用者的异常，继续进行下一步操作。 在出现异常方法的调用者中捕获并处理异常。]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>Exception</tag>
       </tags>
   </entry>
   <entry>
@@ -355,8 +355,8 @@
         <category>java</category>
       </categories>
       <tags>
-        <tag>引用</tag>
         <tag>基础知识</tag>
+        <tag>引用</tag>
       </tags>
   </entry>
   <entry>
