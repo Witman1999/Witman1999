@@ -12,10 +12,11 @@ copyright: true
 二 然后，根据自己电脑的操作系统，位数选择合适自己的版本（我的是 Windows）。   
 ![image](https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/8BAD7FDF0EED42489B1D5C02F6FA86C0/13402)  
 ![image](https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/99F80E633E5B495A9E3FD1FBC5C8D5B8/13405)  
-### 建议：  
+## 建议：  
 如果需要下载缓慢，可以使用下面的百度网盘地址，版本为 14.1.2：  
 [点击这里](https://pan.baidu.com/s/1oIpulfzTKy-mc02i2oKDTA&shfl=sharepset) 
-提取码：knea 
+提取码：knea    
+
 # 安装 Vmware  
 一 运行 .exe 文件，即可开始安装  
 ![image](https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/D5F7C98B07AC49DDABF821252639F28E/13414)  
