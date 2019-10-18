@@ -11,7 +11,7 @@ copyright: true # 新增，开启版权说明
 ---
 <!-- more -->
 # 一. 下载 nodejs
-点击 [node.js](https://nodejs.org/en/) 官网，就可以进行下载，例如下图：
+点击 [node.js](https://nodejs.org/en/) 官网，就可以进行下载，例如：
 
 
 ![image](https://note.youdao.com/yws/public/resource/fde450b8e5a0062a91d41f0c1552b69d/xmlnote/3BCC50B163104CE6BE69568E28EE0FD0/9528.jpg)  
