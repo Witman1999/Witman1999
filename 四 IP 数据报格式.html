@@ -47,18 +47,26 @@
   };
 </script>
 
-  <meta name="description" content="I was born to break these chains">
-<meta name="keywords" content="witman1999,志者">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小碗宽面">
-<meta property="og:url" content="http://witman1999.github.io/archives/2019/page/5/index.html">
+  <meta name="description" content="TCP/IP 协议栈">
+<meta name="keywords" content="网络层">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四 IP 数据报格式">
+<meta property="og:url" content="http://witman1999.github.io/四 IP 数据报格式.html">
 <meta property="og:site_name" content="小碗宽面">
-<meta property="og:description" content="I was born to break these chains">
+<meta property="og:description" content="TCP/IP 协议栈">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/67AA502787464A72BCDDB4E78B50E728/14167">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/9191CF63BF49430CA3B8E6740790A009/14169">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/81378B1CBBEB49B6AF347AC35471A022/14170">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/AD1D82C38A0E423F971DE9EC638B8A3F/14210">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/5EBB83663BAA49B09D2EA39A6DEEB148/14286">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4851F415C227416B9BDDC5F9ACBC3490/14303">
+<meta property="og:updated_time" content="2019-11-02T10:05:05.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="小碗宽面">
-<meta name="twitter:description" content="I was born to break these chains">
-  <link rel="canonical" href="http://witman1999.github.io/archives/2019/page/5/">
+<meta name="twitter:title" content="四 IP 数据报格式">
+<meta name="twitter:description" content="TCP/IP 协议栈">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/67AA502787464A72BCDDB4E78B50E728/14167">
+  <link rel="canonical" href="http://witman1999.github.io/四 IP 数据报格式">
 
 
 <script id="page-configurations">
@@ -66,14 +74,14 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 <meta name="google-site-verification" content="S02dSO8Ii6nJgcdTzOt678zkMEwYZXjpdKTeLfNwoO0">
 <meta name="referrer" content="no-referrer">
-  <title>归档 | 小碗宽面</title>
+  <title>四 IP 数据报格式 | 小碗宽面</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -3399,7 +3407,7 @@ h6 {
   </style>
 </noscript>
 
-<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');</script><noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></noscript></head>
+<script>function loadCss(l){var d=document,h=d.head,s=d.createElement('link');s.rel='stylesheet';s.href=l;!function e(f){if (d.body)return f();setTimeout(function(){e(f)})}(function(){h.appendChild(s);});}loadCss('//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');loadCss('http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css');</script><noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css"></noscript></head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
   <div class="container use-motion">
@@ -3531,284 +3539,380 @@ h6 {
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope="" itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-         
-        
-        <span class="collection-header">还行! 目前共计 48 篇日志。 继续努力。</span>
-      </div>
-      
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/四 IP 数据报格式.html">
 
-      
+    <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="志者">
+      <meta itemprop="description" content="I was born to break these chains">
+      <meta itemprop="image" content="/images/avatar3.jpeg">
+    </span>
 
-  
-  
+    <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小碗宽面">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">四 IP 数据报格式
 
-  
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-11-02 15:06:00 / 修改时间：18:05:05" itemprop="dateCreated datePublished" datetime="2019-11-02T15:06:00+08:00">2019-11-02</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/计算机网络/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>1.8k</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 ≈</span>
+              
+              <span>3 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/继承.html" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:42:36+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/Map集合.html" itemprop="url">
-            <span itemprop="name">Map集合</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:42:00+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/List集合.html" itemprop="url">
-            <span itemprop="name">List集合</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:38:00+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/java中的引用.html" itemprop="url">
-            <span itemprop="name">java中的引用</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:32:17+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/java8新特性和default.html" itemprop="url">
-            <span itemprop="name">java8新特性和default</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:29:49+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/IO流.html" itemprop="url">
-            <span itemprop="name">IO流</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T15:11:33+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/ASCII码表.html" itemprop="url">
-            <span itemprop="name">ASCII码表</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-16T14:50:13+08:00" content="2019-08-16">
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/hello-world.html" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-13T11:53:28+08:00" content="2019-08-13">
-          08-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+      
+        <h1 id="TCP-IP-协议栈"><a href="#TCP-IP-协议栈" class="headerlink" title="TCP/IP 协议栈"></a>TCP/IP 协议栈</h1><p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/67AA502787464A72BCDDB4E78B50E728/14167" alt="image"> </p>
+<a id="more"></a> 
+<h1 id="IP-数据报格式"><a href="#IP-数据报格式" class="headerlink" title="IP 数据报格式"></a>IP 数据报格式</h1><p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/9191CF63BF49430CA3B8E6740790A009/14169" alt="image"><br><strong>首部的格式</strong><br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/81378B1CBBEB49B6AF347AC35471A022/14170" alt="image">  </p>
+<ul>
+<li><strong>版本( version )</strong><ul>
+<li>IPV4/IPV6</li>
+</ul>
+</li>
+<li><strong>首部长度</strong>  <ul>
+<li>单位是 <strong>4B</strong> ,最小为 5</li>
+</ul>
+</li>
+<li><strong>区分服务</strong><ul>
+<li>指示期望获得哪种类型服务（数据报的优先级等等）</li>
+</ul>
+</li>
+<li><strong>总长度</strong><ul>
+<li>首部+数据，单位 <strong>1B</strong></li>
+</ul>
+</li>
+<li><strong>生存时间</strong><ul>
+<li>IP 分组的保质期，经过一个路由器-1，变成0则丢弃（防止数据报在网络兜圈子）</li>
+</ul>
+</li>
+<li><strong>协议</strong><ul>
+<li>数据部分的协议</li>
+<li>如下：</li>
+<li><table>
+<thead>
+<tr>
+<th>协议名</th>
+<th>ICMP</th>
+<th>IGMP</th>
+<th>TCP</th>
+<th>EGP</th>
+<th>IGP</th>
+<th>UDP</th>
+<th>IPV6</th>
+<th>ESP</th>
+<th>OSPF</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>字节</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>17</td>
+<td>41</td>
+<td>50</td>
+<td>89</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li><strong>首部检验和</strong><ul>
+<li>只检验首部，在检验首部用的方法</li>
+</ul>
+</li>
+<li><strong>源地址</strong><ul>
+<li>32 位</li>
+</ul>
+</li>
+<li><strong>目的地址</strong><ul>
+<li>32 位</li>
+</ul>
+</li>
+<li><strong>可选字段</strong><ul>
+<li>0~40B，用来支持排错，测量及安全等措施。</li>
+</ul>
+</li>
+<li><strong>填充</strong><ul>
+<li>全 0 ，把首部补成 4B 的整数倍。</li>
+</ul>
+</li>
+</ul>
+<h1 id="IP-数据报分片"><a href="#IP-数据报分片" class="headerlink" title="IP 数据报分片"></a>IP 数据报分片</h1><h2 id="最大传送单元-MTU"><a href="#最大传送单元-MTU" class="headerlink" title="最大传送单元 MTU"></a>最大传送单元 MTU</h2><p><strong>链路层数据帧可封装数据的上限</strong><br><strong>以太网的 MTU 是 1500 字节</strong>  </p>
+<p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/AD1D82C38A0E423F971DE9EC638B8A3F/14210" alt="image"><br>上面是一个 <strong>IP分组</strong>，也叫 <strong>IP数据报</strong>，它<strong>分为首部和数据部分</strong>，然后经过封装，形成链路层的数据帧，封装就是加头加尾。然后 <strong>IP 分组</strong>就成了数据帧的数据部分，那么这个数据部分就有最大要求值（<strong>MTU</strong>）  </p>
+<p>如果传送的数据超过了这个 <strong>MTU</strong> 值，怎么办？  </p>
+<p>解决方法就是 <strong>分片</strong>，当然，要看<strong>分组是否也许，如果分组不也许，那么将不能在往下传，返回一个差错报文</strong>。  </p>
+<p> 那么<strong>分片怎么理解</strong>，这要结合 IP 数据报的格式中的“<strong>标识</strong>”，“<strong>标志</strong>”，“<strong>片偏移</strong>”</p>
+<h4 id="字段解释"><a href="#字段解释" class="headerlink" title="字段解释"></a>字段解释</h4><ul>
+<li><strong>标识</strong><ul>
+<li><strong>同一数据报的分片，使用同一标识</strong>。</li>
+</ul>
+</li>
+<li><strong>标志</strong><ul>
+<li>一共又三位，<strong>只有中间那位和最低位有意义</strong> <strong>x _ _</strong></li>
+<li>中间为 <strong>DF</strong> （<strong>Don’t Fragment</strong>）<ul>
+<li>DF = 1 , 禁止分片</li>
+<li>DF = 0 ，也许分片</li>
+</ul>
+</li>
+<li>最低位 <strong>MF</strong> （<strong>More Fragment</strong>）<ul>
+<li>MF = 1，后面“还有分片”</li>
+<li>MF = 0，代表最后一片/没分片</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>片偏移</strong><ul>
+<li>指出较长的分组分片后，某片在原分组中的相对位置，以 <strong>8B 字节为单位</strong>。<ul>
+<li>我们知道，片偏移是 13 位，如果它数值是 0……..1 ，代表十进制 1，那么它的位置在原来分组或者数据报的相对位置，1 * 8B = 8B ，也就是在原来位置的第 8B 字节开始的位置</li>
+</ul>
+</li>
+<li>出了最后一个分片，每个分片的长度一定是 <strong>8B 的整数倍</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/5EBB83663BAA49B09D2EA39A6DEEB148/14286" alt="image">  </p>
+<p>如图，这里 <strong>MTU</strong> 是 <strong>1420B</strong>，数据部分和首部加起来 <strong>3820B</strong> ，超过了最大，需要分片。   </p>
+<p>其中 <strong>20B</strong> 是要作为首部的，剩下的 <strong>1400B</strong> 才能作为数据部分。分片之后，如图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/4851F415C227416B9BDDC5F9ACBC3490/14303" alt="image">  </p>
+<p><strong>那么每个数据报片的片偏移是多少？</strong>  </p>
+<p>首先我们规定刚开始还没被分的数据部分，第一个字节成为 0 字节，依次类推。     </p>
+<p><strong>第一数据报片</strong>，它拿出来 <strong>1400B</strong> ，从 <strong>0B~1399B</strong> 被取出，那么它的偏移量是多少？也就是距离原来的数据报的最开始的位置有多远。其实是 0 ，因为它从 <strong>0B</strong> 开始拿，相对于原来数据报开始位置没有距离的。  </p>
+<p><strong>第二数据分片</strong>，它从 <strong>1400B~2799B</strong>，最后的部分是原来数据部分的 <strong>2799B</strong>，那么偏移量多少？我们，假设放回去，从 <strong>1400B</strong> 开始，距离开始位置 <strong>1400B</strong>，然后 除以 <strong>8</strong>，<strong>1400/8=175</strong>，那么它的片偏移量为 <strong>175</strong>。那么首部字段片偏移为 175。  </p>
+<p><strong>第三数据分片</strong>，它的数据部分只剩 <strong>1000B</strong>，它从 <strong>2800B~3799B</strong>，最后的部分是原来数据部分的 <strong>3799B</strong>，那么偏移量多少？ 我们假设放回去，从 <strong>2800B</strong> 开始，距离开始位置 <strong>2800B</strong>，用这个分片的第一个启示字节也就是 <strong>2800B</strong>，然后除以 <strong>8</strong>，<strong>2800/8=350</strong>，那么它的片偏移量为 <strong>350</strong>。那么首部字段片偏移为 350。  </p>
+<p><strong>最后总结如下图</strong>：  </p>
+<table>
+<thead>
+<tr>
+<th>temp</th>
+<th>总长度</th>
+<th>标识</th>
+<th>MF</th>
+<th>DF</th>
+<th>片偏移</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>原始数据报</strong></td>
+<td>3820</td>
+<td>12345</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>数据报片1</strong></td>
+<td>1420</td>
+<td>12345</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td><strong>数据报片2</strong></td>
+<td>1420</td>
+<td>12345</td>
+<td>1</td>
+<td>0</td>
+<td>175</td>
+</tr>
+<tr>
+<td><strong>数据报片3</strong></td>
+<td>1020</td>
+<td>12345</td>
+<td>0</td>
+<td>0</td>
+<td>350</td>
+</tr>
+</tbody></table>
+<p><strong>注意</strong>：<br><strong>这里的每个数据报片都要随原来的包含首部，数据部分根据 MTU 分片。最后一个剩多少就是多少</strong>。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>对应IP数据报的格式中，首部长度，总长度，片偏移</p>
+<ul>
+<li><strong>总长度单位</strong> <strong>1B</strong></li>
+<li><strong>片偏移单位是</strong> <strong>8B</strong></li>
+<li><strong>首部长度单位是</strong> <strong>4B</strong>  </li>
+</ul>
+<p>这里<strong>单位是什么意思</strong>？用总长度来说，也就是总长度是 <strong>16 位</strong>，它的字段值为 <strong>0…..1</strong> ，前面 <strong>15 个0</strong>，后面 <strong>1个1</strong>，然后用总长度字段的值乘以 <strong>1B</strong> ，<strong>1x1B=1B</strong>，总长度就是 <strong>1B</strong>（当然这里只是假设，总长度不会那么小）</p>
 
     </div>
+
+    
+    
+    
+
+	<div>
+     
+       
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  
+
+  <p><span>本文标题:</span>四 IP 数据报格式</p>
+  <p><span>文章作者:</span>志者</p>
+  <p><span>发布时间:</span>2019年11月02日 - 15:06:00</p>
+  <p><span>最后更新:</span>2019年11月02日 - 18:05:05</p>
+  <p><span>原始链接:</span><a href="/四 IP 数据报格式.html" title="四 IP 数据报格式">http://witman1999.github.io/四 IP 数据报格式.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/四 IP 数据报格式.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">署名-非商业性使用-相同方式共享 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+         button: false
+        });
+      });
+    }));  
+</script>
+
+     
+   </div>
+
+	<div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/网络层/" rel="tag"><i class="fa fa-tag"></i> 网络层</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/三 路由算法及路由协议.html" rel="next" title="三 路由算法及路由协议">
+                  <i class="fa fa-chevron-left"></i> 三 路由算法及路由协议
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/一 数据交换方式.html" rel="prev" title="一 数据交换方式">
+                  一 数据交换方式 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2019/page/4/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/archives/2019/">1</a><span class="space">…</span><a class="page-number" href="/archives/2019/page/4/">4</a><span class="page-number current">5</span>
-  </nav>
-
+  </div>
 
 
           </div>
           
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80NjIxOC8yMjcyOQ=="></div>
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NjIxOC8yMjcyOQ=="></div>
+  </div>
+  
+  
+ 
 
         </div>
           
@@ -3825,6 +3929,11 @@ h6 {
   <aside class="sidebar">
 
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc" data-target="post-toc-wrap">
@@ -3837,6 +3946,8 @@ h6 {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#TCP-IP-协议栈"><span class="nav-number">1.</span> <span class="nav-text">TCP/IP 协议栈</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IP-数据报格式"><span class="nav-number">2.</span> <span class="nav-text">IP 数据报格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IP-数据报分片"><span class="nav-number">3.</span> <span class="nav-text">IP 数据报分片</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#最大传送单元-MTU"><span class="nav-number">3.1.</span> <span class="nav-text">最大传送单元 MTU</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字段解释"><span class="nav-number">3.1.0.1.</span> <span class="nav-text">字段解释</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#例题"><span class="nav-number">3.2.</span> <span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.2.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -4082,6 +4193,7 @@ h6 {
   
 
 
+
   copy<!-- 代码块复制功能 -->
   
 
@@ -4091,4 +4203,14 @@ h6 {
 
 
 
-<script type="text/javascript" src="/bundle.js"></script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
+<script type="text/javascript" src="/bundle.js"></script><script type="text/javascript">window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
