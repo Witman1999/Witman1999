@@ -1,5 +1,5 @@
 ---
-title: 关键字 surper 和 final
+title: 关键字 surper 和 this
 date: 2019-08-16 15:45:00
 tags: 关键字
 categories: java
@@ -17,7 +17,7 @@ copyright: true
 ### 引用构造函数
 super(参数)，<font color=red>调用父类的某个构造函数，并且要成为使用这个关键字的构造方法（只能在构造方法中使用，并且不能与this 同时使用）的第一条语句。</font>
 <!-- more -->
-## this
+# this
 > 和 super 接近，它是表示自身的一个对象，代表对象本身（调用者），可以理解为：指向对象本身的指针。
 ## 用法
 ### 引用成员变量

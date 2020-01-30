@@ -5,13 +5,13 @@ tags: List
 categories: java
 copyright: true
 ---
->有序集合，可以存放重复的元素；
+>有序集合，也许存放重复的元素；
 # 实现类
 ## ArrayList
 >数组实现，查询块，增删慢，轻量级。（线程不安全）  
 
 底层是 Object 数组，动态的，通过判断大小是否超过来 copy 数组，并且重新赋予新的空间。能够拥有数组的查找速度快的特点，但是，也造成了增删慢的缺点。
-<!-- more -->
+<!--more-->
 ### 遍历方式
 **（01）第一种，迭代器**
 ```java
@@ -56,7 +56,11 @@ LinkedList() 可以用来实现栈（stack），队列（queue），双向队列
 ## Vector
 >数组实现，重量级（线程安全，使用少）
 
-和 ArrayList   相似在考虑的清空下使用 Vector ( 保证线程安全 )
+**和 ArrayList   相似在考虑的清空下使用 Vector ( 保证线程安全 )**，例如： 在indexOf 的方法中增加了 synchronized 同步标记 
+```
+public synchronized int indexOf(Object o,int index){
+    ......
+}
+```
 ## 总结 
 对于“单线程环境”或者“多线程环境，但 List 仅仅只会被单个线程操作“，此时应该使用非同步类（如 ArrayList ）,对于多线程环境，且 list 可能同时被多个线程操作，此时应该使用同步的类（如 Vector ）
-
