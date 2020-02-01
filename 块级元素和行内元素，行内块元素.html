@@ -47,24 +47,28 @@
   };
 </script>
 
-  <meta name="description" content="计算机网络的性能指标大概分为速率，带宽，吞吐量，时延，时延带宽积，往返实际RTT，利用率。">
-<meta name="keywords" content="网络">
+  <meta name="description" content="在学习 CSS 的时候发现，发现有些标签会独占一行，典型的例如 &amp;lt;div&amp;gt; 标签。而某些不会独占一行，典型如 &amp;lt;span&amp;gt; 标签。其实这是因为 CSS 的标签是有区分元素类型的。 元素分类行内元素又称为内联元素，行内元素的大小是靠本身内容的大小，宽高都设置无效。">
+<meta name="keywords" content="witman1999,志者">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络性能指标">
-<meta property="og:url" content="http://witman1999.github.io/计算机网络性能指标.html">
+<meta property="og:title" content="块级元素和行内元素，行内块元素">
+<meta property="og:url" content="http://witman1999.github.io/块级元素和行内元素，行内块元素.html">
 <meta property="og:site_name" content="小碗宽面">
-<meta property="og:description" content="计算机网络的性能指标大概分为速率，带宽，吞吐量，时延，时延带宽积，往返实际RTT，利用率。">
+<meta property="og:description" content="在学习 CSS 的时候发现，发现有些标签会独占一行，典型的例如 &amp;lt;div&amp;gt; 标签。而某些不会独占一行，典型如 &amp;lt;span&amp;gt; 标签。其实这是因为 CSS 的标签是有区分元素类型的。 元素分类行内元素又称为内联元素，行内元素的大小是靠本身内容的大小，宽高都设置无效。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/29A9AB4BB81E46A3BF6B0E4A2866A695/12383">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/6C03A5244C5848298949F9CD41DB81BD/12364">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/DBBCCC92B4D04F56BCFDA8588A87D8A8/12190">
-<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/BAEA41C05D114C8C8EE38E36BCA68AF4/12255">
-<meta property="og:updated_time" content="2019-09-26T11:12:57.356Z">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/F38539BB0E57428CBCF4223A95C68186/17050">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7D9C049A6D934C9BAE5A491279E0FE32/16908">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/95C4CDF5B906496CBA610791A1F0F8BD/16955">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/C448E29A17C94ADE8BB5E10B156A812C/16957">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/75F6CB290DD34ABA825047DFC7E45BA4/16964">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/40786942D0BA4A349B9A23C3588619C0/17123">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/263B3D1BAE4643EC840D1F7E6C75E9E8/16996">
+<meta property="og:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/B98091D7804A4019916993CBCD834FDD/17195">
+<meta property="og:updated_time" content="2020-02-01T14:56:47.704Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机网络性能指标">
-<meta name="twitter:description" content="计算机网络的性能指标大概分为速率，带宽，吞吐量，时延，时延带宽积，往返实际RTT，利用率。">
-<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/29A9AB4BB81E46A3BF6B0E4A2866A695/12383">
-  <link rel="canonical" href="http://witman1999.github.io/计算机网络性能指标">
+<meta name="twitter:title" content="块级元素和行内元素，行内块元素">
+<meta name="twitter:description" content="在学习 CSS 的时候发现，发现有些标签会独占一行，典型的例如 &amp;lt;div&amp;gt; 标签。而某些不会独占一行，典型如 &amp;lt;span&amp;gt; 标签。其实这是因为 CSS 的标签是有区分元素类型的。 元素分类行内元素又称为内联元素，行内元素的大小是靠本身内容的大小，宽高都设置无效。">
+<meta name="twitter:image" content="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/F38539BB0E57428CBCF4223A95C68186/17050">
+  <link rel="canonical" href="http://witman1999.github.io/块级元素和行内元素，行内块元素">
 
 
 <script id="page-configurations">
@@ -79,7 +83,7 @@
 </script>
 <meta name="google-site-verification" content="S02dSO8Ii6nJgcdTzOt678zkMEwYZXjpdKTeLfNwoO0">
 <meta name="referrer" content="no-referrer">
-  <title>计算机网络性能指标 | 小碗宽面</title>
+  <title>块级元素和行内元素，行内块元素 | 小碗宽面</title>
   <meta name="generator" content="Hexo 3.9.0">
   
 
@@ -3546,7 +3550,7 @@ h6 {
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/计算机网络性能指标.html">
+    <link itemprop="mainEntityOfPage" href="http://witman1999.github.io/块级元素和行内元素，行内块元素.html">
 
     <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="志者">
@@ -3558,7 +3562,7 @@ h6 {
       <meta itemprop="name" content="小碗宽面">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">计算机网络性能指标
+        <h1 class="post-title" itemprop="name headline">块级元素和行内元素，行内块元素
 
           
         </h1>
@@ -3574,7 +3578,7 @@ h6 {
                 
               
 
-              <time title="创建时间：2019-09-26 19:10:00 / 修改时间：19:12:57" itemprop="dateCreated datePublished" datetime="2019-09-26T19:10:00+08:00">2019-09-26</time>
+              <time title="创建时间：2020-02-01 18:10:00 / 修改时间：22:56:47" itemprop="dateCreated datePublished" datetime="2020-02-01T18:10:00+08:00">2020-02-01</time>
             </span>
           
             
@@ -3587,7 +3591,7 @@ h6 {
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/计算机网络/" itemprop="url" rel="index"><span itemprop="name">计算机网络</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span>
 
                 
                 
@@ -3604,7 +3608,7 @@ h6 {
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span>2k</span>
+              <span>8k</span>
             </span>
           
             <span class="post-meta-item" title="阅读时长">
@@ -3614,7 +3618,7 @@ h6 {
               
                 <span class="post-meta-item-text">阅读时长 ≈</span>
               
-              <span>4 分钟</span>
+              <span>15 分钟</span>
             </span>
           
 
@@ -3627,81 +3631,309 @@ h6 {
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>计算机网络的性能指标大概分为<strong>速率</strong>，<strong>带宽</strong>，<strong>吞吐量</strong>，<strong>时延</strong>，<strong>时延带宽积</strong>，<strong>往返实际RTT</strong>，<strong>利用率</strong>。<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/29A9AB4BB81E46A3BF6B0E4A2866A695/12383" alt="image">  </p>
+        <p>在学习 CSS 的时候发现，发现有些标签会独占一行，典型的例如 &lt;div&gt; 标签。而某些不会独占一行，典型如 &lt;span&gt; 标签。其实这是因为 CSS 的标签是有区分元素类型的。</p>
+<h1 id="元素分类"><a href="#元素分类" class="headerlink" title="元素分类"></a>元素分类</h1><h2 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h2><p>又称为内联元素，行内元素的大小是靠本身内容的大小，宽高都设置无效。  </p>
 <a id="more"></a>
-<h1 id="速率"><a href="#速率" class="headerlink" title="速率"></a>速率</h1><div class="note primary">
-            <p>速率即<strong>数据率</strong>或称<strong>数据传输率</strong>或<strong>比特率</strong>  </p>
-          </div>
-<h2 id="比特"><a href="#比特" class="headerlink" title="比特"></a>比特</h2><p>在计算机当中，计算机发送出的信号，都是以数字形式发送，比特就相当于计算机数据量的一个单位（数据传输单位）。</p>
-<ul>
-<li>1/0 组成</li>
-<li>以位为单位</li>
-</ul>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>连接在计算机网络上的<strong>主机</strong>在数字信道上传送数据<strong>位数的速率</strong><br>单位： <code>b/s</code>，<code>kb/s</code>，<code>Mb/s</code></p>
-<h2 id="存储容量"><a href="#存储容量" class="headerlink" title="存储容量"></a>存储容量</h2><p>1 Byte（字节）=8bit （比特）</p>
-<h1 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h1><blockquote>
-<p>原本指的是某个信号具有的频带宽度，即最高频率与最低频率之差，单位是赫兹 (Hz) 。  </p>
-</blockquote>
-<div class="note primary">
-            <p>在计算机网络中，带宽用来表示网络的通信线路传送数据的能力，通常是指单位时间内从网络中的某一个点到另一个点所通过的“最高数据率”，单位是“比特每秒”，b/s,kb/s,Mb/s,Gb/s。（网络设备所能支持的最高速度）</p>
-          </div>
-<h2 id="链路带宽"><a href="#链路带宽" class="headerlink" title="链路带宽"></a>链路带宽</h2><div class="note primary">
-            <p>指链路在入口的位置发送数据的数量，而不是链路传播的速率，因为链路的依靠电磁波传播。</p>
-          </div>  
 
-<p>假如，链路带宽是<code>2Mb/s</code>，指的是在<code>1us</code>内向链路注入了<code>2bit</code>数据。提高了这个。相当于母鸡生蛋的速度变快了，每秒能生两科，但是掉落的速度是一样的。</p>
-<h1 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h1><div class="note primary">
-            <p>表示在<strong>单位时间内</strong>通过<strong>某个网络或信道，接口</strong>的数据量。单位 b/s,kb/s,Mb/s等。<br>吞吐量受网络的带宽或网络的额定速率的限制。  </p>
-          </div>
-<p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/6C03A5244C5848298949F9CD41DB81BD/12364" alt="image"><br>如图所示，两个服务器向客户端发送数据，但是由于服务器本身的速率只能 20Mb/s 和 10Mb/s ，这个时候在一秒当中，通过这条线路的某个关口或者网卡的总吞吐量为 30Mb/s（这里指的是实际的量）， 也就是把所有链路都加和，就是吞吐量了。</p>
-<h1 id="时延"><a href="#时延" class="headerlink" title="时延"></a>时延</h1><div class="note primary">
-            <p>指的是数据（报文/分组/比特流）从网络（或链路）的一端传送到另一端所需的时间。也叫延迟或迟延。单位是S</p><ul><li><code>发送时延</code>-&gt;<code>传播时延</code>-&gt;<code>排队时延</code>-&gt;<code>处理时延</code> </li></ul>
-          </div>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="发送时延"><a href="#发送时延" class="headerlink" title="发送时延"></a>发送时延</h3><p>是指从发送分组的第一个比特算起，到该分组最后一个比特发送完毕所需的时间（一般发生在主机内部或者网络适配器等）<br>加入数据<code>0101010101</code>从自己身上推到信道上，这样的过程</p>
-<h4 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h4><ul>
-<li>发送数据的长度</li>
-<li>发送数据的快慢  </li>
-</ul>
-<p>发送时延=数据长度/信道带宽（发送速率）</p>
-<h3 id="传播时延"><a href="#传播时延" class="headerlink" title="传播时延"></a>传播时延</h3><p>是电磁波在信道上传播一定距离所花的时间。<br>当数据<code>0101010101</code>从起始位置到碰到路由器为止。</p>
-<h4 id="影响-1"><a href="#影响-1" class="headerlink" title="影响"></a>影响</h4><ul>
-<li>电磁波的传播速度<ul>
-<li>2.** X 10^8 </li>
+<p><strong>常见的特点如下：</strong>  </p>
+<ul>
+<li><strong>与其他行内元素并排</strong></li>
+<li><strong>设置宽高无效</strong></li>
+<li><strong>默认的宽度就是文本内容的宽度</strong></li>
+<li><strong>水平方向的 padding 和 margin 属性可以使用。</strong></li>
+<li><strong>只能容纳文本级元素和内联元素</strong></li>
+<li><strong>注意</strong>：<ul>
+<li>a 标签可以放块级元素，但是连接里面不能再放连接</li>
 </ul>
 </li>
-<li>链路长度</li>
 </ul>
-<p>传播时延=信道长度/电磁波在信道上的传播速率</p>
-<h4 id="为什么是电磁波"><a href="#为什么是电磁波" class="headerlink" title="为什么是电磁波"></a>为什么是电磁波</h4><p>因为信号经过一定的调制手法，以电磁波位载体传输</p>
-<h3 id="排队时延"><a href="#排队时延" class="headerlink" title="排队时延"></a>排队时延</h3><p>等待输出/输入链路可用<br>如果数据<code>0101010101</code>已经到路由器那边了，可是路由器忙（要处理之前的数据）所以要等待。</p>
-<h3 id="处理时延"><a href="#处理时延" class="headerlink" title="处理时延"></a>处理时延</h3><p>等排队到了以后，要进行转发，找错，找出口等工作。</p>
-<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>如果求总时延，也就将上述的四类时延加起来。<br>补充一点：  </p>
-<h3 id="高速链路"><a href="#高速链路" class="headerlink" title="高速链路"></a>高速链路</h3><p>指的是，发送速率提高也就是信道带宽，在数据长度不变的情况下，减少了发送延时，但是这是影响不到电磁波的传播速率，因为电磁波的传播速率是受两点影响，一个用的是什么介质，光纤什么的，同轴电缆，高速指的是提高了带宽，减少了发送时延。但是传播时延是不变的。</p>
-<h1 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h1><p><code>时延带宽积=传播时延 X 带宽</code><br><code>bit        s           b/s</code>   </p>
-<div class="note primary">
-            <p>描述信息量（数据量）的性能属性。又称为以<strong>以比特位单位的链路长度</strong>。即某段链路现在有多少比特。  </p>
-          </div>
-<p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/DBBCCC92B4D04F56BCFDA8588A87D8A8/12190" alt="image"><br>如图所示，带宽指得是发送速率，在A这一端一直发送数据，而传播时延，可以这样理解，有一个比特，在A端的信道上了，经过一个传播时延到B的位置。在第一个比特在信道上走，其他比特在第一个后面跟上，直到第一个比特到达B端，这时候发送停止，这个时候的时延带宽积，也就是管道中的比特。（容量）</p>
-<h1 id="往返时间RTT"><a href="#往返时间RTT" class="headerlink" title="往返时间RTT"></a>往返时间RTT</h1><div class="note primary">
-            <p>想当于打游戏的时延，<strong>从发送方发送数据开始，到发送方收到就接受方的确认（接受方收到数据后立即发送确认）总共经历的时延。</strong></p>
-          </div>
+<p>常见的行内元素：  </p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;a&gt;</td>
+<td>标签定义超链接</td>
+</tr>
+<tr>
+<td>&lt;abbr&gt;</td>
+<td>表示一缩写形式</td>
+</tr>
+<tr>
+<td>&lt;acronym&gt;</td>
+<td>定义只取首字母缩写</td>
+</tr>
+<tr>
+<td>&lt;b&gt;</td>
+<td>定义字体缩写</td>
+</tr>
+<tr>
+<td>&lt;bdo&gt;</td>
+<td>可覆盖默认的文本方向</td>
+</tr>
+<tr>
+<td>&lt;big&gt;</td>
+<td>定义大号字体加粗</td>
+</tr>
+<tr>
+<td>&lt;br&gt;</td>
+<td>定义换行</td>
+</tr>
+<tr>
+<td>&lt;code&gt;</td>
+<td>定义计算机代码文本</td>
+</tr>
+<tr>
+<td>&lt;label&gt;</td>
+<td>标签</td>
+</tr>
+<tr>
+<td>&lt;select&gt;</td>
+<td>创建单选或多选菜单</td>
+</tr>
+<tr>
+<td>&lt;span&gt;</td>
+<td>组合文档中的行内元素</td>
+</tr>
+<tr>
+<td>&lt;small&gt;</td>
+<td>定义小号字体</td>
+</tr>
+<tr>
+<td>等等…</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>除了 p 之外，所有的文本级标签都是行内元素，p 是块级元素</p>
+<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><p>块元素通常会独占一行，或者多行，它的宽高，边距等都可以设置。  </p>
+<p><strong>通常有这几个特点</strong>：  </p>
 <ul>
-<li>开始的时间：从发送方的第一个比特位放到信道开始。</li>
-<li>结束的时间：发送方接受的接受的确认，也就是接受方接受的第一个比特位的发送回确认开始。  </li>
+<li><strong>独占一行</strong></li>
+<li><strong>可以设置宽度，高度，margin,padding</strong> </li>
+<li><strong>宽度默认所在容器的宽度</strong>。</li>
+<li><strong>可以容纳内联元素和块级元素</strong></li>
+<li><strong>注意</strong>：<ul>
+<li>一些文字级标签不能放块元素。例如：&lt;p&gt;，&lt;h1&gt;~&lt;h6&gt;，&lt;dt&gt;</li>
 </ul>
-<p><strong>RTT越大，在收到确认之前，可以发送的数据越多。</strong></p>
-<h2 id="包括"><a href="#包括" class="headerlink" title="包括"></a>包括</h2><ul>
-<li>往返的传播时延=传播时延*2</li>
-<li>末端处理时间<div class="note warning">
-            <p>这里不指传输时延，也就是把数据推到信道上的时延。</p>
-          </div>
-
 </li>
 </ul>
-<h1 id="利用率"><a href="#利用率" class="headerlink" title="利用率"></a>利用率</h1><div class="note primary">
-            <ul><li>信道利用率<ul><li>有数据通过的时间/（有+无数据通过的时间）</li></ul></li><li>网络利用率<ul><li>所以信道利用率的加权平均值  </li></ul></li></ul>
-          </div>
-<p><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/BAEA41C05D114C8C8EE38E36BCA68AF4/12255" alt="image"><br>如图所示，其实可以这样理解，我们知道，当马路上，车辆过少的时候，利用率，就不高，但是（利用率接近 1 的时候）在当我们把车辆填满了，导致车辆行走缓慢，这个时候速率就变低了。</p>
+<p>常见的块级元素： </p>
+<table>
+<thead>
+<tr>
+<th>标签</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&lt;caption&gt;</td>
+<td>定义表格标题</td>
+</tr>
+<tr>
+<td>&lt;address&gt;</td>
+<td>定义地址</td>
+</tr>
+<tr>
+<td>&lt;dd&gt;</td>
+<td>定义列表中定义条目</td>
+</tr>
+<tr>
+<td>&lt;div&gt;</td>
+<td>定义文档中的分区或节</td>
+</tr>
+<tr>
+<td>&lt;dl&gt;</td>
+<td>定义列表</td>
+</tr>
+<tr>
+<td>&lt;dt&gt;</td>
+<td>定义列表中的项目</td>
+</tr>
+<tr>
+<td>&lt;fieldset&gt;</td>
+<td>定义一个框架集</td>
+</tr>
+<tr>
+<td>&lt;form&gt;</td>
+<td>创建 HTML 表单</td>
+</tr>
+<tr>
+<td>&lt;h1&gt;~&lt;h6&gt;</td>
+<td>定义标题</td>
+</tr>
+<tr>
+<td>&lt;hr&gt;</td>
+<td>定义一条水平线</td>
+</tr>
+<tr>
+<td>&lt;p&gt;</td>
+<td>定义段落</td>
+</tr>
+<tr>
+<td>&lt;table&gt;</td>
+<td>定义表格</td>
+</tr>
+<tr>
+<td>&lt;li&gt;</td>
+<td>标签定义列表项目</td>
+</tr>
+<tr>
+<td>&lt;ul&gt;</td>
+<td>定义无序列表</td>
+</tr>
+<tr>
+<td>&lt;ol&gt;</td>
+<td>定义有序列表</td>
+</tr>
+<tr>
+<td>等等…</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="行内块元素"><a href="#行内块元素" class="headerlink" title="行内块元素"></a>行内块元素</h2><p>行内块元素从文字上看像块级元素和行内元素结合似的，其实比较特殊，比如&lt;input&gt;，&lt;img&gt;，&lt;td&gt; 可以设置宽高属性，这种就称为行内块元素。   </p>
+<p>通常有这几个特点。</p>
+<ul>
+<li><strong>默认宽度是内容宽度</strong></li>
+<li><strong>宽度，高度，行高，margin,padding 都可以设置</strong></li>
+<li><strong>和行内元素同一行，之间会留白</strong>。</li>
+</ul>
+<h2 id="块级元素和行内元素的转换"><a href="#块级元素和行内元素的转换" class="headerlink" title="块级元素和行内元素的转换"></a>块级元素和行内元素的转换</h2><h3 id="display-属性"><a href="#display-属性" class="headerlink" title="display 属性"></a>display 属性</h3><p>通过 display 属性转换，其中 display 有三个值：</p>
+<ul>
+<li><strong>inline</strong>:<ul>
+<li>值为 inline 将变成行内元素，比如 div </li>
+<li>不能设置宽高，和行内元素并排</li>
+</ul>
+</li>
+<li><strong>block</strong>:<ul>
+<li>值为 block 的，比如 span</li>
+<li>能设置宽高（填充父级），独占一行。</li>
+</ul>
+</li>
+<li><strong>inline-block</strong><ul>
+<li>值为 inline-block 也就是变成行内块元素</li>
+</ul>
+</li>
+</ul>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1{</span><br><span class="line">				width: 100px;</span><br><span class="line">				height: 100px;</span><br><span class="line">				background-color: red;</span><br><span class="line">				display: inline;</span><br><span class="line">			}</span><br><span class="line">			.div2{</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 150px;</span><br><span class="line">				background-color: green;</span><br><span class="line">				display: inline-block;</span><br><span class="line">			} </span><br><span class="line">			.span1{</span><br><span class="line">				width: 100px;</span><br><span class="line">				height: 100px;</span><br><span class="line">				background-color: yellow;</span><br><span class="line">				display: block;</span><br><span class="line">			}</span><br><span class="line">			.div3{</span><br><span class="line">				width: 300px;</span><br><span class="line">				height: 200px;</span><br><span class="line">				background-color: blue;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;</span><br><span class="line">			div1</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="div2"&gt;</span><br><span class="line">			div2</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;span class="span1"&gt;</span><br><span class="line">			span1</span><br><span class="line">		&lt;/span&gt;</span><br><span class="line">		&lt;div class="div3"&gt;</span><br><span class="line">			div3</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>效果</strong>：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/F38539BB0E57428CBCF4223A95C68186/17050" alt="image"><br>正如效果图显示，值为 inline 的时候，div1 的宽高无效，仅仅为内容的宽度和高度。div2 为 inline-block 则生效了，而原本 span 是行内元素，设置宽高无效，而且不独占一行，现在设置的值为 block 便都有用了。</p>
+<h3 id="浮动-float-属性"><a href="#浮动-float-属性" class="headerlink" title="浮动 float 属性"></a>浮动 float 属性</h3><p>浮动的目的。最初时，浮动只能用于图像（某些浏览器还支持表的浮动），目的就是为了允许其他内容（如文本）“围绕”该图像。而后来的CSS允许浮动任何元素。  </p>
+<p>float 一共有三个值：</p>
+<ul>
+<li><strong>left</strong><ul>
+<li>表示左浮动</li>
+</ul>
+</li>
+<li><strong>right</strong><ul>
+<li>表示右浮动</li>
+</ul>
+</li>
+<li><strong>none</strong><ul>
+<li>表示不浮动，默认</li>
+</ul>
+</li>
+</ul>
+<p>代码格式：<code>float : value</code>  </p>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1{</span><br><span class="line">				width: 100px;</span><br><span class="line">				height: 100px;</span><br><span class="line">				background-color: red;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">			.div2{</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 150px;</span><br><span class="line">				background-color: blue;</span><br><span class="line">				float: right;</span><br><span class="line">			}</span><br><span class="line">			.div3{</span><br><span class="line">				width: 200px;</span><br><span class="line">				height: 200px;</span><br><span class="line">				background-color: green;</span><br><span class="line">				float: none;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="div2"&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;div class="div3"&gt;</span><br><span class="line">			</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">```</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/7D9C049A6D934C9BAE5A491279E0FE32/16908" alt="image"></p>
+<p>如图所示，三个 div ，其中 div1（红色） 左浮动，div2（蓝色） 右浮动，所以 div 1 仅靠在左边，div 2 仅靠在右边，而 div3 没有。  </p>
+<p>如果是浮动，将会和其他不同，脱离标准文档流，也就是相当于不占用位置了，漂浮起来。浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。</p>
+<p>由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。</p>
+<h4 id="浮动的特点"><a href="#浮动的特点" class="headerlink" title="浮动的特点"></a>浮动的特点</h4><p>浮动有几个特点，大概是脱离标准流文档，浮动之间元素相互靠近，自动收缩。</p>
+<ul>
+<li><strong>脱离标准流文档</strong></li>
+</ul>
+<p>示例代码：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1{</span><br><span class="line">				width: 50px;</span><br><span class="line">				height: 50px;</span><br><span class="line">				background-color: #0000FF;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">			.div2{</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 150px;</span><br><span class="line">				background-color: #008000;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div class="div2"&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/95C4CDF5B906496CBA610791A1F0F8BD/16955" alt="image">  </p>
+<p>对 div1 进行浮动时，会脱离文档流，若向右浮动，直到它的右边缘碰到框的右边缘，若向左浮动，脱离文档流并向左移动，直到它的左边缘碰到包含框的左边缘。因为这样，就会导致原有的 div2 被浮动的 div1 覆盖。</p>
+<p>这里还有一种情况：  </p>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.span1{</span><br><span class="line">				width: 50px;</span><br><span class="line">				height: 50px;	</span><br><span class="line">				background-color: #FF0000;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;span class="span1"&gt;&lt;/span&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/C448E29A17C94ADE8BB5E10B156A812C/16957" alt="image">  </p>
+<p>这是因为标签一旦设置浮动，就没有分块状元素和行内元素，所以原本的行内元素也能设置宽高。  </p>
+<ul>
+<li><strong>浮动之间元素相互贴近</strong></li>
+</ul>
+<p>在浏览器父级的宽度足够，那么浮动元素紧挨。  </p>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1{</span><br><span class="line">				width: 100px;</span><br><span class="line">				height: 100px;</span><br><span class="line">				background-color: red;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">			.div2{</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 150px;</span><br><span class="line">				background-color: blue;</span><br><span class="line">				position:static;</span><br><span class="line">				float: left;</span><br><span class="line">				</span><br><span class="line">			}</span><br><span class="line">			.div3{</span><br><span class="line">				width: 200px;</span><br><span class="line">				height: 200px;</span><br><span class="line">				background-color: green;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div class="div2"&gt;&lt;/div&gt;</span><br><span class="line">		&lt;div class="div3"&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/75F6CB290DD34ABA825047DFC7E45BA4/16964" alt="image">   </p>
+<p>如果宽度不够，就有收缩情况，会根据包含的父级元素，如果太窄，无法容纳水平排列的三个浮动元素，那么其它浮动块向下移动，直到有足够的空间。如果浮动元素的高度不同，那么当它们向下移动时可能被其它浮动元素“卡住”，如下情况：</p>
+<ul>
+<li><strong>浮动收缩情况</strong></li>
+</ul>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1 {</span><br><span class="line">				width: 50px;</span><br><span class="line">				height: 50px;</span><br><span class="line">				background-color: blue;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line"></span><br><span class="line">			.div2 {</span><br><span class="line">				width: 150px;</span><br><span class="line">				height: 150px;</span><br><span class="line">				background-color: green;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line"></span><br><span class="line">			.div3 {</span><br><span class="line">				width: 250px;</span><br><span class="line">				height: 250px;</span><br><span class="line">				background-color: #FF0000;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">			.div4 {</span><br><span class="line">				width: 250px;</span><br><span class="line">				height: 1250px;</span><br><span class="line">				float: left;</span><br><span class="line"></span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div4"&gt;</span><br><span class="line">			&lt;div class="div1"&gt;</span><br><span class="line">				div1</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="div2"&gt;</span><br><span class="line">				div2</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">			&lt;div class="div3"&gt;</span><br><span class="line">				div3</span><br><span class="line">			&lt;/div&gt;</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/40786942D0BA4A349B9A23C3588619C0/17123" alt="image"></p>
+<p>这里父容器 div 4 的宽度不够，div 3 也就自动下滑了。</p>
+<p>如果不设置宽高，那么宽高也就是文本内容高度和宽度。  </p>
+<p>示例代码：</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1{</span><br><span class="line">				background-color: red;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;</span><br><span class="line">			特性</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/263B3D1BAE4643EC840D1F7E6C75E9E8/16996" alt="image">  </p>
+<h4 id="浮动的覆盖规则"><a href="#浮动的覆盖规则" class="headerlink" title="浮动的覆盖规则"></a>浮动的覆盖规则</h4><p>这里并不是任何情况下浮动的元素向左或向右移动直至左右两边碰到包含框的两边才停止。如果某个浮动的元素在移动的过程中，碰到了包含内容的框时，也会停止。  </p>
+<p>也就是浮动元素在移动的过程中，除非碰到框没有内容，否则框内的内容会自我调整位置以防止被覆盖。比如&lt;p&gt;标签中的文本遇到浮动的框例如图像框，就自我调整位置，使得文字围绕着图像避免被覆盖。还有 &lt;img&gt;，&lt;span&gt;包含文字，等等</p>
+<p>这里块级元素即使被覆盖，文字也会围绕在浮动元素旁，因为浮动本身就是为了让文字围绕在图像旁边。行内块元素则不会被覆盖。  </p>
+<p>记住，永远不是一个盒子单独浮动，要浮动就要一起浮动。另外，有浮动，一定要清楚浮动。</p>
+<p>如下 &lt;span&gt; 标签包含文字，不会被覆盖</p>
+<p>示例代码：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset="utf-8"&gt;</span><br><span class="line">		&lt;title&gt;&lt;/title&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			.div1 {</span><br><span class="line">				width: 50px;</span><br><span class="line">				height: 50px;</span><br><span class="line">				background-color: blue;</span><br><span class="line">				float: left;</span><br><span class="line">			}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;div class="div1"&gt;</span><br><span class="line">			div1</span><br><span class="line">		&lt;/div&gt;</span><br><span class="line">		&lt;span class="span1"&gt;</span><br><span class="line">			我是 span</span><br><span class="line">		&lt;/span&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>效果图：<br><img src="https://note.youdao.com/yws/public/resource/359e08a52f64deaac553adb0132327ad/xmlnote/B98091D7804A4019916993CBCD834FDD/17195" alt="image"></p>
+<h4 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h4><ul>
+<li>clean     <ul>
+<li>left<ul>
+<li>当前元素左边不能有浮动元素</li>
+</ul>
+</li>
+<li>right<ul>
+<li>当前元素右边不能有浮动元素 </li>
+</ul>
+</li>
+<li>both<ul>
+<li>当前元素两边不能有浮动元素 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>overflow<ul>
+<li>规定当内容溢出元素框的时候会怎样。</li>
+<li>visible<ul>
+<li>默认值，内容会呈现在元素之外。</li>
+</ul>
+</li>
+<li>hidden<ul>
+<li>内容会被修剪，其余隐藏不见</li>
+</ul>
+</li>
+<li>scroll<ul>
+<li>内容会被修剪，显示滚动条显示其余内容</li>
+</ul>
+</li>
+<li>auto<ul>
+<li>如果内容会被修剪，自动 显示滚动条显示其余内容</li>
+</ul>
+</li>
+<li>inherit<ul>
+<li>继承父级的 overflow 属性的值 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
     </div>
 
@@ -3720,12 +3952,12 @@ h6 {
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   
 
-  <p><span>本文标题:</span>计算机网络性能指标</p>
+  <p><span>本文标题:</span>块级元素和行内元素，行内块元素</p>
   <p><span>文章作者:</span>志者</p>
-  <p><span>发布时间:</span>2019年09月26日 - 19:10:00</p>
-  <p><span>最后更新:</span>2019年09月26日 - 19:12:57</p>
-  <p><span>原始链接:</span><a href="/计算机网络性能指标.html" title="计算机网络性能指标">http://witman1999.github.io/计算机网络性能指标.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/计算机网络性能指标.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2020年02月01日 - 18:10:00</p>
+  <p><span>最后更新:</span>2020年02月01日 - 22:56:47</p>
+  <p><span>原始链接:</span><a href="/块级元素和行内元素，行内块元素.html" title="块级元素和行内元素，行内块元素">http://witman1999.github.io/块级元素和行内元素，行内块元素.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/块级元素和行内元素，行内块元素.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)">署名-非商业性使用-相同方式共享 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -3760,23 +3992,14 @@ h6 {
       
 
       <footer class="post-footer">
-          
-            
-          
-          <div class="post-tags">
-            
-              <a href="/tags/网络/" rel="tag"><i class="fa fa-tag"></i> 网络</a>
-            
-          </div>
-        
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/计算机网络的概念.html" rel="next" title="计算机网络概念">
-                  <i class="fa fa-chevron-left"></i> 计算机网络概念
+                <a href="/搭建博客遇到的问题.html" rel="next" title="搭建博客遇到的问题">
+                  <i class="fa fa-chevron-left"></i> 搭建博客遇到的问题
                 </a>
               
             </div>
@@ -3785,8 +4008,8 @@ h6 {
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/计算机网络分层结构.html" rel="prev" title="计算机网络分层结构">
-                  计算机网络分层结构 <i class="fa fa-chevron-right"></i>
+                <a href="/标准流文档.html" rel="prev" title="标准流文档">
+                  标准流文档 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -3846,7 +4069,7 @@ h6 {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#速率"><span class="nav-number">1.</span> <span class="nav-text">速率</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#比特"><span class="nav-number">1.1.</span> <span class="nav-text">比特</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.2.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存储容量"><span class="nav-number">1.3.</span> <span class="nav-text">存储容量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#带宽"><span class="nav-number">2.</span> <span class="nav-text">带宽</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#链路带宽"><span class="nav-number">2.1.</span> <span class="nav-text">链路带宽</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#吞吐量"><span class="nav-number">3.</span> <span class="nav-text">吞吐量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时延"><span class="nav-number">4.</span> <span class="nav-text">时延</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">4.1.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#发送时延"><span class="nav-number">4.1.1.</span> <span class="nav-text">发送时延</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#影响"><span class="nav-number">4.1.1.1.</span> <span class="nav-text">影响</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传播时延"><span class="nav-number">4.1.2.</span> <span class="nav-text">传播时延</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#影响-1"><span class="nav-number">4.1.2.1.</span> <span class="nav-text">影响</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么是电磁波"><span class="nav-number">4.1.2.2.</span> <span class="nav-text">为什么是电磁波</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排队时延"><span class="nav-number">4.1.3.</span> <span class="nav-text">排队时延</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#处理时延"><span class="nav-number">4.1.4.</span> <span class="nav-text">处理时延</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意"><span class="nav-number">4.2.</span> <span class="nav-text">注意</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#高速链路"><span class="nav-number">4.2.1.</span> <span class="nav-text">高速链路</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时延带宽积"><span class="nav-number">5.</span> <span class="nav-text">时延带宽积</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#往返时间RTT"><span class="nav-number">6.</span> <span class="nav-text">往返时间RTT</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#包括"><span class="nav-number">6.1.</span> <span class="nav-text">包括</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#利用率"><span class="nav-number">7.</span> <span class="nav-text">利用率</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#元素分类"><span class="nav-number">1.</span> <span class="nav-text">元素分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#行内元素"><span class="nav-number">1.1.</span> <span class="nav-text">行内元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#块级元素"><span class="nav-number">1.2.</span> <span class="nav-text">块级元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行内块元素"><span class="nav-number">1.3.</span> <span class="nav-text">行内块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#块级元素和行内元素的转换"><span class="nav-number">1.4.</span> <span class="nav-text">块级元素和行内元素的转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#display-属性"><span class="nav-number">1.4.1.</span> <span class="nav-text">display 属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动-float-属性"><span class="nav-number">1.4.2.</span> <span class="nav-text">浮动 float 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动的特点"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">浮动的特点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动的覆盖规则"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">浮动的覆盖规则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清除浮动"><span class="nav-number">1.4.2.3.</span> <span class="nav-text">清除浮动</span></a></li></ol></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
