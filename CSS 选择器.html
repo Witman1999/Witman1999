@@ -55,7 +55,7 @@
 <meta property="og:site_name" content="小碗宽面">
 <meta property="og:description" content="什么是 CSSCSS 称为层叠样式表，也可以称为 CSS 样式表或样式表，其扩展名位 .CSS 。CSS 是用于增强或控制网页样式，并也许将样式信息与网页内容分割开的一种标记性语言">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-01T15:01:06.160Z">
+<meta property="og:updated_time" content="2020-02-02T02:04:21.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS 选择器">
 <meta name="twitter:description" content="什么是 CSSCSS 称为层叠样式表，也可以称为 CSS 样式表或样式表，其扩展名位 .CSS 。CSS 是用于增强或控制网页样式，并也许将样式信息与网页内容分割开的一种标记性语言">
@@ -1900,7 +1900,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9affac;
+  background: #df49e9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3569,11 +3569,19 @@ h6 {
                 
               
 
-              <time title="创建时间：2020-02-01 20:10:00 / 修改时间：23:01:06" itemprop="dateCreated datePublished" datetime="2020-02-01T20:10:00+08:00">2020-02-01</time>
+              <time title="创建时间：2020-02-01 20:10:00" itemprop="dateCreated datePublished" datetime="2020-02-01T20:10:00+08:00">2020-02-01</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-02 10:04:21" itemprop="dateModified" datetime="2020-02-02T10:04:21+08:00">2020-02-02</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -3672,19 +3680,10 @@ h6 {
 <td>CSS2</td>
 <td>所有元素对象</td>
 </tr>
-<tr>
-<td>代码如下：</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*{ color: red;}</span><br></pre></td></tr></tbody></table></figure></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
+<p>代码如下：  </p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*{ color: red;}</span><br></pre></td></tr></tbody></table></figure>
+
 <h3 id="类型选择器"><a href="#类型选择器" class="headerlink" title="类型选择器"></a>类型选择器</h3><p>HTML 文档由多个不同标记组成，而 CSS 选择器就用于声明那些标记采用的样式</p>
 <table>
 <thead>
@@ -3701,13 +3700,9 @@ h6 {
 <td>CSS1</td>
 <td>一文档语言对象类型作为选择符</td>
 </tr>
-<tr>
-<td><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* 这里 div 是 E ,E 就是指标签类型 */</span><br><span class="line">div{ color: red;}</span><br></pre></td></tr></tbody></table></figure></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* 这里 div 是 E ,E 就是指标签类型 */</span><br><span class="line">div{ color: red;}</span><br></pre></td></tr></tbody></table></figure>
+
 <h3 id="ID-选择器"><a href="#ID-选择器" class="headerlink" title="ID 选择器"></a>ID 选择器</h3><p>与类选择器相似   </p>
 <p>#idvalue{property:value}  </p>
 <p>idvalue 是选择器的名称，自己定义。  </p>
@@ -3828,7 +3823,52 @@ h6 {
 <p>代码如下：  </p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">			ol .order ~ li a{ color: gray;}}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;ol&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li class="order"&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">			&lt;li&gt;&lt;a href=""&gt;Hello world&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">		&lt;/ol&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>一共分为七种类型<br>选择符 |版本|描述<br>—|—|—|<br>E[att]|CSS2|选择具有 att 属性的 E 元素。<br>E[att=’val’]|CSS2|选择具有 att 属性且属性值等于 val 的 E 元素。<br>E[att~=’val’]|CSS2|选择具有 att 属性且属性值为一空格分割的字词列表，其中有一个等于 val 的 E 元素。<br>E[att^=’val’]|CSS3|选择具有 att 属性且属性值为以 val 开头的字符串的 E 元素<br>E[att$=’val’]|CSS3|选择具有 att 属性且属性值为以 val 结尾的字符串的 E 元素。<br>E[att*=’val’]|CSS3|选择具有 att 属性且属性值包含 val 的字符串的 E 元素<br>E[att|=’val’]|CSS2|选择具有 att 属性且属性值为以 val 开头并用链接连接符“-”分隔的字符串的 E 元素，如果属性值为 val ,也将被选择<br>代码如下：  </p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>一共分为七种类型  </p>
+<table>
+<thead>
+<tr>
+<th>选择符</th>
+<th>版本</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>E[att]</td>
+<td>CSS2</td>
+<td>选择具有 att 属性的 E 元素。</td>
+</tr>
+<tr>
+<td>E[att=’val’]</td>
+<td>CSS2</td>
+<td>选择具有 att 属性且属性值等于 val 的 E 元素。</td>
+</tr>
+<tr>
+<td>E[att~=’val’]</td>
+<td>CSS2</td>
+<td>选择具有 att 属性且属性值为一空格分割的字词列表，其中有一个等于 val 的 E 元素。</td>
+</tr>
+<tr>
+<td>E[att^=’val’]</td>
+<td>CSS3</td>
+<td>选择具有 att 属性且属性值为以 val 开头的字符串的 E 元素</td>
+</tr>
+<tr>
+<td>E[att$=’val’]</td>
+<td>CSS3</td>
+<td>选择具有 att 属性且属性值为以 val 结尾的字符串的 E 元素。</td>
+</tr>
+<tr>
+<td>E[att*=’val’]</td>
+<td>CSS3</td>
+<td>选择具有 att 属性且属性值包含 val 的字符串的 E 元素</td>
+</tr>
+<tr>
+<td>E[att|=’val’]</td>
+<td>CSS2</td>
+<td>选择具有 att 属性且属性值为以 val 开头并用链接连接符“-”分隔的字符串的 E 元素，如果属性值为 val ,也将被选择</td>
+</tr>
+</tbody></table>
+<p>代码如下：  </p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;style type="text/css"&gt;</span><br><span class="line">		/* 属性选择符:含有某种属性 */</span><br><span class="line">        a[target]{ color: lightblue;}</span><br><span class="line">        a[data-role]{ color: lightgreen;}</span><br><span class="line">        /* 含有具体值得属性选择器 */</span><br><span class="line">        a[data-role='goToBack']{ color: orange;}</span><br><span class="line">        a[data-role~='goTo']{ color:black;}</span><br><span class="line">        a[data-role^='st']{ font-size:50px;}</span><br><span class="line">        a[data-role$='d']{ font-size:60px;}</span><br><span class="line">        a[data-role*='a']{ color:blue;}</span><br><span class="line">        a[data-role|='begin']{ color:darkred;}}</span><br><span class="line">		&lt;/style&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;a href="" target="_blank"&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='goToNext'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='goToBack'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='goTo goToAll'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='start'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='end'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='begin-end'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">		&lt;a href="" data-role='begin'&gt;页面跳转&lt;/a&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></tbody></table></figure>
 
 <h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>伪类定义的 CSS 样式并不是在标记的，而是作用在标记的状态上。  </p>
@@ -3922,7 +3962,7 @@ h6 {
   <p><span>本文标题:</span>CSS 选择器</p>
   <p><span>文章作者:</span>志者</p>
   <p><span>发布时间:</span>2020年02月01日 - 20:10:00</p>
-  <p><span>最后更新:</span>2020年02月01日 - 23:01:06</p>
+  <p><span>最后更新:</span>2020年02月02日 - 10:04:21</p>
   <p><span>原始链接:</span><a href="/CSS 选择器.html" title="CSS 选择器">http://witman1999.github.io/CSS 选择器.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://witman1999.github.io/CSS 选择器.html" aria-label="复制成功！"></i></span>
   </p>
